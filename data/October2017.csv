@@ -4,7 +4,7 @@ lon,lat,City,State,Date,Attendance,Movement,Cause,Description
 -73.9866136,40.7306458,New York City,NY,2017-10-28,5000,Environmental & Food Justice,Climate Justice,Demanding bold climate change policy on the 5-year anniversary of superstorm Sandy
 -86.7743531,36.1622296,Nashville,TN,2017-10-25,3000,Other,International Politics ,Rallying in support of Kurdistan
 -82.3233746019217,29.67357765,Gainesville,FL,2017-10-19,2500,Racial Justice,Anti-Racism ,protesting visit of Richard Spencer
--84.3901849,33.7490987,Atlanta,GA,2017-10-15,2000,Gender & Sexual Orientation Equality,LGBTQ+ Rights,LGBTQ Pride March
+-84.3901849,33.7490987,Atlanta,GA,2017-10-15,2000,,LGBTQ+ Rights,LGBTQ Pride March
 -82.3984882,34.851354,Greenville,SC,2017-10-16,2000,U.S. Politics,Politician Opposition,Trump rallying for McMaster's gubernatorial campaign
 -118.244476,34.054935,Los Angeles,CA,2017-10-01,2000,Women's Rights,Anti-Sexual Violence,"Protesting gender inequality, sexual assault"
 -73.9866136,40.7306458,New York City,NY,2017-10-09,2000,Housing Justice,Affordinility ,"Protesting de Blasio, rallying for affordable housing"
@@ -13,7 +13,7 @@ lon,lat,City,State,Date,Attendance,Movement,Cause,Description
 -81.4127841856302,28.5479786,Orlando,FL,2017-10-19,1200,Workers & Labor Rights,Living Wages,Protesting Low wages
 -73.9866136,40.7306458,New York City,NY,2017-10-01,1100,Racial Justice,Anti-Racism ,Rally for racial justice
 -86.765783,33.570499,Birmingham,AL,2017-10-03,1000,U.S. Politics ,Politician Support,Campaign Rally for Doug Jones
-Error,Error,urfreesboro,TN,2017-10-28,1000,Racial Justice,Anti-Racism ,counter-protest against white nationalists 
+-86.3920452,35.845999,Murfreesboro,TN,2017-10-28,1000,Racial Justice,Anti-Racism ,counter-protest against white nationalists 
 -90.1978889,38.6272733,St. Louis,MO,2017-10-08,1000,Racial Justice,Anti-Police Brutality,Remembering 3 year anniversary of police shooting of area man
 -83.0567375,42.3486635,Detroit,MI,2017-10-27,700,Racial Justice,Immigration Rights,Protesting new Trump immigration ban
 -92.2895948,34.7464809,Little Rock,AR,2017-10-09,600,Other,Peace,Rally to end violence (Victory over Violence Prayer Rally)

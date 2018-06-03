@@ -1,7 +1,7 @@
 lon,lat,City,State,Date,Attendance,Movement,Cause,Description
 -78.6390989,35.7803977,Raleigh,NC,2017-02-11,48500,U.S. Politics,Multiple Causes,"Voting Rights, against immigration executive order, against North Carolina restrictions on transgender rights, against ACA repeal"
-Error,Error,ilwaukee,WI,2017-02-13,15000,Racial Justice,Immigrant Rights,Against Milwaukee Sheriff arresting undocumented immigrants
-Error,Error,elbourne,FL,2017-02-18,9000,U.S. Politics,Politician Support,pro-Trump
+-87.9065,43.0389,Milwaukee,WI,2017-02-13,15000,Racial Justice,Immigrant Rights,Against Milwaukee Sheriff arresting undocumented immigrants
+-80.6081,28.0836,Melbourne,FL,2017-02-18,9000,U.S. Politics,Politician Support,pro-Trump
 -73.4373087,45.4423543,San Francisco,CA,2017-02-04,7500,Racial Justice,Immigrant Rights,protest immigration ban and border wall
 -80.8431268,35.2270869,Charlotte,NC,2017-02-16,7500,Racial Justice,Immigrant Rights,Immigrant rights march
 -104.9653271,39.7348381,Denver,CO,2017-02-04,6000,Racial Justice,Immigrant Rights,"end the ""Muslim ban"""
@@ -22,8 +22,8 @@ Error,Error,elbourne,FL,2017-02-18,9000,U.S. Politics,Politician Support,pro-Tru
 -89.5891008,40.6938609,Peoria,IL,2017-02-11,2500,Women's Rights,Reproductive Rights,Supporting Planned Parenthood
 -93.6037149,41.5910641,Des Moines,IA,2017-02-16,2250,Racial Justice,Immigrant Rights,Immigrant rights march
 -73.9866136,40.7306458,New York City,NY,2017-02-01,2000,U.S. Politics,Politician Opposition,Protesting senator schumer
-Error,Error,emphis,TN,2017-02-01,2000,Racial Justice,Immigrant Rights,Immigration ban
-Error,Error,"Washington, DC",DC,2017-02-04,2000,Racial Justice,Immigrant Rights,immigration ban
+-90.0490,35.1495,Memphis,TN,2017-02-01,2000,Racial Justice,Immigrant Rights,Immigration ban
+-77.0369,38.9072,Washington,DC,2017-02-04,2000,Racial Justice,Immigrant Rights,immigration ban
 -80.0533746,26.7153425,West Palm Beach,FL,2017-02-04,2000,U.S. Politics,Politician Opposition,anti-Trump
 -73.9866136,40.7306458,New York City,NY,2017-02-04,2000,Racial Justice,Immigrant Rights,immigration ban
 -75.1635755,39.9524152,Philadelphia,PA,2017-02-04,2000,Racial Justice,Immigrant Rights,immigration ban
@@ -73,13 +73,13 @@ Error,Error,"Washington, DC",DC,2017-02-04,2000,Racial Justice,Immigrant Rights,
 -73.356691165361,40.74123595,New York,NY,2017-02-12,850,Racial Justice,Immigrant Rights,Against immigration executive order
 -75.1635755,39.9524152,Philadelphia,PA,2017-02-02,800,Racial Justice,Immigrant Rights,Immigration ban
 -105.0668085,40.5508527,Fort Collins,CO,2017-02-04,800,U.S. Politics,Politician Opposition,Protest Betsy DeVos
-Error,Error,inneapolis,MN,2017-02-18,800,Racial Justice,Immigrant Rights,Immigrant Rights
+-93.2650,44.9778,Minneapolis,MN,2017-02-18,800,Racial Justice,Immigrant Rights,Immigrant Rights
 -120.6596156,35.2827525,San Luis Obispo,CA,2017-02-11,775,Women's Rights,Reproductive Rights,Supporting Planned Parenthood
 -85.6678639,42.9632405,Grand Rapids,MI,2017-02-11,750,Women's Rights,Reproductive Rights,Supporting Planned Parenthood
-Error,Error,ount Vernon,WA,2017-02-12,700,Racial Justice,Immigrant Rights,"Immigrant Rights, Farm Worker Rights"
+-122.3340,48.4212,Mount Vernon,WA,2017-02-12,700,Racial Justice,Immigrant Rights,"Immigrant Rights, Farm Worker Rights"
 -78.6390989,35.7803977,Raleigh,NC,2017-02-16,700,Racial Justice,Immigrant Rights,Immigrant Rights
 -75.0307264,39.9348351,Cherry Hill,NJ,2017-02-24,700,U.S. Politics,Health Care,Save Affordable Care Act
-Error,Error,oscow,ID,2017-02-04,650,Racial Justice,Immigrant Rights,immigration ban
+-117.0002,46.7324,Moscow,ID,2017-02-04,650,Racial Justice,Immigrant Rights,immigration ban
 -83.0567375,42.3486635,Detroit,MI,2017-02-11,650,Women's Rights,Reproductive Rights,Supporting Planned Parenthood
 -83.0567375,42.3486635,Indianapolis,IN,2017-02-20,650,Environmental & Food Justice,Environmental Protection,Rally for the Trees; in favor of a state Senate bill that would protect specific areas of state forest from logging or tree planting
 -97.7436995,30.2711286,Austin,TX,2017-02-16,620,Racial Justice,Immigrant Rights,Immigrant rights protest
