@@ -1,0 +1,822 @@
+lon,lat,City,State,Date,Attendance,Movement,Cause,Description
+-77.0366456,38.8949549,Washington,DC,2017-04-29,190000,Environmental & Food Justice,Climate Justice,People's Climate March
+-87.6244212,41.8755546,Chicago,IL,2017-04-22,49000,U.S. Politics,Scientific Funding,March for Science
+-73.4373087,45.4423543,San Francisco,CA,2017-04-22,30750,U.S. Politics,Scientific Funding,March for Science
+-118.244476,34.054935,Los Angeles,CA,2017-04-22,29100,U.S. Politics,Scientific Funding,March for Science
+-73.356691165361,40.74123595,New York,NY,2017-04-22,29000,U.S. Politics,Scientific Funding,March for Science
+-93.1015026,44.9504037,St. Paul,MN,2017-04-22,27100,U.S. Politics,Scientific Funding,March for Science
+-77.0366456,38.8949549,Washington,DC,2017-04-22,19100,U.S. Politics,Scientific Funding,March for Science
+-104.9653271,39.7348381,Denver,CO,2017-04-22,17250,U.S. Politics,Scientific Funding,March for Science
+-117.1627714,32.7174209,San Diego,CA,2017-04-22,15000,U.S. Politics,Scientific Funding,March for Science
+-95.3676974,29.7589382,Houston,TX,2017-04-22,15000,U.S. Politics,Scientific Funding,March for Science
+-75.1635755,39.9524152,Philadelphia,PA,2017-04-22,14500,U.S. Politics,Scientific Funding,March for Science
+-84.3901849,33.7490987,Atlanta,GA,2017-04-22,13350,U.S. Politics,Scientific Funding,March for Science
+-121.4943996,38.5815719,Sacramento,CA,2017-04-22,12250,U.S. Politics,Scientific Funding,March for Science
+-118.244476,34.054935,Los Angeles,CA,2017-04-15,10900,U.S. Politics,Politician Opposition,demand Trump tax returns
+-96.7968559,32.7762719,Dallas,TX,2017-04-09,10760,Racial Justice,Immigrant Rights,Mega March against Trump's immigration policies
+-122.3300624,47.6038321,Seattle,WA,2017-04-22,10650,U.S. Politics,Scientific Funding,March for Science
+-122.3300624,47.6038321,San Jose,CA,2017-04-22,10000,U.S. Politics,Scientific Funding,March for Science
+-118.244476,34.054935,Los Angeles,CA,2017-04-24,10000,Racial Justice,Anti-Racism,102nd anniversary of Armenian Genocide
+-81.6934446,41.5051613,Cleveland,OH,2017-04-22,8900,U.S. Politics,Scientific Funding,March for Science
+-83.7312291,42.2681569,Ann Arbor,MI,2017-04-22,8400,U.S. Politics,Scientific Funding,March for Science
+-76.8861122,40.2663107,Harrisburg,PA,2017-04-29,7000,U.S. Politics,Politician Support,President Trump rally
+-86.1583502,39.7683331,Indianapolis,IN,2017-04-22,6150,U.S. Politics,Scientific Funding,March for Science
+-84.5124602,39.1014537,Cincinnati,OH,2017-04-22,5950,U.S. Politics,Scientific Funding,March for Science
+-97.7436995,30.2711286,Austin,TX,2017-04-22,5600,U.S. Politics,Scientific Funding,March for Science
+-88.2433829,40.1164205,Champaign,IL,2017-04-22,5000,U.S. Politics,Scientific Funding,March for Science
+-105.9377997,35.6869996,Santa Fe,NM,2017-04-22,5000,U.S. Politics,Scientific Funding,March for Science
+-112.0773456,33.4485866,Phoenix,AZ,2017-04-22,4700,U.S. Politics,Scientific Funding,March for Science
+-123.2620435,44.5645659,Corvallis,OR,2017-04-22,4450,U.S. Politics,Scientific Funding,March for Science
+-122.8948725,47.0450197,Olympia,WA,2017-04-22,4450,U.S. Politics,Scientific Funding,March for Science
+-89.3837613,43.074761,Madison,WI,2017-04-22,4450,U.S. Politics,Scientific Funding,March for Science
+-8.4335089,40.2139237,Santa Cruz,CA,2017-04-22,4000,U.S. Politics,Scientific Funding,March for Science
+-84.2809332,30.4380832,Tallahassee,FL,2017-04-22,4000,U.S. Politics,Scientific Funding,March for Science
+-106.6509851,35.0841034,Albuquerque,NM,2017-04-22,4000,U.S. Politics,Scientific Funding,March for Science
+-86.7743531,36.1622296,Nashville,TN,2017-04-22,4000,U.S. Politics,Scientific Funding,March for Science
+-122.3300624,47.6038321,Seattle,WA,2017-04-15,4000,U.S. Politics,Politician Opposition,demand Trump tax returns
+-73.6077401,45.5361933,Santa Barbara,CA,2017-04-22,3900,U.S. Politics,Scientific Funding,March for Science
+-111.586066176293,33.436188,Mesa,AZ,2017-04-21,3800,U.S. Politics,Politician Support,Bernie Sanders rally
+-89.3837613,43.074761,Madison,WI,2017-04-22,3625,Environmental & Food Justice,Climate Justice,Madison Climate March
+-97.7436995,30.2711286,Austin,TX,2017-04-29,3500,Environmental & Food Justice,Climate Justice,People's Climate March
+-82.6469934,27.77330515,St. Petersburg,FL,2017-04-22,3350,U.S. Politics,Scientific Funding,March for Science
+-79.9900861,40.4416941,Pittsburgh,PA,2017-04-22,3350,U.S. Politics,Scientific Funding,March for Science
+-117.1627714,32.7174209,San Diego,CA,2017-04-29,3260,Environmental & Food Justice,Climate Justice,People's Climate March
+-93.6037149,41.5910641,Des Moines,IA,2017-04-22,3000,U.S. Politics,Scientific Funding,March for Science
+-83.0567375,42.3486635,Detroit,MI,2017-04-22,3000,U.S. Politics,Scientific Funding,March for Science
+-73.9284101,41.7065779,Poughkeepsie,NY,2017-04-29,3000,Environmental & Food Justice,Climate Justice,People's Climate March
+-111.8904308,40.7670126,Salt Lake City,UT,2017-04-21,3000,U.S. Politics,Politician Support,Bernie Sanders rally
+-111.8904308,40.7670126,Salt Lake City,UT,2017-04-22,3000,U.S. Politics,Scientific Funding,March for Science
+-72.575684,44.260445,Montpelier,VT,2017-04-29,3000,Environmental & Food Justice,Climate Justice,People's Climate March
+-87.6244212,41.8755546,Chicago,IL,2017-04-15,2900,U.S. Politics,Politician Opposition,demand Trump tax returns
+-83.0007065,39.9622601,Columbus,OH,2017-04-22,2900,U.S. Politics,Scientific Funding,March for Science
+-73.5428,45.5484418,Chico,CA,2017-04-22,2725,U.S. Politics,Scientific Funding,March for Science
+-96.7968559,32.7762719,Dallas,TX,2017-04-22,2725,U.S. Politics,Scientific Funding,March for Science
+-122.3300624,47.6038321,Seattle,WA,2017-04-29,2675,Environmental & Food Justice,Climate Justice,People's Climate March
+-110.9262353,32.2218917,Tucson,AZ,2017-04-22,2500,U.S. Politics,Scientific Funding,March for Science
+-84.5553805,42.7337712,Lansing,MI,2017-04-22,2500,U.S. Politics,Scientific Funding,March for Science
+-124.08284,40.866517,Arcata,CA,2017-04-22,2450,U.S. Politics,Scientific Funding,March for Science
+-117.1627714,32.7174209,San Diego,CA,2017-04-15,2450,U.S. Politics,Politician Opposition,demand Trump tax returns
+-77.0366456,38.8949549,Washington,DC,2017-04-15,2175,U.S. Politics,Politician Opposition,demand Trump tax returns
+-149.8948523,61.2163129,Anchorage,AK,2017-04-22,2000,U.S. Politics,Scientific Funding,March for Science
+-86.765783,33.570499,Birmingham,AL,2017-04-22,2000,U.S. Politics,Scientific Funding,March for Science
+-123.10250585,49.26334935,Santa Rosa,CA,2017-04-22,2000,U.S. Politics,Scientific Funding,March for Science
+-80.7272504,44.3669375,Berkeley,CA,2017-04-22,2000,U.S. Politics,Scientific Funding,March for Science
+-73.4373087,45.4423543,San Francisco,CA,2017-04-15,2000,U.S. Politics,Politician Opposition,demand Trump tax returns
+-104.9653271,39.7348381,Denver,CO,2017-04-15,2000,U.S. Politics,Politician Opposition,demand Trump tax returns
+-95.283819,38.943818,Hartford,CT,2017-04-29,2000,Racial Justice,Immigrant Rights,pro-immigration; anti-Trump
+-81.4127841856302,28.5479786,Orlando,FL,2017-04-22,2000,U.S. Politics,Scientific Funding,March for Science
+-82.5306527,27.3364347,Sarasota,FL,2017-04-15,2000,U.S. Politics,Politician Opposition,demand Trump tax returns
+-157.846644178573,21.3250785,Honolulu,HI,2017-04-29,2000,Environmental & Food Justice,Climate Justice,People's Climate March
+-116.200835,43.61656,Boise,ID,2017-04-22,2000,U.S. Politics,Scientific Funding,March for Science
+-87.6244212,41.8755546,Chicago,IL,2017-04-29,2000,Environmental & Food Justice,Climate Justice,People's Climate March
+-71.0595678,42.3604823,Boston,MA,2017-04-29,2000,Environmental & Food Justice,Climate Justice,People's Climate March
+-69.779663,44.310583,Augusta,ME,2017-04-29,2000,Environmental & Food Justice,Climate Justice,People's Climate March
+-83.7312291,42.2681569,Ann Arbor,MI,2017-04-15,2000,U.S. Politics,Politician Opposition,demand Trump tax returns
+-90.1978889,38.6272733,St. Louis,MO,2017-04-22,2000,U.S. Politics,Scientific Funding,March for Science
+-82.5540161,35.6009498,Asheville,NC,2017-04-22,2000,U.S. Politics,Scientific Funding,March for Science
+-78.6390989,35.7803977,Raleigh,NC,2017-04-22,2000,U.S. Politics,Scientific Funding,March for Science
+-74.6592958,40.3492744,Princeton,NJ,2017-04-22,2000,U.S. Politics,Scientific Funding,March for Science
+-78.8783922,42.8867166,Buffalo,NY,2017-04-22,2000,U.S. Politics,Scientific Funding,March for Science
+-73.754968,42.6511674,Albany,NY,2017-04-22,2000,U.S. Politics,Scientific Funding,March for Science
+-97.5170536,35.4729886,Oklahoma City,OK,2017-04-22,2000,U.S. Politics,Scientific Funding,March for Science
+-122.6741949,45.5202471,Portland,OR,2017-04-22,2000,U.S. Politics,Scientific Funding,March for Science
+-75.1635755,39.9524152,Philadelphia,PA,2017-04-15,2000,U.S. Politics,Politician Opposition,demand Trump tax returns
+-75.1635755,39.9524152,Philadelphia,PA,2017-04-29,2000,Environmental & Food Justice,Climate Justice,People's Climate March
+-79.9402728,32.7876012,Charleston,SC,2017-04-22,2000,U.S. Politics,Scientific Funding,March for Science
+-122.3300624,47.6038321,Seattle,WA,2017-04-15,2000,U.S. Politics,Politician Opposition,demand Trump tax returns; decry Washington state's regressive tax system
+-122.3300624,47.6038321,Seattle,WA,2017-04-16,2000,Racial Justice,Anti-Police Brutality,against police violence
+-122.4788602,48.754402,Bellingham,WA,2017-04-22,2000,U.S. Politics,Scientific Funding,March for Science
+-123.0950506,44.0505054,Eugene,OR,2017-04-22,1725,U.S. Politics,Scientific Funding,March for Science
+-98.4951405,29.4246002,San Antonio,TX,2017-04-22,1700,U.S. Politics,Scientific Funding,March for Science
+-104.9653271,39.7348381,Denver,CO,2017-04-29,1515,Environmental & Food Justice,Climate Justice,People's Climate March
+-79.5280653,43.5936451,Walnut Creek,CA,2017-04-22,1500,U.S. Politics,Scientific Funding,March for Science
+-76.1474244,43.0481221,Syracuse,NY,2017-04-22,1500,U.S. Politics,Scientific Funding,March for Science
+-72.575684,44.260445,Montpelier,VT,2017-04-12,1500,Environmental & Food Justice,Climate Justice,climate change march
+-94.5408358,38.6843072,Kansas City,MO,2017-04-22,1460,U.S. Politics,Scientific Funding,March for Science
+-97.7436995,30.2711286,Austin,TX,2017-04-15,1460,U.S. Politics,Politician Opposition,demand Trump tax returns
+114.192381924198,22.2667238,New Haven,CT,2017-04-22,1450,U.S. Politics,Scientific Funding,March for Science
+-71.0595678,42.3604823,Boston,MA,2017-04-22,1450,U.S. Politics,Scientific Funding,March for Science
+-119.8136744,39.52927,Reno,NV,2017-04-22,1450,U.S. Politics,Scientific Funding,March for Science
+-84.1916069,39.7589478,Dayton,OH,2017-04-22,1335,U.S. Politics,Scientific Funding,March for Science
+-122.8718605,42.3264181,Medford,OR,2017-04-29,1245,Environmental & Food Justice,Climate Justice,People's Climate March
+-117.9294165,33.8708215,Fullerton,CA,2017-04-22,1225,U.S. Politics,Scientific Funding,March for Science
+-95.283819,38.943818,Hartford,CT,2017-04-22,1200,U.S. Politics,Scientific Funding,March for Science
+-121.4943996,38.5815719,Sacramento,CA,2017-04-15,1175,U.S. Politics,Politician Opposition,demand Trump tax returns
+-86.2500066,41.6833813,South Bend,IN,2017-04-22,1128,U.S. Politics,Scientific Funding,March for Science
+-86.798814,33.561968,Huntsville,AL,2017-04-22,1100,U.S. Politics,Scientific Funding,March for Science
+-71.537476,43.207178,Concord,NH,2017-04-22,1010,U.S. Politics,Scientific Funding,March for Science
+-117.4212265,47.6579425,Spokane,WA,2017-04-22,1010,U.S. Politics,Scientific Funding,March for Science
+-87.922497,43.0349931,Milwaukee,WI,2017-04-22,1010,U.S. Politics,Scientific Funding,March for Science
+-147.716675,64.837845,Fairbanks,AK,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-92.2895948,34.7464809,Little Rock,AR,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-111.6514259,35.199458,Flagstaff,AZ,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-97.1414618042211,49.88525745,Monterey,CA,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-119.708861260756,36.7295295,Fresno,CA,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-123.10250585,49.26334935,Santa Rosa,CA,2017-04-29,1000,U.S. Politics,Multiple Causes,"May Day; march for “Climate, Jobs, and Justice”"
+-117.1627714,32.7174209,San Diego,CA,2017-04-04,1000,Racial Justice,Equal Pay & Opportunity,Equal pay; black lives matter
+-105.3632079,40.102555,Boulder,CO,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-80.1936589,25.7742658,Miami,FL,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-82.5306527,27.3364347,Sarasota,FL,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-82.3233746019217,29.67357765,Gainesville,FL,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-157.846644178573,21.3250785,Honolulu,HI,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-71.1056157,42.3750997,Cambridge,MA,2017-04-15,1000,U.S. Politics,Politician Opposition,demand Trump tax returns
+-72.523143,42.3803676,Amherst,MA,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-110.9716788,29.0654341,Portland,ME,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-85.6165301,44.7606441,Traverse City,MI,2017-04-29,1000,Environmental & Food Justice,Climate Justice,People's Climate March
+-92.1251218,46.7729322,Duluth,MN,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-93.2920373,37.2166779,Springfield,MO,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-79.7919754,36.0726355,Greensboro,NC,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-80.8431268,35.2270869,Charlotte,NC,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-95.9378732,41.2587317,Omaha,NE,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-74.7429463,40.2170575,Trenton,NJ,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-123.033121,44.9391565,Salem,OR,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-122.6741949,45.5202471,Portland,OR,2017-04-29,1000,Environmental & Food Justice,Climate Justice,People's Climate March
+-103.228006,44.081176,Rapid City,SD,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-85.3096801,35.0456297,Chattanooga,TN,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-97.7436995,30.2711286,Austin,TX,2017-04-05,1000,Women's Rights,Reproductive Rights,In support of Planned Parenthood
+-97.3327459,32.753177,Fort Worth,TX,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-117.173895,46.7304268,Pullman,WA,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-122.4398746,47.2495798,Tacoma,WA,2017-04-22,1000,U.S. Politics,Scientific Funding,March for Science
+-93.6037149,41.5910641,Des Moines,IA,2017-04-06,900,U.S. Politics,Education,supporters of school choice programs
+-92.4630215,44.0233269,Rochester,MN,2017-04-22,900,U.S. Politics,Scientific Funding,March for Science
+-77.615214,43.157285,Rochester,NY,2017-04-22,898,U.S. Politics,Scientific Funding,March for Science
+-104.8253485,38.8339578,Colorado Springs,CO,2017-04-22,890,U.S. Politics,Scientific Funding,March for Science
+-97.3375448,37.6922361,Wichita,KS,2017-04-22,890,U.S. Politics,Scientific Funding,March for Science
+-92.3337366,38.951883,Columbia,MO,2017-04-22,785,U.S. Politics,Scientific Funding,March for Science
+-108.5507317,39.063956,Grand Junction,CO,2017-04-22,750,U.S. Politics,Scientific Funding,March for Science
+-77.9447107,34.2257282,Wilmington,NC,2017-04-22,750,U.S. Politics,Scientific Funding,March for Science
+-75.6254955069444,39.9226025,East Lyme,CT,2017-04-22,725,U.S. Politics,Scientific Funding,March for Science
+-110.9262353,32.2218917,Tucson,AZ,2017-04-15,700,U.S. Politics,Politician Opposition,demand Trump tax returns
+-82.7637127,28.0780718,Palm Harbor,FL,2017-04-15,700,U.S. Politics,Politician Opposition,demand Trump tax returns
+-89.6443688,39.7989763,Springfield,IL,2017-04-22,700,U.S. Politics,Scientific Funding,March for Science
+-85.759407,38.2542376,Louisville,KY,2017-04-23,650,Environmental & Food Justice,Climate Justice,People’s Climate March and March for Science
+-75.7354367393588,39.68387145,Newark,DE,2017-04-22,600,U.S. Politics,Scientific Funding,March for Science
+-83.3881868,33.9550905,Athens,GA,2017-04-22,600,U.S. Politics,Scientific Funding,March for Science
+-114.154332,46.248886,Hamilton,MT,2017-04-21,600,U.S. Politics,Politician Support,Rally for house candidate Gianforte
+-112.036109,46.592712,Helena,MT,2017-04-22,600,U.S. Politics,Scientific Funding,March for Science
+-106.7798078,32.3140354,Las Cruces,NM,2017-04-22,600,U.S. Politics,Scientific Funding,March for Science
+-121.3153096,44.0581728,Bend,OR,2017-04-22,600,U.S. Politics,Scientific Funding,March for Science
+-124.053442,44.636755,Newport,OR,2017-04-22,600,U.S. Politics,Scientific Funding,March for Science
+-80.0852421,42.1290657,Erie,PA,2017-04-22,600,U.S. Politics,Scientific Funding,March for Science
+-111.044675,45.679984,Bozeman,MT,2017-04-22,560,U.S. Politics,Scientific Funding,March for Science
+-122.8948725,47.0450197,Olympia,WA,2017-04-15,560,U.S. Politics,Politician Opposition,demand Trump tax returns
+-7.64738,4.57782,Evansville,IN,2017-04-22,550,U.S. Politics,Scientific Funding,March for Science
+-94.1574328,36.0625843,Fayetteville,AR,2017-04-22,500,U.S. Politics,Scientific Funding,March for Science
+-78.7359702,44.4567705,Long Beach,CA,2017-04-22,500,U.S. Politics,Scientific Funding,March for Science
+-99.45,49.583333,Stockton,CA,2017-04-22,500,U.S. Politics,Scientific Funding,March for Science
+-73.4373087,45.4423543,San Francisco,CA,2017-04-08,500,Women's Rights,Anti-Sexual Violence,to protest rape and sexual violence
+-3.069915,51.7366267,Bethel,CT,2017-04-23,500,LGBTQ+ Rights,Pride,Gay pride
+-81.3145395,29.8946952,St. Augustine,FL,2017-04-22,500,U.S. Politics,Scientific Funding,March for Science
+-80.0533746,26.7153425,West Palm Beach,FL,2017-04-29,500,Environmental & Food Justice,Climate Justice,People's Climate March
+-112.4401098,42.8688613,Pocatello,ID,2017-04-22,500,U.S. Politics,Scientific Funding,March for Science
+-89.5891008,40.6938609,Peoria,IL,2017-04-22,500,U.S. Politics,Scientific Funding,March for Science
+-72.6006199,42.5877962,Greenfield,MA,2017-04-29,500,Environmental & Food Justice,Climate Justice,People's Climate March
+-83.0567375,42.3486635,Detroit,MI,2017-04-04,500,Racial Justice,Equal Pay & Opportunity,"Fight Racisim, Raise Pay"
+-84.2472117,43.6155825,Midland,MI,2017-04-22,500,U.S. Politics,Scientific Funding,March for Science
+-84.95533,45.373343,Petoskey,MI,2017-04-22,500,U.S. Politics,Scientific Funding,March for Science
+-76.4968019,42.4396039,Ithaca,NY,2017-04-22,500,U.S. Politics,Scientific Funding,March for Science
+-73.140943,40.9256538,Stony Brook,NY,2017-04-22,500,U.S. Politics,Scientific Funding,March for Science
+-76.1474244,43.0481221,Syracuse,NY,2017-04-29,500,Environmental & Food Justice,Climate Justice,People's Climate March
+-48.4682453,-1.45056,Bethlehem,PA,2017-04-22,500,U.S. Politics,Scientific Funding,March for Science
+-111.8348631,41.7313447,Logan,UT,2017-04-22,500,U.S. Politics,Scientific Funding,March for Science
+-79.9559437,39.6296809,Morgantown,WV,2017-04-22,500,U.S. Politics,Scientific Funding,March for Science
+-71.0595678,42.3604823,Boston,MA,2017-08-19,50000,Racial Justice,Anti-Racism,Fight Supremacy! Boston Counter-Protest & Resistance Rally
+-80.7272504,44.3669375,Berkeley,CA,2017-08-27,7000,Racial Justice,Anti-Racism,Rally Against Hate; counter-protest Patriot Prayer
+-77.0366456,38.8949549,Washington,DC,2017-08-28,3000,Racial Justice,Anti-Racism,One Thousand Ministers March for Justice
+-83.9210261,35.9603948,Knoxville,TN,2017-08-26,2800,Racial Justice,Anti-Racism,Counter-protest white supremacist rally
+-122.3300624,47.6038321,Seattle,WA,2017-08-26,2700,Racial Justice,Anti-Racism,"Removal of Confederate Statue, White Supremacists outnumbered by counter-protestors"
+-96.7968559,32.7762719,Dallas,TX,2017-08-19,2500,Racial Justice,Anti-Racism,Protesting violence/racism in Charlottesville
+-113.402912433547,53.4453765,Laguna Beach,CA,2017-08-20,2500,Racial Justice,Anti-Racism,Counter-protest; against America First! rally
+-75.1635755,39.9524152,Philadelphia,PA,2017-08-16,2200,Racial Justice,Anti-Racism,Philly Is Charlottesville March and Rally; Unmasking White Supremacy in Philadelphia
+-80.3310713,43.0317491,Oakland,CA,2017-08-12,2000,Racial Justice,Anti-Racism,Protesting violence/racism in Charlottesville
+-73.356691165361,40.74123595,New York,NY,2017-08-14,2000,Racial Justice,Anti-Racism,Protesting Trump's response to Charlottesville
+-111.8904308,40.7670126,Salt Lake City,UT,2017-08-14,2000,Racial Justice,Anti-Racism,Protesting violence/racism in Charlottesville
+-78.4766781,38.029306,Charlottesville,VA,2017-08-16,2000,Racial Justice,Anti-Racism,Protesting violence/racism in Charlottesville
+-84.3901849,33.7490987,Atlanta,GA,2017-08-19,2000,Racial Justice,Anti-Racism,"Protesting violence/racism in Charlottesville, Trump"
+-89.9750054503052,30.03280175,New Orleans,LA,2017-08-19,2000,Racial Justice,Anti-Racism,Protesting violence/racism in Charlottesville
+-87.6244212,41.8755546,Chicago,IL,2017-08-26,2000,Racial Justice,Anti-Racism,Rally against hate
+-73.4373087,45.4423543,San Francisco,CA,2017-08-26,2000,Racial Justice,Anti-Racism,San Francisco Peacefully Unites Against White Nationalists
+-73.4373087,45.4423543,San Francisco,CA,2017-08-26,2000,Racial Justice,Anti-Racism,counter planned white supremacist rallies
+-110.9262353,32.2218917,Tucson,AZ,2017-08-13,1300,Racial Justice,Anti-Racism,Protesting violence/racism in Charlottesville
+-97.7436995,30.2711286,Austin,TX,2017-08-19,1200,Racial Justice,Anti-Racism,against white supremacy
+-110.9716788,29.0654341,Portland,ME,2017-08-20,1200,Racial Justice,Anti-Racism,Protesting racism; white supremacy
+-78.6390989,35.7803977,Raleigh,NC,2017-08-13,1100,Racial Justice,Anti-Racism,Protesting violence/racism in Charlottesville
+-78.4766781,38.029306,Charlottesville,VA,2017-08-12,1000,Racial Justice,Anti-Racism,Oppose alt-right rally
+-77.0366456,38.8949549,Washington,DC,2017-08-13,1000,Racial Justice,Anti-Racism,Protesting violence/racism in Charlottesville
+-93.2654692,44.9772995,Minneapolis,MN,2017-08-14,1000,Racial Justice,Anti-Racism,Protesting violence/racism in Charlottesville
+-122.6741949,45.5202471,Portland,OR,2017-08-18,1000,Racial Justice,Anti-Racism,Protesting violence/racism in Charlottesville
+-81.9383187,40.7991766,Wooster,OH,2017-08-27,1000,Racial Justice,Anti-Racism,CommUNITY Rally against the appearance locally of KKK recruiting fliers
+-121.4943996,38.5815719,Sacramento,CA,2017-08-13,809,Racial Justice,Anti-Racism,Protesting violence/racism in Charlottesville
+-71.0994968,42.3875968,Somerville,MA,2017-08-16,798,Racial Justice,Anti-Racism,Our Ville Stands with Your Ville: Charlottesville Vigil
+-82.4563972,27.9518491,Tampa,FL,2017-08-13,608,Racial Justice,Anti-Racism,Protesting violence/racism in Charlottesville
+-95.3676974,29.7589382,Houston,TX,2017-08-13,603,Racial Justice,Anti-Racism,Protesting violence/racism in Charlottesville
+114.192381924198,22.2667238,New Haven,CT,2017-08-13,515,Racial Justice,Anti-Racism,Protesting violence/racism in Charlottesville
+-149.8948523,61.2163129,Anchorage,AK,2017-08-13,500,Racial Justice,Anti-Racism,rally against racism
+-104.9653271,39.7348381,Denver,CO,2017-08-13,500,Racial Justice,Anti-Racism,Protesting violence/racism in Charlottesville
+-97.4394816,35.2225717,Norman,OK,2017-08-17,500,Racial Justice,Anti-Racism,solidarity with Charlottesville
+-94.5408358,38.6843072,Kansas City,MO,2017-08-20,500,Racial Justice,Anti-Racism,Protestig racism; white supremacy
+114.183818890881,22.3263649,Mansfield,CT,2017-08-30,500,Racial Justice,Anti-Racism,Vigil for memory and justice; solidarity with Charlottesville; against racism
+-112.0773456,33.4485866,Phoenix,AZ,2017-08-22,15000,U.S. Politics,Politician Support,Campaign-style rally
+-82.445154,38.4192496,Huntington,WV,2017-08-03,9000,U.S. Politics,Politician Support,Make American Great Again rally
+-112.0773456,33.4485866,Phoenix,AZ,2017-08-22,2000,U.S. Politics ,Politician Opposition,Protesting Trump rally
+-73.356691165361,40.74123595,New York,NY,2017-08-28,2000,U.S. Politics ,Politician Opposition,denounce President Trump
+-93.2920373,37.2166779,Springfield,MO,2017-08-30,2000,U.S. Politics ,Politician Opposition,The People’s Protest to oppose visit by President Trump
+-73.4373087,45.4423543,San Francisco,CA,2017-08-26,2000,Other,Equality & Diversity,Come Together Rally and March for Equality
+-84.1916069,39.7589478,Dayton,OH,2017-08-27,2000,U.S. Politics ,Health Care,Rally for families of addicts
+-75.1635755,39.9524152,Philadelphia,PA,2017-08-31,2000,Other,Pro-Police,Condemn a protest outside officer's home
+-93.3204872,44.8322405,Bloomington,MN,2017-08-08,1000,Religious & Cultural Justice,Anti-Islamophobia,denounce attack on mosque; anti-hate
+-98.3252932,26.2159066,Mission,TX,2017-08-12,1000,Racial Justice,Immigrant Rights,Oppose Trump's border wall plans
+-78.4766781,38.029306,Charlottesville,VA,2017-08-16,1000,Racial Justice,Anti-Racism,Memorial service for counter-protestor killed at the Unite the Right rally
+-119.8136744,39.52927,Reno,NV,2017-08-23,1000,U.S. Politics ,Politician Opposition,Oppose visit by President Trump
+-73.4373087,45.4423543,San Francisco,CA,2017-08-26,1000,Racial Justice,Anti-Racism,Together We Will STOP HATE! Heart-Shaped Human Banner
+-80.7272504,44.3669375,Berkeley,CA,2017-08-27,1000,Racial Justice,Anti-Racism,Bay Area Rally Against Hate
+-73.356691165361,40.74123595,New York,NY,2017-08-30,1000,Racial Justice,Immigrant Rights,Protect the DACA program
+-79.05578,35.9131542,Chapel Hill,NC,2017-08-22,800,Racial Justice,Anti-Racism,"Call for removal of confederate statue ""silent Sam"""
+-118.244476,34.054935,Los Angeles,CA,2017-08-04,500,Workers & Labor Rights,Living Wages,support of contracted valet workers
+-96.667821,40.8,Lincoln,NE,2017-08-06,500,Racial Justice,Indigenous Rights,Oppose Keystone XL pipeline
+-78.4766781,38.029306,Charlottesville,VA,2017-08-12,500,Other,White Nationalism,Unite the Right
+-71.0595678,42.3604823,Boston,MA,2017-08-15,500,Religious & Cultural Justice,Against Anti-Semitism,Protesting vandalism at Holocaust memorial
+-70.736847,43.088448,Kittery,ME,2017-08-19,500,Racial Justice,Anti-Racism,Protesting racism; white supremacy
+-73.6050824,45.5073725,Mountain View,CA,2017-08-19,500,Racial Justice,Anti-Racism,Stand Up for Equality and Diversity Rally
+-97.3327459,32.753177,Fort Worth,TX,2017-08-27,500,Racial Justice,Anti-Racism,"Love, Hot Hate; against white supremacy"
+-77.0366456,38.8949549,Washington,DC,2017-12-06,15000,Racial Justice,Immigrant Rights,Rallying for DREAM Act
+-77.0366456,38.8949549,Salt Lake City,UT,2017-12-02,5000,Racial Justice,Indigenous Rights,Protesting Trump's monument reduction plan
+-77.0366456,38.8949549,Oakland,CA,2017-12-05,3000,Workers & Labor Rights,Health & Safety Protections,Protesting working conditions; labor protest
+-77.0366456,38.8949549,Miramar,FL,2017-12-09,3000,U.S. Politics,Health Care,Rallying against drug use
+-77.0366456,38.8949549,Portland,OR,2017-12-12,2800,U.S. Politics,Politician Support,Hillary Clinton Democratic Rally 
+-77.0366456,38.8949549,Charlotte,NC,2017-12-02,2000,U.S. Politics,Health Care,Pro-Life protest
+-77.0366456,38.8949549,Salt Lake City,UT,2017-12-04,2000,Racial Justice,Indigenous Rights,Protesting Trump's monument reduction plan
+-87.2169149,30.421309,Pensacola,FL,2017-12-08,2000,U.S. Politics,Politician Support,Trump Sponsored Campain Rally for Alabama Republican Senator Roy Moore 
+-87.2169149,30.421309,Jackson,MS,2017-12-09,2000,U.S. Politics,Politician Opposition,Rallying for museum's opening and opposing Trump's visit
+-75.9279495,40.335345,Reading,PA,2017-12-03,1616,U.S. Politics,Anti-Budget Cuts,Protesting GOP tax plan
+-75.9279495,40.335345,Dayton,OH,2017-12-02,1300,U.S. Politics,Anti-Budget Cuts,Rally against the Republican tax reform
+-75.9279495,40.335345,Glens Falls,NY,2017-12-24,1200,Other,Commemoration,Celebrating service of deployed US troops
+-75.9279495,40.335345,Chicago,IL,2017-12-04,1000,U.S. Politics,Anti-Budget Cuts,Protesting GOP tax plan
+-118.244476,34.054935,Los Angeles,CA,2017-12-10,1000,Other,International Politics,Protesting Trump's decision to recognize Jerusalem as the capital of Israel
+-77.0366456,38.8949549,Washington,DC,2017-12-20,1000,Racial Justice,Immigrant Rights,Protesting Trump's deicision to end DACA; rallying for immigrants
+-118.244476,34.054935,Los Angeles,CA,2017-12-04,882,U.S. Politics,Anti-Budget Cuts,Protesting GOP tax plan
+-73.356691165361,40.74123595,New York,NY,2017-12-07,738,U.S. Politics,Multiple Causes,"Protesting GOP tax plan, Muslim ban"
+-71.0595678,42.3604823,Boston,MA,2017-12-10,630,U.S. Politics,Anti-Budget Cuts,Protesting GOP tax plan
+-85.8419246,40.2769834,Elwood,IL,2017-12-19,600,Environmental & Food Justice,Environmental Protection,Protesting new construction proposal
+-77.0366456,38.8949549,Washington,DC,2017-12-13,555,U.S. Politics,Privacy & Internet,Protesting potential end to net neutrality
+-71.0595678,42.3604823,Boston,MA,2017-12-17,555,Other,International Politics,Protesting Trump's decision to recognize Jerusalem as the capital of Israel
+-104.9653271,39.7348381,Denver,CO,2017-12-02,544,Racial Justice,Anti-Racism,Protesting white supremacy
+151.499496964417,-32.8660752,Richmond,VA,2017-12-02,500,Environmental & Food Justice,Environmental Protection,Protesting proposed pipeline
+-78.6390989,35.7803977,Raleigh,NC,2017-02-11,48500,U.S. Politics,Multiple Causes,"Voting Rights, against immigration executive order, against North Carolina restrictions on transgender rights, against ACA repeal"
+-87.9065,43.0389,Milwaukee,WI,2017-02-13,15000,Racial Justice,Immigrant Rights,Against Milwaukee Sheriff arresting undocumented immigrants
+-80.6081,28.0836,Melbourne,FL,2017-02-18,9000,U.S. Politics,Politician Support,pro-Trump
+-73.4373087,45.4423543,San Francisco,CA,2017-02-04,7500,Racial Justice,Immigrant Rights,protest immigration ban and border wall
+-80.8431268,35.2270869,Charlotte,NC,2017-02-16,7500,Racial Justice,Immigrant Rights,Immigrant rights march
+-104.9653271,39.7348381,Denver,CO,2017-02-04,6000,Racial Justice,Immigrant Rights,"end the ""Muslim ban"""
+-73.356691165361,40.74123595,New York,NY,2017-02-20,6000,Racial Justice,Immigrant Rights,pro-Muslim; oppose immigration EO
+-93.1015026,44.9504037,St. Paul,MN,2017-02-11,5500,Women's Rights,Reproductive Rights,Supporting Planned Parenthood
+-71.0595678,42.3604823,Boston,MA,2017-02-19,5000,Environmental & Food Justice,General Awareness,"pro-science, pro-environment"
+-71.0595678,42.3604823,San Jose,CA,2017-02-11,4000,Women's Rights,Reproductive Rights,Supporting Planned Parenthood
+-157.846644178573,21.3250785,Honolulu,HI,2017-02-13,4000,U.S. Politics,Education,support raising taxes for school funding
+-117.1627714,32.7174209,San Diego,CA,2017-02-18,4000,Racial Justice,Immigrant Rights,Immigrant rights march
+-95.677556,39.049011,Topeka,KS,2017-02-25,4000,U.S. Politics,Politician Opposition,anti-Trump; progressive
+-73.356691165361,40.74123595,New York,NY,2017-02-11,3950,Women's Rights,Reproductive Rights,Supporting Planned Parenthood
+-119.708861260756,36.7295295,Fresno,CA,2017-02-16,3700,Racial Justice,Immigrant Rights,Immigrant rights protest
+-86.7743531,36.1622296,Nashville,TN,2017-02-01,3000,Racial Justice,Immigrant Rights,Immigration ban
+-111.8904308,40.7670126,Salt Lake City,UT,2017-02-04,3000,U.S. Politics,Politician Opposition,anti-Trump; protest immigration ban
+-90.1978889,38.6272733,St. Louis,MO,2017-02-11,3000,Women's Rights,Reproductive Rights,Supporting Planned Parenthood
+-117.2919818,33.0369867,Encinitas,CA,2017-02-11,2500,Women's Rights,Reproductive Rights,Supporting Planned Parenthood
+-73.4373087,45.4423543,San Francisco,CA,2017-02-11,2500,U.S. Politics,Politician Opposition,anti-Trump
+-89.5891008,40.6938609,Peoria,IL,2017-02-11,2500,Women's Rights,Reproductive Rights,Supporting Planned Parenthood
+-93.6037149,41.5910641,Des Moines,IA,2017-02-16,2250,Racial Justice,Immigrant Rights,Immigrant rights march
+-73.9866136,40.7306458,New York City,NY,2017-02-01,2000,U.S. Politics,Politician Opposition,Protesting senator schumer
+-90.0490,35.1495,Memphis,TN,2017-02-01,2000,Racial Justice,Immigrant Rights,Immigration ban
+-77.0369,38.9072,Washington,DC,2017-02-04,2000,Racial Justice,Immigrant Rights,immigration ban
+-80.0533746,26.7153425,West Palm Beach,FL,2017-02-04,2000,U.S. Politics,Politician Opposition,anti-Trump
+-73.9866136,40.7306458,New York City,NY,2017-02-04,2000,Racial Justice,Immigrant Rights,immigration ban
+-75.1635755,39.9524152,Philadelphia,PA,2017-02-04,2000,Racial Justice,Immigrant Rights,immigration ban
+-74.2121964562147,40.092024,Lakewood,NJ,2017-02-16,2000,Racial Justice,Immigrant Rights,Immigrant Rights
+-118.244476,34.054935,Los Angeles,CA,2017-02-18,2000,Racial Justice,Immigrant Rights,Immigrant Rights
+-87.6244212,41.8755546,Chicago,IL,2017-02-19,2000,U.S. Politics,Politician Opposition,anti-Trump
+-118.244476,34.054935,Los Angeles,CA,2017-02-20,2000,U.S. Politics,Politician Opposition,Not My President Day; anti-Trump
+-73.356691165361,40.74123595,New York,NY,2017-02-20,2000,U.S. Politics,Politician Opposition,Not My President Day; anti-Trump
+144.9416745,-37.6750126,Stamford,CT,2017-02-23,2000,U.S. Politics,Politician Opposition,Walkout against Betsy DeVos
+-96.7968559,32.7762719,Dallas,TX,2017-02-18,1700,Racial Justice,Immigrant Rights,Immigrant Rights
+-80.7272504,44.3669375,Berkeley,CA,2017-02-02,1500,Racial Justice,Anti-Racism,"protest against alt-right Breitbart editor, Milo Yiannopoulos"
+-73.9866136,40.7306458,New York City,NY,2017-02-02,1500,Racial Justice,Immigrant Rights,"end the ""muslim ban"""
+-84.2809332,30.4380832,Tallahassee,FL,2017-02-04,1500,Racial Justice,Immigrant Rights,against Trump's executive order
+-118.244476,34.054935,Los Angeles,CA,2017-02-05,1500,Racial Justice,Indigenous Rights,protest Dakota Access Pipeline
+-104.9653271,39.7348381,Denver,CO,2017-02-11,1500,Women's Rights,Reproductive Rights,In support of Planned Parenthood
+-86.5342881,39.1670396,Bloomington,IN,2017-02-11,1500,Women's Rights,Reproductive Rights,Supoorting Planned Parenthood
+-85.6678639,42.9632405,Grand Rapids,MI,2017-02-16,1500,Racial Justice,Immigrant Rights,Immigrant Rights
+-90.1978889,38.6272733,St. Louis,MO,2017-02-26,1500,LGBTQ+ Rights,General Awareness,pro-LGBTQ rights
+-122.8948725,47.0450197,Olympia,WA,2017-02-27,1500,Racial Justice,Immigrant Rights,pro-immigration
+-73.356691165361,40.74123595,New York,NY,2017-02-23,1350,LGBTQ+ Rights,General Awareness,LGBTQ Rights
+-91.5299106,41.6612561,Iowa City,IA,2017-02-05,1300,Racial Justice,Immigrant Rights,protest immigration ban
+-110.9716788,29.0654341,Portland,ME,2017-02-01,1250,Racial Justice,Immigrant Rights,"end the ""Muslim ban"""
+-73.356691165361,40.74123595,New York,NY,2017-02-11,1250,Racial Justice,Immigrant Rights,Againts ICE raids; Against immigration executive order
+-111.8102104,40.6196702,Cottonwood Heights,UT,2017-02-09,1200,U.S. Politics,Politician Opposition,"Various, general anti-Trump administration"
+-87.6244212,41.8755546,Chicago,IL,2017-02-20,1200,U.S. Politics,Politician Opposition,Not My President Day; anti-Trump
+-79.8964650794964,43.26083105,Beverly Hills,CA,2017-02-24,1200,Racial Justice,Immigrant Rights,for immigration rights
+-84.4537545,39.3718852,West Hartford,CT,2017-02-01,1150,Racial Justice,Immigrant Rights,end immigration ban
+-78.6390989,35.7803977,Raleigh,NC,2017-02-04,1100,Racial Justice,Immigrant Rights,Immigration ban
+-122.3300624,47.6038321,Seattle,WA,2017-02-11,1100,LGBTQ+ Rights,General Awareness,LBGTQ rights
+-87.6244212,41.8755546,Chicago,IL,2017-02-16,1100,Racial Justice,Immigrant Rights,Against immigration executive order
+-97.1466695,31.549333,Waco,TX,2017-02-16,1050,Racial Justice,Immigrant Rights,Immigrant Rights
+-83.9210261,35.9603948,Knoxville,TN,2017-02-01,1000,Racial Justice,Immigrant Rights,protest immigration ban
+-80.4759309,43.3414752,Roseville,CA,2017-02-04,1000,U.S. Politics,Health Care,protest repeal of Obamacare
+-105.3632079,40.102555,Boulder,CO,2017-02-04,1000,Racial Justice,Immigrant Rights,immigration ban
+-80.4494174,26.6279798,Palm Beach,FL,2017-02-04,1000,Racial Justice,Immigrant Rights,Against Trump's orders
+-84.4970393,38.0464066,Lexington,KY,2017-02-05,1000,Racial Justice,Immigrant Rights,immigration ban
+-76.8861122,40.2663107,Harrisburg,PA,2017-02-05,1000,Racial Justice,Immigrant Rights,immigration ban
+-81.6332812,38.3505995,Charleston,WV,2017-02-05,1000,Racial Justice,Immigrant Rights,Immigration ban
+-86.5342881,39.1670396,Bloomington,IL,2017-02-11,1000,Women's Rights,Reproductive Rights,Supporting Planned Parenthood
+-73.754968,42.6511674,Albany,NY,2017-02-11,1000,Women's Rights,Reproductive Rights,Supporting Planned Parenthood
+-74.0437839,41.1130231,Spring Valley,NY,2017-02-16,1000,Racial Justice,Immigrant Rights,Immigrant Rights
+-95.3676974,29.7589382,Houston,TX,2017-02-16,1000,Racial Justice,Immigrant Rights,Immigrant Rights
+-73.356691165361,40.74123595,New York,NY,2017-02-19,1000,Religious & Cultural Justice,Anti-Islamophobia,Muslim Rights
+-84.8966171,38.0372967,Lawrenceburg,KY,2017-02-21,1000,U.S. Politics,Politician Opposition,anti-Trump; outside Sen. Mitch McConnel meeting
+-99.5120986,31.8160381,,TX,2017-02-25,1000,Racial Justice,Immigrant Rights,"No Ban, No Wall; pro-immigration"
+-72.0550479,46.6855068,Napa,CA,2017-02-16,950,Racial Justice,Immigrant Rights,Immigrant Rights
+-73.356691165361,40.74123595,New York,NY,2017-02-12,850,Racial Justice,Immigrant Rights,Against immigration executive order
+-75.1635755,39.9524152,Philadelphia,PA,2017-02-02,800,Racial Justice,Immigrant Rights,Immigration ban
+-105.0668085,40.5508527,Fort Collins,CO,2017-02-04,800,U.S. Politics,Politician Opposition,Protest Betsy DeVos
+-93.2650,44.9778,Minneapolis,MN,2017-02-18,800,Racial Justice,Immigrant Rights,Immigrant Rights
+-120.6596156,35.2827525,San Luis Obispo,CA,2017-02-11,775,Women's Rights,Reproductive Rights,Supporting Planned Parenthood
+-85.6678639,42.9632405,Grand Rapids,MI,2017-02-11,750,Women's Rights,Reproductive Rights,Supporting Planned Parenthood
+-122.3340,48.4212,Mount Vernon,WA,2017-02-12,700,Racial Justice,Immigrant Rights,"Immigrant Rights, Farm Worker Rights"
+-78.6390989,35.7803977,Raleigh,NC,2017-02-16,700,Racial Justice,Immigrant Rights,Immigrant Rights
+-75.0307264,39.9348351,Cherry Hill,NJ,2017-02-24,700,U.S. Politics,Health Care,Save Affordable Care Act
+-117.0002,46.7324,Moscow,ID,2017-02-04,650,Racial Justice,Immigrant Rights,immigration ban
+-83.0567375,42.3486635,Detroit,MI,2017-02-11,650,Women's Rights,Reproductive Rights,Supporting Planned Parenthood
+-83.0567375,42.3486635,Indianapolis,IN,2017-02-20,650,Environmental & Food Justice,Environmental Protection,Rally for the Trees; in favor of a state Senate bill that would protect specific areas of state forest from logging or tree planting
+-97.7436995,30.2711286,Austin,TX,2017-02-16,620,Racial Justice,Immigrant Rights,Immigrant rights protest
+-92.4453179,42.5274123,Cedar Falls,IA,2017-02-05,600,Racial Justice,Immigrant Rights,against the immigration ban
+-73.356691165361,40.74123595,New York,NY,2017-02-07,600,Racial Justice,Immigrant Rights,Against immigration executive order
+-93.1015026,44.9504037,St. Paul,MN,2017-02-16,600,Racial Justice,Immigrant Rights,Immigrant rights march
+-123.033121,44.9391565,Salem,OR,2017-02-19,600,Racial Justice,Immigrant Rights,Immigrant rights protest
+-73.356691165361,40.74123595,New York,NY,2017-02-10,550,Racial Justice,Immigrant Rights,Againts ICE raids; Against immigration executive order
+-95.3676974,29.7589382,Houston,TX,2017-02-05,500,Racial Justice,Immigrant Rights,Protest immigration ban and Trump's policies
+-118.244476,34.054935,Los Angeles,CA,2017-02-08,500,Racial Justice,Indigenous Rights,Against Dakota Access Pipeline
+-83.2910468,42.6389216,Pontiac,MI,2017-02-16,500,Racial Justice,Immigrant Rights,Immigrant Rights
+-122.8948725,47.0450197,Olympia,WA,2017-02-20,500,U.S. Politics,Politician Opposition,Not My President Day; anti-Trump
+-2.6642358,51.4325409,Providence,RI,2017-02-25,500,U.S. Politics,Health Care,Pro ACA
+-81.6332812,38.3505995,Charleston,WV,2018-02-17,12000,Workers & Labor Rights,General Awareness,Rallying for state workers
+-73.356691165361,40.74123595,New York,NY,2018-02-24,10000,Workers & Labor Rights,General Awareness,Rallying for worker's rights
+-92.4343035,31.3224044,Pineville,LA,2018-02-03,5600,U.S. Politics,Health Care,March against abortion
+-84.2809332,30.4380832,Tallahassee,FL,2018-02-21,5000,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-81.6332812,38.3505995,Charleston,WV,2018-02-22,5000,U.S. Politics,Education,Rallying for better pay and benefits for teachers
+-74.3148713,40.7959335,Livingston,NJ,2018-02-25,2100,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-73.754968,42.6511674,Albany,NY,2018-02-03,2000,Other,Disaster Relief,Rallying for aid to Puerto Rico
+-77.615214,43.157285,Rochester,NY,2018-02-03,2000,Other,Disaster Relief,Rallying for aid to Puerto Rico
+-76.1474244,43.0481221,Syracuse,NY,2018-02-03,2000,Other,Disaster Relief,Rallying for aid to Puerto Rico
+-78.6390989,35.7803977,Raleigh,NC,2018-02-10,2000,Racial Justice,Anti-Racism,Rallying for racial equality; Social Justice March
+-97.5170536,35.4729886,Oklahoma City,OK,2018-02-12,2000,U.S. Politics,Education,Rally for teacher pay raise bill
+-80.23727,26.3100794,Parkland,FL,2018-02-15,2000,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-80.1433786,26.1223084,Fort Lauderdale,FL,2018-02-17,2000,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-82.6469934,27.77330515,St. Petersburg,FL,2018-02-17,2000,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-122.4788602,48.754402,Bellingham,WA,2018-02-21,2000,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-80.2653420379876,26.26485615,Coral Springs,FL,2018-02-21,2000,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-77.0141419981481,38.78343595,National Harbor,MD,2018-02-22,2000,U.S. Politics,Politician Support,Vice President Pence rallies for GOP legislative control
+-83.0007065,39.9622601,Columbus,OH,2018-02-24,2000,Workers & Labor Rights,General Awareness,Rallying for worker's rights
+-84.5553805,42.7337712,Lansing,MI,2018-02-25,2000,U.S. Politics,Anti-Budget Cuts,Protesting GOP tax plan;
+-81.6332812,38.3505995,Charleston,WV,2018-02-26,2000,Workers & Labor Rights,General Awareness,Labor protest
+-78.7811925,35.7882973,Cary,NC,2018-02-28,2000,U.S. Politics,Gun Control,against gun violence; pro-gun control
+-90.0516285,35.1490215,Memphis,TN,2018-02-12,1500,Workers & Labor Rights,Living Wages,Rallying for higher minimum wage
+-95.3676974,29.7589382,Houston,TX,2018-02-17,1500,U.S. Politics,Health Care,Rallying for suicide prevention
+-95.504686,30.1734194,Woodlands,TX,2018-02-17,1500,U.S. Politics,Health Care,Rallying for suicide prevention
+-84.3901849,33.7490987,Atlanta,GA,2018-02-21,1500,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-97.7436995,30.2711286,Austin,TX,2018-02-24,1500,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-95.3676974,29.7589382,Houston,TX,2018-02-16,1300,Racial Justice,Immigrant Rights,Rallying for DREAM Act
+-84.2809332,30.4380832,Tallahassee,FL,2018-02-26,1200,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-97.7436995,30.2711286,Austin,TX,2018-02-11,1100,Women’s Rights,General Awareness,Protesting Doritos' new chips for women
+-74.5240422,39.3898388,Pleasantville,NJ,2018-02-14,1100,Racial Justice,Anti-Racism,Rallying for racial equality
+-71.8634062,42.3517586,Holden,MA,2018-02-25,1100,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-122.6741949,45.5202471,Portland,OR,2018-02-03,1000,Other,White Nationalism,"Rallying for freedom of speech, religion and President Donald Trump's agenda"
+-8.4335089,40.2139237,Santa Cruz,CA,2018-02-03,1000,Environmental & Food Justice,Environmental Protection,Protesting offshore drilling
+-97.5170536,35.4729886,Oklahoma City,OK,2018-02-07,1000,U.S. Politics,Health Care,Protesting abortion
+-121.4943996,38.5815719,Sacramento,CA,2018-02-11,1000,Other,White Nationalism,White Nationalists Movement
+-73.754968,42.6511674,Albany,NY,2018-02-14,1000,U.S. Politics,Education,Protesting budget cuts for students at private nonprofit colleges
+-80.0830984,26.3586885,Boca Raton,FL,2018-02-21,1000,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-75.1635755,39.9524152,Philadelphia,PA,2018-02-24,1000,Workers & Labor Rights,General Awareness,Rallying for worker's rights
+-123.137194429102,49.28388955,Malibu,CA,2018-02-25,1000,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-2.6642358,51.4325409,Providence,RI,2018-02-06,900,Workers & Labor Rights,Living Wages,Protesting stalled labor contract talks
+-96.667821,40.8,Lincoln,NE,2018-02-14,750,Racial Justice,Anti-Racism,Protesting white nationalism
+-71.1408776,42.65717,Andover,MA,2018-02-16,700,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-96.6154471,33.1976496,McKinney,TX,2018-02-21,670,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-119.8136744,39.52927,Reno,NV,2018-02-24,600,Housing Justice,Homelessness,Rallying for the homeless
+-111.8904308,40.7670126,Salt Lake City,UT,2018-02-20,508,U.S. Politics,Health Care,Rallying for mental health and addiction recovery
+-111.8904308,40.7670126,Los Angeles,CA,2018-02-19,500,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-80.3256056,27.4467056,Fort Pierce,FL,2018-02-21,500,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-80.6429695,28.0331886,Palm Bay,FL,2018-02-21,500,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-91.6704053,41.9758872,Cedar Rapids,IA,2018-02-23,500,U.S. Politics,Anti-Budget Cuts,Protesting GOP tax plan
+-79.7919754,36.0726355,Greensboro,NC,2018-02-23,500,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-117.1627714,32.7174209,San Diego,CA,2018-02-23,500,Workers & Labor Rights,General Awareness,Labor protest
+-82.4563972,27.9518491,Tampa,FL,2018-02-23,500,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-74.415984,40.4278841,East Brunswick,NJ,2018-02-25,500,U.S. Politics,Gun Control,Protesting gun violence in the wake of school shooting
+-122.3300624,47.6038321,Seattle,WA,2018-02-25,500,Racial Justice,Immigrant Rights,Rallying for easier access to green cards
+-89.6443688,39.7989763,Springfield,IL,2018-02-28,500,U.S. Politics,Gun Control,Rallying for gun control
+-118.244476,34.054935,Los Angeles,CA,2018-01-20,600000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-73.356691165361,40.74123595,New York,NY,2018-01-20,400000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-98.4951405,29.4246002,San Antonio,TX,2018-01-15,300000,Racial Justice,Anti-Racism,March for racial equality
+-87.6244212,41.8755546,Chicago,IL,2018-01-20,300000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-77.0366456,38.8949549,Washington,DC,2018-01-19,200000,U.S. Politics,Health Care,Protesting abortion
+-122.3300624,47.6038321,Seattle,WA,2018-01-20,175000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-104.9653271,39.7348381,Denver,CO,2018-01-20,100000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-117.1627714,32.7174209,San Diego,CA,2018-01-20,100000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-77.0366456,38.8949549,Washington,DC,2018-01-20,75000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-73.4373087,45.4423543,San Francisco,CA,2018-01-20,60000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-73.4373087,45.4423543,San Francisco,CA,2018-01-27,50000,U.S. Politics,Health Care,Protesting abortion
+-80.3310713,43.0317491,Oakland,CA,2018-01-20,50000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+Error,Error,Philidelphia,PA,2018-01-20,50000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-79.9900861,40.4416941,Pittsburgh,PA,2018-01-21,50000,Women’s Rights,General Awareness,Empower Voters to Support Womens's Rights
+-118.244476,34.054935,Los Angeles,CA,2018-01-20,35000,Racial Justice,Anti-Racism,Protesting abortion
+-121.4943996,38.5815719,Sacramento,CA,2018-01-20,30000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-8.4335089,40.2139237,Santa Cruz,CA,2018-01-20,30000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-112.0773456,33.4485866,Phoenix,AZ,2018-01-21,25000,Women’s Rights,General Awareness,Empower Voters to Support Womens's Rights
+-112.0773456,33.4485866,Santa Ana,CA,2018-01-20,24000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-121.4943996,38.5815719,Sacramento,CA,2018-01-15,20000,U.S. Politics,Health Care,March for racial equality
+-95.3676974,29.7589382,Houston,TX,2018-01-20,20000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-74.4809492,40.7970384,Morristown,NJ,2018-01-20,20000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-74.4809492,40.7970384,San Jose,CA,2018-01-20,20000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-86.7743531,36.1622296,Nashville,TN,2018-01-20,15000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-89.9750054503052,30.03280175,New Orleans,LA,2018-01-20,15000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-76.7966215,42.910622,Seneca Falls,NY,2018-01-20,15000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-83.9210261,35.9603948,Knoxville,TN,2018-01-21,14000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-82.5306527,27.3364347,Sarasota,FL,2018-01-20,12000,Other,Other,March For Democracy
+-84.5124602,39.1014537,Cincinnati,OH,2018-01-20,12000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-95.283819,38.943818,Hartford,CT,2018-01-20,12000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-119.8136744,39.52927,Reno,NV,2018-01-20,12000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-77.0366456,38.8949549,Washington,DC,2018-01-18,10000,U.S. Politics,Health Care,Protesting abortion
+-71.1056157,42.3750997,Cambridge,MA,2018-01-20,10000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-122.8718605,42.3264181,Medford,OR,2018-01-20,10000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-79.5280653,43.5936451,Walnut Creek,CA,2018-01-20,10000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-122.8948725,47.0450197,Olympia,WA,2018-01-20,8000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-95.9378732,41.2587317,Omaha,NE,2018-01-20,8000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-115.149225,36.1662859,Las Vegas,NV,2018-01-21,8000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-84.5553805,42.7337712,Lansing,MI,2018-01-21,7300,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-81.6934446,41.5051613,Cleveland,OH,2018-01-20,7000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-96.7968559,32.7762719,Dallas,TX,2018-01-20,7000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-93.6037149,41.5910641,Des Moines,IA,2018-01-20,7000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-123.0950506,44.0505054,Eugene,OR,2018-01-20,7000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-96.7968559,32.7762719,Dallas,TX,2018-01-21,7000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-78.6390989,35.7803977,Raleigh,NC,2018-01-20,6500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-117.4212265,47.6579425,Spokane,WA,2018-01-21,6500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-78.0656936,44.3214498,Westwood,CA,2018-01-07,6000,Other,International Politics,Rallying behind Iranian protestors
+-77.3063733,38.8462236,Fairfax,VA,2018-01-19,5300,U.S. Politics,Health Care,Protesting abortion
+-112.0773456,33.4485866,Phoenix,AZ,2018-01-15,5000,Racial Justice,Anti-Racism,March for racial equality
+-106.6509851,35.0841034,Albuquerque,NM,2018-01-19,5000,Racial Justice,Immigrant Rights,Rallying for DREAM Act
+-117.1627714,32.7174209,San Diego,CA,2018-01-20,5000,U.S. Politics,Health Care,Protesting abortion
+-122.8948725,47.0450197,Olympia,WA,2018-01-22,5000,U.S. Politics,Health Care,Protesting attempts to expand contraceptive insurance
+-97.7436995,30.2711286,Austin,TX,2018-01-27,5000,U.S. Politics,Health Care,Protesting abortion
+-96.667821,40.8,Lincoln,NE,2018-01-27,5000,U.S. Politics,Health Care,Anti-abortion March For Life
+-80.8431268,35.2270869,Charlotte,NC,2018-01-20,5000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-73.5428,45.5484418,Chico,CA,2018-01-20,5000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-85.9373384357636,79.98855485,Eureka,CA,2018-01-20,5000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-97.3327459,32.753177,Fort Worth,TX,2018-01-20,5000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-73.790959,42.2528649,Hudson,NY,2018-01-20,5000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-156.4727118,20.8894101,Kahului,HI,2018-01-20,5000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-90.1978889,38.6272733,St. Louis,MO,2018-01-20,5000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-74.118329,42.041003,Woodstock,NY,2018-01-20,5000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-105.9377997,35.6869996,Santa Fe,NM,2018-01-21,5000,Women’s Rights,General Awareness,Empower Voters to Support Womens's Rights
+-82.6469934,27.77330515,St. Petersburg,FL,2018-01-21,5000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-96.7968559,32.7762719,Dallas,TX,2018-01-20,4500,U.S. Politics,Politician Opposition,impeach Trump; Protesting Trump administration
+-69.779663,44.310583,Augusta,ME,2018-01-20,4500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-85.6165301,44.7606441,Traverse City,MI,2018-01-20,4500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-83.7312291,42.2681569,Ann Arbor,MI,2018-01-20,4000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-123.2620435,44.5645659,Corvallis,OR,2018-01-20,4000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-86.1583502,39.7683331,Indianapolis,IN,2018-01-20,4000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-79.9602096795782,37.274532,Roanoke,VA,2018-01-20,4000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-117.1661449,33.1433723,San Marcos,CA,2018-01-20,4000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-79.9402728,32.7876012,Charleston,SC,2018-01-20,3500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+151.499496964417,-32.8660752,Richmond,VA,2018-01-20,3500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-95.9929113,36.1556805,Tulsa,OK,2018-01-20,3500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-81.6934446,41.5051613,Cleveland,OH,2018-01-06,3200,Other,Other,Protesting Browns' 0-16 season
+-104.9653271,39.7348381,Denver,CO,2018-01-13,3000,U.S. Politics,Health Care,Protesting abortion
+-82.5540161,35.6009498,Asheville,NC,2018-01-20,3000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-119.0194639,35.3738712,Bakersfield,CA,2018-01-20,3000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-121.3153096,44.0581728,Bend,OR,2018-01-20,3000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-85.3096801,35.0456297,Chattanooga,TN,2018-01-20,3000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-83.0007065,39.9622601,Columbus,OH,2018-01-20,3000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-84.1916069,39.7589478,Dayton,OH,2018-01-20,3000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-94.1574328,36.0625843,Fayetteville,AR,2018-01-20,3000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-87.922497,43.0349931,Milwaukee,WI,2018-01-20,3000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-113.9952796,46.8700801,Missoula,MT,2018-01-20,3000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-72.575684,44.260445,Montpelier,VT,2018-01-20,3000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-122.7679629,48.1185325,Port Townsend,WA,2018-01-20,3000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-81.526093,42.766156,Riverside,CA,2018-01-20,3000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-123.106667524685,49.2718707,Seaside,CA,2018-01-20,3000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-116.200835,43.61656,Boise,ID,2018-01-21,3000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-85.5872286,42.291707,Kalamazoo,MI,2018-01-21,3000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-86.765783,33.570499,Birmingham,AL,2018-01-20,2700,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-122.4788602,48.754402,Bellingham,WA,2018-01-20,2500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-95.2359496,38.9719384,Lawrence,KS,2018-01-20,2500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-96.700327,43.5499749,Sioux Falls,SD,2018-01-20,2500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-93.1015026,44.9504037,St. Paul,MN,2018-01-21,2500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-80.6081089,28.0836269,Melbourne,FL,2018-01-20,2200,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-112.0773456,33.4485866,Phoenix,AZ,2018-01-06,2000,U.S. Politics,Education,Rallying for better public school funding
+-81.655651,30.3321838,Jacksonville,FL,2018-01-15,2000,Racial Justice,Anti-Racism,March for racial equality
+-83.9879625,33.9562149,Lawrenceville,GA,2018-01-15,2000,Racial Justice,Anti-Racism,Rallying for racial equality
+-84.4970393,38.0464066,Lexington,KY,2018-01-15,2000,Racial Justice,Anti-Racism,March for racial equality
+-73.4373087,45.4423543,San Francisco,CA,2018-01-15,2000,Racial Justice,Anti-Racism,March for racial equality
+-79.7028276,43.4129206,Savannah,GA,2018-01-15,2000,Racial Justice,Anti-Racism,March for racial equality
+-122.3300624,47.6038321,Seattle,WA,2018-01-15,2000,Racial Justice,Anti-Racism,March for racial equality
+-104.9653271,39.7348381,Denver,CO,2018-01-16,2000,Racial Justice,Anti-Racism,Celebrating life of Martin Luther King Jr.; protesting racism
+-77.0366456,38.8949549,Washington,DC,2018-01-19,2000,U.S. Politics,Health Care,Protesting abortion
+-73.754968,42.6511674,Albany,NY,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-84.3901849,33.7490987,Atlanta,GA,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-97.7436995,30.2711286,Austin,TX,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-76.610759,39.2908816,Baltimore,MD,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-92.3337366,38.951883,Columbia,MO,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-119.708861260756,36.7295295,Fresno,CA,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-108.5507317,39.063956,Grand Junction,CO,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-112.036109,46.592712,Helena,MT,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-157.846644178573,21.3250785,Honolulu,HI,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-82.3534728,36.3134398,Johnson City,TN,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-84.4970393,38.0464066,Lexington,KY,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-78.266098,40.85239,Montgomery,AL,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-72.0550479,46.6855068,Napa,CA,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-72.6306344,42.3190227,Northampton,MA,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-97.5170536,35.4729886,Oklahoma City,OK,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-89.093966,42.2713945,Rockford,IL,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-73.6077401,45.5361933,Santa Barbara,CA,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-123.10250585,49.26334935,Santa Rosa,CA,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-122.8473388,38.5110803,Sonoma,CA,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-77.9447107,34.2257282,Wilmington,NC,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-80.2440518,36.0998131,Winston-Salem,NC,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-106.6509851,35.0841034,Albuquerque,NM,2018-01-21,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-78.8783922,42.8867166,Buffalo,NY,2018-01-21,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-81.655651,30.3321838,Jacksonville,FL,2018-01-21,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-155.996933,19.641941,Kailua Kona,HI,2018-01-21,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-85.759407,38.2542376,Louisville,KY,2018-01-21,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-87.396433,46.5434914,Marquette,MI,2018-01-21,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-81.4127841856302,28.5479786,Orlando,FL,2018-01-21,2000,Women’s Rights,General Awareness,Empower Voters to Support Womens's Rights
+-95.677556,39.049011,Topeka,KS,2018-01-21,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-70.7625532,43.0717552,Portsmouth,NH,2018-01-20,1800,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-110.857334550843,53.3479495,Ventura,CA,2018-01-20,1500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-106.7798078,32.3140354,Las Cruces,NM,2018-01-21,1500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-112.469518,34.5402813,Prescott,AZ,2018-01-20,1400,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-120.6596156,35.2827525,San Luis Obispo,CA,2018-01-20,1400,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-111.044675,45.679984,Bozeman,MT,2018-01-20,1300,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-81.7948103,26.1420358,Naples,FL,2018-01-20,1300,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-111.6514259,35.199458,Flagstaff,AZ,2018-01-20,1200,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-82.3984882,34.851354,Greenville,SC,2018-01-20,1200,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-86.798814,33.561968,Huntsville,AL,2018-01-20,1200,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-114.363662,43.680741,Ketchum,ID,2018-01-20,1200,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-120.9968782,37.6390972,Modesto,CA,2018-01-20,1200,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-123.804512600293,39.4192825,Fort Bragg,CA,2018-01-20,1100,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-84.5124602,39.1014537,Cincinnati,OH,2018-01-20,1000,U.S. Politics,Health Care,Protesting abortion
+-122.6741949,45.5202471,Portland,OR,2018-01-20,1000,U.S. Politics,Politician Opposition,National March for Impeachment
+-87.6244212,41.8755546,Chicago,IL,2018-01-21,1000,U.S. Politics,Politician Opposition,Protesting Trump administration
+-122.715405116335,45.44924535,Jackson,MS,2018-01-23,1000,U.S. Politics,Education,Rallying for educational choice
+-85.7212545,38.2587156,Frankfurt,KY,2018-01-25,1000,U.S. Politics,Education,Rallying for educational choice
+-92.2149827,38.769879,Jefferson City,MO,2018-01-27,1000,U.S. Politics,Health Care,Protesting abortion
+-110.9712006,29.065897,Bangor,ME,2018-01-20,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-89.216655,37.7274692,Carbondale,IL,2018-01-20,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-77.634372,38.813522,Cheyenne,WY,2018-01-20,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-104.8253485,38.8339578,Colorado Springs,CO,2018-01-20,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-71.537476,43.207178,Concord,NH,2018-01-20,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-123.0171242,48.5342662,Friday Harbor,WA,2018-01-20,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-111.2918908,47.5048851,Great Falls,MT,2018-01-20,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-91.5299106,41.6612561,Iowa City,IA,2018-01-20,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-134.419734,58.3019496,Juneau,AK,2018-01-20,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-96.667821,40.8,Lincoln,NE,2018-01-20,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-90.0516285,35.1490215,Memphis,TN,2018-01-20,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-122.85395333696,49.19968475,Pacifica,CA,2018-01-20,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-116.540303,33.8246269,Palm Springs,CA,2018-01-20,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-111.4979741,40.6460635,Park City,UT,2018-01-20,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-2.6642358,51.4325409,Providence,RI,2018-01-20,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-74.3473717,40.6589912,Westfield,NJ,2018-01-20,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-76.7074042,37.2708788,Williamsburg,VA,2018-01-20,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-104.8253485,38.8339578,Colorado Springs,CO,2018-01-21,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-86.2005933,42.6433584,Douglas,MI,2018-01-21,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-75.1304373,40.3100865,Doylestown,PA,2018-01-21,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-80.1936589,25.7742658,Miami,FL,2018-01-21,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-122.3916754,40.5863563,Redding,CA,2018-01-21,1000,Women’s Rights,General Awareness,Empower Voters to Support Womens's Rights
+-119.2769067,46.2778406,Richland,WA,2018-01-21,1000,Women’s Rights,General Awareness,Empower Voters to Support Womens's Rights
+-123.033121,44.9391565,Salem,OR,2018-01-21,1000,Women’s Rights,General Awareness,Empower Voters to Support Womens's Rights
+-116.5532476,48.2765903,Sandpoint,ID,2018-01-20,951,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-123.3272489,42.4393707,Grants Pass,OR,2018-01-20,900,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-107.8799422,37.2753739,Durango,CO,2018-01-20,856,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-81.8723084,26.640628,Fort Myers,FL,2018-01-15,800,Racial Justice,Anti-Racism,March for racial equality
+-88.2811895,42.0372487,Elgin,IL,2018-01-20,800,Racial Justice,Immigrant Rights,Rallying for DREAM Act
+-97.1413417,33.1838787,Denton,TX,2018-01-20,800,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-93.7651944,32.5221828,Shreveport,LA,2018-01-20,800,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-120.5108421,46.601557,Yakima,WA,2018-01-20,800,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-149.8948523,61.2163129,Anchorage,AK,2018-01-20,784,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-80.6081089,28.0836269,Melbourne,FL,2018-01-21,767,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-120.0233622,39.2362794,Kings Beach,CA,2018-01-20,750,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-110.857334550843,53.3479495,Ventura,CA,2018-01-20,724,Other,Equality & Diversity,"Empower Voters, Activist, and the Community"
+-83.9210261,35.9603948,Knoxville,TN,2018-01-21,700,U.S. Politics,Health Care,Protest abortion
+-91.7857092,43.3033056,Decorah,IA,2018-01-20,700,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-96.789821,46.877229,Fargo,ND,2018-01-20,700,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-114.3167117,48.2022563,Kalispell,MT,2018-01-20,700,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-151.5401477,59.6440876,Homer,AK,2018-01-20,650,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-76.2929252,36.8462923,Norfolk,VA,2018-01-20,649,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-122.6741949,45.5202471,Portland,OR,2018-01-20,637,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-80.4494174,26.6279798,Palm Beach,FL,2018-01-20,619,U.S. Politics,Politician Opposition,Protesting Trump administration; pro-impeachment
+-74.5746001,39.2776156,Ocean City,NJ,2018-01-20,600,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-122.3916754,40.5863563,Redding,CA,2018-01-20,600,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-74.5746001,39.2776156,Toledo,OH,2018-01-21,600,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-122.6741949,45.5202471,Portland,OR,2018-01-15,566,Other,Equality & Diversity,4th Annual Children's March for Social Justice
+-80.3310713,43.0317491,Oakland,CA,2018-01-15,558,Racial Justice,Anti-Racism,March to reclaim MLK Jr.'s raical legacy
+-74.5746001,39.2776156,Alamo,TX,2018-01-27,547,Racial Justice,Immigrant Rights,Protesting Trump's proposal to wall off the reserve
+-75.8540822,42.1147984,Binghampton,NY,2018-01-20,521,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-73.356691165361,40.74123595,New York,NY,2018-01-11,500,Racial Justice,Immigrant Rights,Protesting arrest of immigrant rights actvist
+-117.4212265,47.6579425,Spokane,WA,2018-01-20,500,U.S. Politics,Health Care,Anti-Abortion March For Life
+-84.4852469,42.7355416,East Lansing,MI,2018-01-26,500,Women’s Rights,Anti-Sexual Violence,Rallying for sexual assault survivors
+-74.3632049,40.5431598,Metuchen,NJ,2018-01-28,500,Racial Justice,Immigrant Rights,Protesting ICE
+-81.6332812,38.3505995,Charleston,WV,2018-01-31,500,U.S. Politics,Health Care,Rallying for more expansive healthcare coverage
+-71.5897897,42.5612021,Ayer,MA,2018-01-20,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-71.5897897,42.5612021,Bethlehem,PA,2018-01-20,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-107.2111628,39.4022054,Carbondale,CO,2018-01-20,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-89.5800978,40.666149,East Peoria,IL,2018-01-20,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-72.6006199,42.5877962,Greenfield,MA,2018-01-20,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-79.0992279,36.0752297,Hillsborough,NC,2018-01-20,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-155.081635,19.707243,Hilo,HI,2018-01-20,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-98.4951405,29.4246002,San Antonio,TX,2018-01-20,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-79.7028276,43.4129206,Savannah,GA,2018-01-20,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-111.7929891,34.8657757,Sedona,AZ,2018-01-20,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-89.6443688,39.7989763,Springfield,IL,2018-01-20,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-89.6443688,39.7989763,State College,PA,2018-01-20,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-89.6443688,39.7989763,Wichita,KS,2018-01-20,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-89.6443688,39.7989763,El Paso,TX,2018-01-21,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-89.6443688,39.7989763,Fort Wayne,IN,2018-01-21,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-89.6443688,39.7989763,Houghton,MI,2018-01-21,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-89.6443688,39.7989763,Jackson,NH,2018-01-21,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-89.6443688,39.7989763,Steamboat Springs,CO,2018-01-21,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-80.6520161,41.1035786,Youngstown,OH,2017-07-25,6800,U.S. Politics,Politician Support,Pro-Trump rally
+-77.615214,43.157285,Rochester,NY,2017-07-15,4000,LGBTQ+ Rights,Pride,ROC Pride Parade
+-111.8904308,40.7670126,Salt Lake City,UT,2017-07-27,3000,Environmental & Food Justice ,Environmental Protection,This Land Is Our Land rally to support public lands and national monuments
+-111.8904308,40.7670126,Los Angeles,CA,2017-07-02,2000,U.S. Politics,Politician Opposition,Impeach Trump
+-117.1627714,32.7174209,San Diego,CA,2017-07-02,2000,U.S. Politics,Politician Opposition,Impeach Trump
+-73.4373087,45.4423543,San Francisco,CA,2017-07-02,2000,U.S. Politics,Politician Opposition,Impeachment March
+-86.452725,43.95544,Ludington,MI,2017-07-03,2000,Environmental & Food Justice ,Environmental Protection,All Hands on Deck in solidarity against threats to the lake
+-78.4766781,38.029306,Charlottesville,VA,2017-07-08,2000,Racial Justice,Anti-Racism,"Anti-KKK ""BlocKKK Party"""
+-77.0366456,38.8949549,Washington,DC,2017-07-22,1500,U.S. Politics,Education,March for Public Education
+-77.0366456,38.8949549,Washington,DC,2017-07-13,1400,Environmental & Food Justice ,Climate Justice,Oppose Trump's decision to pull America out of the Paris Climate Agreement
+-83.0567375,42.3486635,Detroit,MI,2017-07-22,1000,U.S. Politics,Education,National March for Public Education
+-117.1627714,32.7174209,San Diego,CA,2017-07-22,1000,U.S. Politics,Politician Support,"Advertise Lewis's book ""March"" book series"
+-90.152855,29.984093,Metairie,LA,2017-07-16,700,Other,International Politics,symbolic plebiscite against the Venezuelan president
+151.499496964417,-32.8660752,Richmond,VA,2017-07-16,700,Other,International Politics,symbolic plebiscite against the Venezuelan president
+-87.7359,42.1081,Winnekta,IL,2017-07-25,600,U.S. Politics ,Anti-Budget Cuts,Protesting cuts to daycare assistance
+-97.0780654,32.9342919,Grapevine,TX,2017-07-26,600,Workers & Labor Rights,Living Wages,Demand American Airlines provide higher pay and stop shifting maintenance work overseas
+-97.0780654,32.9342919,New Orleans,LA,2017-07-02,529,U.S. Politics ,Politician Opposition,Impeach Trump
+-97.0780654,32.9342919,Covington,KY,2017-07-09,500,U.S. Politics ,Anti-Budget Cuts,Care Not Cuts
+-97.0780654,32.9342919,organtown,WV,2017-07-09,500,U.S. Politics ,Anti-Budget Cuts,Care Not Cuts
+-77.0366456,38.8949549,Washington,DC,2017-07-15,500,U.S. Politics ,Gun Control,Protesting NRA
+-97.0780654,32.9342919,Tunkhannock,PA,2017-07-20,500,U.S. Politics ,Corporate Support ,Support proposed Atlantic Sunrise natural gas pipeline
+-73.9866136,40.7306458,New York City,NY,2017-07-26,500,LGBTQ+ Rights,Anti-Homophobia,Oppose Trump's transgender military ban
+-111.8904308,40.7670126,Los Angeles,CA,2017-07-28,500,Workers & Labor Rights,Living Wages,Oppose treatment of contracted valet workers
+-87.6244212,41.8755546,Chicago,IL,2017-06-25,250000,LGBTQ+ Rights,Pride,Pride Parade
+-73.4373087,45.4423543,San Francisco,CA,2017-06-25,200000,LGBTQ+ Rights,Pride,7th annual Pride Parade
+-122.3300624,47.6038321,Seattle,WA,2017-06-25,200000,LGBTQ+ Rights,Pride,Pride Parade
+-79.9900861,40.4416941,Pittsburgh,PA,2017-06-11,150000,LGBTQ+ Rights,Pride,Equality March
+-77.0366456,38.8949549,Washington,DC,2017-06-11,91100,LGBTQ+ Rights,Pride,Equality March
+-77.0366456,38.8949549,Los Angeles,CA,2017-06-11,20000,LGBTQ+ Rights,Pride,Equality March
+-93.2654692,44.9772995,Minneapolis,MN,2017-06-25,20000,LGBTQ+ Rights,Pride,Twin Cities Pride parade
+-73.657861,40.5885116,Long Beach,NY,2017-06-11,20000,LGBTQ+ Rights,Pride,Equality March
+-77.9443091,34.247291,Brooklyn,NC,2017-06-11,17250,Other,International Politics,Against conscription of haredis in Israel
+-91.6704053,41.9758872,Cedar Rapids,IA,2017-06-21,6000,U.S. Politics ,Politician Support,Thank Iowa for its 2016 electoral support
+-117.1627714,32.7174209,San Diego,CA,2017-06-11,5000,LGBTQ+ Rights,Pride,Equality March
+-93.2654692,44.9772995,Minneapolis,MN,2017-06-16,2450,Racial Justice,Anti-Police Brutality,Officer Yanez found not guilty for murder of Philando Castille
+-83.0007065,39.9622601,Columbus,OH,2017-06-25,2200,U.S. Politics ,Health Care,Don't Take Our Healthcare Rally
+-104.9653271,39.7348381,Denver,CO,2017-06-18,2000,LGBTQ+ Rights,Pride,Pridefest celebration
+-73.356691165361,40.74123595,New York,NY,2017-06-25,2000,LGBTQ+ Rights,Pride,New York Gay Pride Garade
+-97.7436995,30.2711286,Austin,TX,2017-06-11,2000,LGBTQ+ Rights,Pride,Equality March
+-122.3300624,47.6038321,Seattle,WA,2017-06-11,2000,LGBTQ+ Rights,Pride,Equality March
+-104.8253485,38.8339578,Colorado Springs,CO,2017-06-23,1650,Women’s Rights,Reproductive Rights,Rally against defunding Planned Parenthood
+-79.9900861,40.4416941,Pittsburgh,PA,2017-06-24,1600,U.S. Politics ,Health Care,don’t take our health care rally
+-93.1015026,44.9504037,St. Paul,MN,2017-06-16,1450,Racial Justice,Anti-Police Brutality,Oppose acquital of Officer Jeronimo Yanez
+-76.8861122,40.2663107,Harrisburg,PA,2017-06-20,1200,Workers & Labor Rights,General Awareness,Oppose state right-to-work legislation
+-79.9900861,40.4416941,Pittsburgh,PA,2017-06-03,1143,U.S. Politics ,Politician Opposition,Demand investigation into Trump-Russia ties
+-80.4570191,37.7806769,Fairlea,WV,2017-06-20,1100,Other,Other,Eastern National Rally by the Christian Motorcyclists Association
+-87.6244212,41.8755546,Chicago,IL,2017-06-03,1010,U.S. Politics ,Politician Opposition,Demand investigation into Trump-Russia ties
+-122.6741949,45.5202471,Portland,OR,2017-06-04,945,U.S. Politics ,Politician Opposition,Oppose fascism; counter protest Trump Free Speech rally
+-77.0366456,38.8949549,Los Angeles,CA,2017-06-03,875,U.S. Politics ,Politician Opposition,Demand investigation into Trump-Russia ties
+-73.356691165361,40.74123595,New York,NY,2017-06-03,875,U.S. Politics ,Politician Opposition,Demand investigation into Trump-Russia ties
+-93.1015026,44.9504037,St. Paul,MN,2017-06-17,785,Racial Justice,Anti-Police Brutality,Oppose acquital of Officer Jeronimo Yanez
+-123.106667524685,49.2718707,Seaside,CA,2017-06-17,700,LGBTQ+ Rights,Pride,Peninsula Pride Celebration and Parade
+-80.8431268,35.2270869,Charlotte,NC,2017-06-10,600,U.S. Politics ,Health Care,Men against abortion
+-96.700327,43.5499749,Sioux Falls,SD,2017-06-11,600,LGBTQ+ Rights,Pride,Equality March
+-84.4970393,38.0464066,Lexington,KY,2017-06-11,560,LGBTQ+ Rights,Pride,Equality March
+-122.3300624,47.6038321,Seattle,WA,2017-06-03,538,U.S. Politics ,Politician Opposition,Demand investigation into Trump-Russia ties
+-90.1978889,38.6272733,St. Louis,MO,2017-06-03,537,U.S. Politics ,Politician Opposition,Demand investigation into Trump-Russia ties
+-80.0533746,26.7153425,West Palm Beach,FL,2017-06-11,500,LGBTQ+ Rights ,Pride,Equality March
+-1.1099771,53.4319831,St. Mary's,GA,2017-06-24,500,Environmental & Food Justice,Environmental Protection,Oppose further development of Cumberland Island
+-123.0950506,44.0505054,Eugene,OR,2017-06-03,500,U.S. Politics ,Politician Opposition,Demand investigation into Trump-Russia ties
+-116.200835,43.61656,Boise,ID,2017-03-04,3000,Environmental & Food Justice,Environmental Protection,Keep Idaho's public lands under federal management
+-73.356691165361,40.74123595,New York,NY,2017-03-08,3000,Women's Rights,General Awareness,A Day Without a Woman
+-86.7743531,36.1622296,Nashville,TN,2017-03-15,2500,U.S. Politics ,Politician Opposition,anti-Trump; protest Trump visit
+-75.1635755,39.9524152,Philadelphia,PA,2017-03-02,2000,Religious & Cultural Justice,Against Anti-Semitism,rally against anti-Semitism
+-88.1578524,42.0258606,Canton,MS,2017-03-04,2000,Workers & Labor Rights,General Awareness,pro worker's unions
+-122.3300624,47.6038321,Seattle,WA,2017-03-04,2000,Racial Justice,Anti-Racism,Immigration; President Trump; juvenile justice; several other causes
+-86.7743531,36.1622296,Nashville,TN,2017-03-15,2000,U.S. Politics ,Politician Support,pro-Trump; speech by President
+-74.0727327,39.9467383,Seaside Heights,NJ,2017-03-25,2000,U.S. Politics ,Politician Support,"support Trump, veterans, police"
+-118.0000166,33.6783336,Huntington Beach,CA,2017-03-25,1835,U.S. Politics ,Politician Support,"support Trump, veterans, police"
+-73.4373087,45.4423543,San Francisco,CA,2017-03-08,1500,Women's Rights,General Awareness,a day without a Woman
+-89.3837613,43.074761,Madison,WI,2017-03-08,1060,Women's Rights,General Awareness,A Day Without a Woman
+-73.356691165361,40.74123595,New York,NY,2017-03-04,1045,U.S. Politics ,Education,Education Reformation
+-89.3837613,43.074761,Washington,DC,2017-03-10,1010,Racial Justice,Indigenous Rights,anti-DAPL
+-87.6244212,41.8755546,Chicago,IL,2017-03-03,1000,LGBTQ+ Rights,General Awareness,support LGBTQ
+-86.7743531,36.1622296,Nashville,TN,2017-03-04,1000,U.S. Politics ,Politician Support,Pro Trump policies
+-87.6244212,41.8755546,Chicago,IL,2017-03-08,1000,Women's Rights,General Awareness,A Day Without a Woman
+-73.754968,42.6511674,Albany,NY,2017-03-13,1000,U.S. Politics ,Politician Opposition,resist Trump
+-105.9377997,35.6869996,Santa Fe,NM,2017-03-16,1000,U.S. Politics ,Education,protect public school funding
+-105.0668085,40.5508527,Fort Collins,CO,2017-03-26,1000,Religious & Cultural Justice,Anti-Islamophobia,support Islamic Center after vandalism
+-117.1627714,32.7174209,San Diego,CA,2017-03-04,670,U.S. Politics ,Politician Opposition,March 4 Impeachment; anti-Trump
+-85.5644033,38.1942356,Jeffersontown,KY,2017-03-11,600,U.S. Politics ,Politician Opposition,protest visit by VP Pence
+-118.244476,34.054935,Los Angeles,CA,2017-03-05,560,Women's Rights,General Awareness,Women's rights
+-122.1634472,37.442156,Palo Alto,CA,2017-03-14,560,U.S. Politics ,Politician Opposition,Resist Trump; open exchange of ideas
+-85.759407,38.2542376,Louisville,KY,2017-03-20,560,U.S. Politics ,Health Care,Protest health care repeal
+-118.244476,34.054935,Los Angeles,CA,2017-03-23,560,U.S. Politics ,Health Care,Protest health care repeal
+-77.0366456,38.8949549,Washington DC,DC,2017-03-26,560,Other,International Politics,oppose AIPAC; oppose Israeli occupation
+-74.0023702,41.9287812,Kingston,NY,2017-03-04,500,U.S. Politics ,Education,Education Reformation
+-77.3579743,38.9584018,Reston,VA,2017-03-04,500,Other,Other,in protest of the paid parking system implemented by Reston Town Center
+-87.71453,43.7508284,Sheboygan,WI,2017-03-20,500,Racial Justice,Immigrant Rights,oppose immigration ordinance
+-118.244476,34.054935,Los Angeles,CA,2017-05-01,20000,Workers & Labor Rights,Immigrant Rights,May Day; immigration
+-77.0366456,38.8949549,Washington,DC,2017-05-15,11000,Other,Other,rally and memorial for fallen police officers
+-73.4373087,45.4423543,San Francisco,CA,2017-05-01,4000,Workers & Labor Rights,Immigrant Rights,May Day or International Workers' Day; pro-immigration; pro-labor
+-71.0595678,42.3604823,Boston,MA,2017-05-20,4000,U.S. Politics,Anti-Budget Cuts,protesting eductaion cuts in Trump's budget
+-71.0595678,42.3604823,Missoula,MT,2017-05-20,3500,U.S. Politics,Politician Support,Bernie Sanders' rally for Rob Quist
+-85.6678639,42.9632405,Grand Rapids,MI,2017-05-01,3000,Workers & Labor Rights,Immigrant Rights,May Day; Trump immigration policies
+-115.149225,36.1662859,Las Vegas,NV,2017-05-01,2500,Workers & Labor Rights,Immigrant Rights,May Day: Trump immigration policies
+-87.6244212,41.8755546,Chicago,IL,2017-05-01,2000,Workers & Labor Rights,Immigrant Rights,May Day; labor and immigration policies
+-87.922497,43.0349931,Milwaukee,WI,2017-05-01,2000,Workers & Labor Rights,General Awareness,May Day
+-122.6741949,45.5202471,Portland,OR,2017-05-01,2000,Workers & Labor Rights,Immigrant Rights,May Day; Trump immigration policies
+-2.6642358,51.4325409,Providence,RI,2017-05-01,2000,Workers & Labor Rights,General Awareness,"May Day; deportation; wage theft"" profiling"
+-2.6642358,51.4325409,San Jose,CA,2017-05-01,2000,Workers & Labor Rights,Immigrant Rights,May Day; pro-immigration; pro-labor
+-49.2687428522959,-25.4206759,San Juan,PR,2017-05-01,2000,Workers & Labor Rights,General Awareness,May Day; denounce economic situation
+-111.8904308,40.7670126,Salt Lake City,UT,2017-05-06,2000,Environmental & Food Justice ,Environmental Protection ,in support of the Bears Ears and Grand Staircase Escalante National Monuments
+-95.283819,38.943818,Hartford,CT,2017-05-09,2000,U.S. Politics,Anti-Budget Cuts,resolve state budget problems
+-87.6244212,41.8755546,Chicago,IL,2017-05-23,2000,Workers & Labor Rights,Living Wages,"against McDonald's, for increase in minimum wage and union rights"
+-81.2219363,35.6630887,Newton,NC,2017-05-27,2000,LGBTQ+ Rights,Anti-Homophobia,protest against a support speech that had called for confinement of gays
+-92.9851372,45.2791076,Forest Lake,MN,2017-05-09,1300,Other,Pro-Police,protest against city vote to disband police force
+114.192381924198,22.2667238,New Haven,CT,2017-05-22,1250,Workers & Labor Rights,General Awareness,against Yale's refusal to engage in collective bargaining process for unionization of graduate students
+-79.9900861,40.4416941,Pittsburgh,PA,2017-05-17,1000,U.S. Politics,Health Care,Protesting heathcare cuts
+-106.6509851,35.0841034,Albuquerque,NM,2017-05-01,1000,Workers & Labor Rights,Immigrant Rights,May Day; pro-labor; pro-immigrant; anti-Trump
+-80.4759905,25.4718946,Homestead,FL,2017-05-01,1000,Workers & Labor Rights,Immigrant Rights,May Day; Trump immigration policies
+-74.0776417,40.7281575,Jersey City,NJ,2017-05-01,1000,Workers & Labor Rights,Immigrant Rights,May Day; immigrant rights
+-80.3310713,43.0317491,Oakland,CA,2017-05-01,1000,Workers & Labor Rights,Immigrant Rights,May Day; Trump immigration policies
+-75.1635755,39.9524152,Philadelphia,PA,2017-05-01,1000,Workers & Labor Rights,Health & Safety Protections,May Day; unfair working conditions
+-83.0007065,39.9622601,Columbus,OH,2017-05-02,1000,U.S. Politics,Education,rally for choice in education
+-73.356691165361,40.74123595,New York,NY,2017-05-04,1000,U.S. Politics,Politician Opposition,against Trump's return to NY
+-97.1074436,49.8238186,Vista,CA,2017-05-09,810,U.S. Politics,Health Care,against House health care bill
+-110.9712006,29.065897,Bangor,ME,2017-05-06,800,Other,Other,suicide awareness
+-86.1583502,39.7683331,Indianapolis,IN,2017-05-01,700,Workers & Labor Rights,Immigrant Rights,May Day; immigrant workers rights
+-73.356691165361,40.74123595,New York,NY,2017-05-04,600,U.S. Politics,Politician Opposition,anti-Trump visit
+-71.2358004,42.3756401,Waltham,MA,2017-05-15,600,Racial Justice,Anti-Racism,against racist instagram comments by fellow student
+-89.9750054503052,30.03280175,New Orleans,LA,2017-05-07,500,Racial Justice,Anti-Racism,against confederate monument
+-73.356691165361,40.74123595,New York,NY,2017-05-01,500,Workers & Labor Rights,General Awareness,May Day; targets companies tied to Trump that profit from his policies; workers rights; immigrant advocacy; protest banks funding of ICE detention facilities
+-117.1627714,32.7174209,San Diego,CA,2017-05-01,500,Workers & Labor Rights,General Awareness,May Day; anti-Trump
+-71.0595678,42.3604823,Boston ,MA,2017-11-08,4000,U.S. Politics,Politician Opposition,Screaming protest 
+-115.149225,36.1662859,Las Vegas,NV,2017-11-09,2000,U.S. Politics,Gun Control,Show of solidarity with those affected by the gunfire in October
+-96.5717,39.1836,Manhattan,KS,2017-11-14,2000,Racial Justice,Anti-Racism,Protesting racial tensions on campus
+-77.0366456,38.8949549,Washington ,DC,2017-11-19,2000,Racial Justice,Anti-Racism,Puerto Rico Unity March/ Protest Inaction by Trump Admin.
+-118.244476,34.054935,Los Angeles,CA,2017-11-29,2000,U.S. Politics,Anti-Budget Cuts,Protesting GOP tax plan
+-71.0595678,42.3604823,Boston,MA,2017-11-13,1200,Women’s Rights,Anti-Sexual Violence,Protesting sexual assault allegations against teachers
+-71.0595678,42.3604823,Boston,MA,2017-11-18,1000,Racial Justice,Anti-Racism,Counter-protest
+-104.9653271,39.7348381,Denver ,CO ,2017-11-25,677,Housing Justice,Anti-Gentrification,Protesting Ink!'s gentrification statemnents 
+-96.9253004,35.3272928,Shawnee,OK,2017-11-13,500,U.S. Politics,Anti-Budget Cuts,Protesting administration spending
+151.499496964417,-32.8660752,Richmond,VA,2017-10-19,7000,U.S. Politcs,Politician Support,Campaign rally for Ralph Northam
+-73.3734547,40.6867667,Lindenhurst,NY,2017-10-29,5000,Environmental & Food Justice,Climate Justice,"5 year anniversary of superstorm Sandy, rallying for environmental policy"
+-73.9866136,40.7306458,New York City,NY,2017-10-28,5000,Environmental & Food Justice,Climate Justice,Demanding bold climate change policy on the 5-year anniversary of superstorm Sandy
+-86.7743531,36.1622296,Nashville,TN,2017-10-25,3000,Other,International Politics ,Rallying in support of Kurdistan
+-82.3233746019217,29.67357765,Gainesville,FL,2017-10-19,2500,Racial Justice,Anti-Racism ,protesting visit of Richard Spencer
+-84.3901849,33.7490987,Atlanta,GA,2017-10-15,2000,,LGBTQ+ Rights,LGBTQ Pride March
+-82.3984882,34.851354,Greenville,SC,2017-10-16,2000,U.S. Politics,Politician Opposition,Trump rallying for McMaster's gubernatorial campaign
+-118.244476,34.054935,Los Angeles,CA,2017-10-01,2000,Women's Rights,Anti-Sexual Violence,"Protesting gender inequality, sexual assault"
+-73.9866136,40.7306458,New York City,NY,2017-10-09,2000,Housing Justice,Affordinility ,"Protesting de Blasio, rallying for affordable housing"
+-97.5170536,35.4729886,Oklahoma City,OK,2017-10-24,2000,U.S. Politics ,Health Care,Rallying to save mental health services from budget cuts
+-81.3111658,28.495156,Orange County,FL,2017-10-19,1200,Workers & Labor Rights,Living Wages,Rallying for higher wages
+-81.4127841856302,28.5479786,Orlando,FL,2017-10-19,1200,Workers & Labor Rights,Living Wages,Protesting Low wages
+-73.9866136,40.7306458,New York City,NY,2017-10-01,1100,Racial Justice,Anti-Racism ,Rally for racial justice
+-86.765783,33.570499,Birmingham,AL,2017-10-03,1000,U.S. Politics ,Politician Support,Campaign Rally for Doug Jones
+-86.3920452,35.845999,Murfreesboro,TN,2017-10-28,1000,Racial Justice,Anti-Racism ,counter-protest against white nationalists 
+-90.1978889,38.6272733,St. Louis,MO,2017-10-08,1000,Racial Justice,Anti-Police Brutality,Remembering 3 year anniversary of police shooting of area man
+-83.0567375,42.3486635,Detroit,MI,2017-10-27,700,Racial Justice,Immigration Rights,Protesting new Trump immigration ban
+-92.2895948,34.7464809,Little Rock,AR,2017-10-09,600,Other,Peace,Rally to end violence (Victory over Violence Prayer Rally)
+-112.0400919,43.4935245,Idaho Falls,ID,2017-10-25,550,U.S. Politics,Politician Support,Campaign rally for Tommy Ahlquist
+-86.798814,33.561968,Huntsville,AL,2017-09-22,9000,U.S. Politics,Politician Support,Supporting Luther Strange
+-71.0595678,42.3604823,Boston,MA,2017-09-16,7600,U.S. Politics,Health Care,Cannabis rally
+-117.1627714,32.7174209,San Diego,CA,2017-09-30,6000,U.S. Politics,Health Care,March against AIDS
+-77.0366456,38.8949549,Washington,DC,2017-09-16,3000,Other,Other,"Protesting FBI classification of Juggalos as a ""loosely organized hybrid gang"""
+-87.6244212,41.8755546,Chicago,IL,2017-09-04,2000,Workers & Labor Rights,Living Wages,Rally for higher wages
+-73.356691165361,40.74123595,New York,NY,2017-09-05,2000,Racial Justice,Immigrant Rights,Protesting Trump's DACA decision
+-73.356691165361,40.74123595,New York,NY,2017-09-05,2000,Racial Justice,Immigrant Rights,Protesting Trump's DACA decision
+-87.922497,43.0349931,Milwaukee,WI,2017-09-06,2000,Racial Justice,Immigrant Rights,Protesting Trump's decision to end DACA
+-80.3310713,43.0317491,Oakland,CA,2017-09-09,2000,Racial Justice,Immigrant Rights,Protesting Trump's decision to end DACA
+-77.0366456,38.8949549,Washington,DC,2017-09-30,2000,Racial Justice,Anti-Racism,March for Racial Justice and the March for Black Women
+-106.501349395577,31.8111305,El Paso,TX,2017-09-01,1000,Racial Justice,Immigrant Rights,SB-4 Bill
+-106.501349395577,31.8111305,Los Angeles,CA,2017-09-04,1000,Racial Justice,Immigrant Rights,Rally for DACA
+-106.501349395577,31.8111305,New Haven,CT,2017-09-05,1000,Racial Justice,Immigrant Rights,Protesting Trump's DACA decision
+-117.1627714,32.7174209,San Diego,CA,2017-09-05,1000,Racial Justice,Immigrant Rights,Protesting Trump's DACA decision
+-73.4373087,45.4423543,San Francisco,CA,2017-09-05,1000,Racial Justice,Immigrant Rights,Protesting Trump's DACA decision
+-80.7272504,44.3669375,Berkeley,CA,2017-09-14,1000,Racial Justice,Anti-Racism,Protesting Ben Shapiro
+-80.7272504,44.3669375,St. Louis,MO,2017-09-16,1000,Racial Justice,Anti-Police Brutality,Protesting Jason Stockley's acquittal
+-77.0366456,38.8949549,Washington,DC,2017-09-16,1000,Other,White Nationalism,Show of American patriotism and celebration
+-80.7272504,44.3669375,St. Louis,MO,2017-09-17,1000,Racial Justice,Anti-Police Brutality,protesting acquittal of ex-police officer Jason Stockley
+-80.7272504,44.3669375,St. Louis,MO,2017-09-18,1000,Racial Justice,Anti-Police Brutality,Protesting acquittal of Jason Stockley
+114.183818890881,22.3263649,Mansfield,CT,2017-09-20,1000,U.S. Politics,Anti-Budget Cuts,Protesting state budget
+-122.6741949,45.5202471,Portland,OR,2017-09-30,1000,U.S. Politics,Health Care,Protesting lack of support for addiction treatment
+-91.5299106,41.6612561,Iowa City,IA,2017-09-07,700,Racial Justice,Immigrant Rights,Protesting Trump's decision to end DACA
+-80.0852421,42.1290657,Erie,PA,2017-09-04,600,Workers & Labor Rights,Living Wages,Rally for higher wages
+-110.9262353,32.2218917,Tucson,AZ,2017-09-06,600,Racial Justice,Immigrant Rights,Protesting Trump's decision to end DACA
+-80.7272504,44.3669375,St. Louis,MO,2017-09-14,600,Racial Justice,Immigrant Rights,Protect International Student Workers
+-123.7244026,48.8032735,Hayward,CA,2017-09-07,530,Racial Justice,Immigrant Rights,Protesting Trump's decision to end DACA
+-95.283819,38.943818,Hartford,CT,2017-09-07,500,U.S. Politics,Anti-Budget Cuts,Rally urging lawmakers to pass budget
