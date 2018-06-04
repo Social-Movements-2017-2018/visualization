@@ -1,3 +1,7 @@
+/*
+* Sources:
+*   Zooming adapted from https://bl.ocks.org/ashenfad/48b4621bd3a9f1bb884a
+* */
 var stateCodetoName = {
     "AL": "Alabama",
     "AK": "Alaska",
@@ -56,11 +60,17 @@ var stateCodetoName = {
 //Width and height
 var w = 800;
 var h = 650;
+var active = d3.select(null);
 
 //Define map projection
 var projection = d3.geoAlbersUsa()
                        .translate([w/2, h/2.5])
                        .scale([1000]);
+
+// custom zoom function built off of d3 zoom with scale extent set to limit zooming, no limit on pan however
+var zoom = d3.zoom()
+    .scaleExtent([1, 32])
+    .on("zoom", zoomed);
 
 //Define path generator
 var path = d3.geoPath()
@@ -77,13 +87,32 @@ var color = d3.scaleThreshold()
 var svg = d3.select("body")
             .append("svg")
             .attr("width", w)
-            .attr("height", h);
+            .attr("height", h)
+            .on("click", stopped, true);
 
-//Load in agriculture data
+var g = svg.append("g");
+
+// binds zoom function to svg and sets initial translation and scale
+svg
+    .call(zoom) // delete this line to disable free zooming
+    .call(zoom.transform, d3.zoomIdentity
+        .translate(0,0)
+        .scale(1));
+
+//Load in movements data
 d3.csv("social-movements.csv", function(data) {
 
     //Load in GeoJSON data
     d3.json("unitedstates.json", function(json) {
+
+        var state_view = false;
+
+        d3.select("svg").insert("rect", "g")
+            .attr("class", "background")
+            .attr("fill", "white")
+            .attr("width", w)
+            .attr("height", h)
+            .on("click", reset);
         
         //For each state in the GeoJSON
         for (var j = 0; j < json.features.length; j++) {
@@ -114,7 +143,7 @@ d3.csv("social-movements.csv", function(data) {
         }
 
         //Bind data and create one path per GeoJSON feature
-        svg.selectAll("path")
+        g.selectAll("path")
            .data(json.features)
            .enter()
            .append("path")
@@ -131,7 +160,61 @@ d3.csv("social-movements.csv", function(data) {
                     //If value is undefined…
                     return "black";
                 }
-           });
+           })
+           .on("click", clicked);
+
+        function clicked(d) {
+            if (active.node() === this) return reset(); // which state is currently being viewed. If you click on the
+            // state which is active, it will return to the original view
+
+            state_view = true;
+            active.classed("active", false); // sets css active class to false on old active state
+            active = d3.select(this).classed("active", true); // sets css active class to true on current state
+
+            // calculates necessary parameters for zoom data in order to center the state and zoom in on it
+            var bounds = path.bounds(d),
+                dx = bounds[1][0] - bounds[0][0],
+                dy = bounds[1][1] - bounds[0][1],
+                x = (bounds[0][0] + bounds[1][0]) / 2,
+                y = (bounds[0][1] + bounds[1][1]) / 2,
+                scale = .9 / Math.max(dx / w, dy / h),
+                translate = [w / 2 - scale * x, h / 2 - scale * y];
+            console.log(translate); // should output the translation array. used while debugging for the upgrade to v4
+
+            // zooms in on state
+            svg.transition()
+                .duration(750)
+                .call(zoom.transform, d3.zoomIdentity
+                    .translate(translate[0], translate[1])
+                    .scale(scale));
+        }
+
+        // sets to original view by removing districts, recolorizing states, and returning to original zoom
+        function reset() {
+            state_view = false;
+            active.classed("active", false);
+            active = d3.select(null);
+
+            d3.selectAll(".state").transition().style("fill",
+                function (d) {
+                    var attendance = d.properties.yearlyAttendance;
+
+                    if (attendance) {
+                        //If value exists…
+                        console.log(d.properties.name + " " + attendance);
+                        return color(attendance);
+                    } else {
+                        //If value is undefined…
+                        return "black";
+                    }
+                });
+
+            svg.transition()
+                .duration(750)
+                .call(zoom.transform, d3.zoomIdentity
+                    .translate(0,0)
+                    .scale(1));
+        }
 
     });
 
@@ -160,3 +243,13 @@ legend.append("text")
     .attr("text-anchor", "start")
     .attr("font-weight", "bold")
     .text("People in Attendance at Direct Actions");
+
+// function for zooming the map
+function zoomed() {
+    g.style("stroke-width", 1.5 / d3.event.transform.k + "px");
+    g.attr("transform", d3.event.transform);
+}
+
+function stopped() {
+    if (d3.event.defaultPrevented) d3.event.stopPropagation();
+}
