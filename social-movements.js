@@ -147,21 +147,25 @@ d3.csv("social-movements.csv", function(data) {
            .data(json.features)
            .enter()
            .append("path")
+           .attr("class", "state")
            .attr("d", path)
-           .style("fill", function(d) {
-                //Get data value
-                var attendance = d.properties.yearlyAttendance;
-
-                if (attendance) {
-                    //If value exists…
-                    console.log(d.properties.name + " " + attendance);
-                    return color(attendance);
-                } else {
-                    //If value is undefined…
-                    return "black";
-                }
-           })
+           .style("fill", state_color)
            .on("click", clicked);
+
+        function state_color(d) {
+            if (state_view) return "#ddd";
+            //Get data value
+            var attendance = d.properties.yearlyAttendance;
+
+            if (attendance) {
+                //If value exists…
+                console.log(d.properties.name + " " + attendance);
+                return color(attendance);
+            } else {
+                //If value is undefined…
+                return "black";
+            }
+        }
 
         function clicked(d) {
             if (active.node() === this) return reset(); // which state is currently being viewed. If you click on the
@@ -170,6 +174,7 @@ d3.csv("social-movements.csv", function(data) {
             state_view = true;
             active.classed("active", false); // sets css active class to false on old active state
             active = d3.select(this).classed("active", true); // sets css active class to true on current state
+            d3.select(this).transition().style("fill", state_color);
 
             // calculates necessary parameters for zoom data in order to center the state and zoom in on it
             var bounds = path.bounds(d),
@@ -179,7 +184,6 @@ d3.csv("social-movements.csv", function(data) {
                 y = (bounds[0][1] + bounds[1][1]) / 2,
                 scale = .9 / Math.max(dx / w, dy / h),
                 translate = [w / 2 - scale * x, h / 2 - scale * y];
-            console.log(translate); // should output the translation array. used while debugging for the upgrade to v4
 
             // zooms in on state
             svg.transition()
@@ -195,19 +199,7 @@ d3.csv("social-movements.csv", function(data) {
             active.classed("active", false);
             active = d3.select(null);
 
-            d3.selectAll(".state").transition().style("fill",
-                function (d) {
-                    var attendance = d.properties.yearlyAttendance;
-
-                    if (attendance) {
-                        //If value exists…
-                        console.log(d.properties.name + " " + attendance);
-                        return color(attendance);
-                    } else {
-                        //If value is undefined…
-                        return "black";
-                    }
-                });
+            d3.selectAll(".state").transition().style("fill", state_color);
 
             svg.transition()
                 .duration(750)
