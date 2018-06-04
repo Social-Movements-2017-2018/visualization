@@ -153,7 +153,7 @@ d3.csv("social-movements.csv", function(data) {
            .on("click", clicked);
 
         function state_color(d) {
-            if (state_view) return "#ddd";
+            if (d3.select(this).classed("active")) return "#ddd";
             //Get data value
             var attendance = d.properties.yearlyAttendance;
 
@@ -169,12 +169,11 @@ d3.csv("social-movements.csv", function(data) {
 
         function clicked(d) {
             if (active.node() === this) return reset(); // which state is currently being viewed. If you click on the
-            // state which is active, it will return to the original view
 
             state_view = true;
             active.classed("active", false); // sets css active class to false on old active state
             active = d3.select(this).classed("active", true); // sets css active class to true on current state
-            d3.select(this).transition().style("fill", state_color);
+            d3.selectAll(".state").transition().style("fill", state_color);
 
             // calculates necessary parameters for zoom data in order to center the state and zoom in on it
             var bounds = path.bounds(d),
