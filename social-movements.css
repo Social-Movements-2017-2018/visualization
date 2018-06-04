@@ -5,6 +5,11 @@ body {
   font: 13px sans-serif;
 }
 h1 {
-  text-align:left;
+  text-align:center;
   color:magenta;
+}
+
+svg {
+  display: block;
+  margin: auto;
 }

@@ -1,3 +1,58 @@
+var stateCodetoName = {
+    "AL": "Alabama",
+    "AK": "Alaska",
+    "AZ": "Arizona",
+    "AR": "Arkansas",
+    "CA": "California",
+    "CO": "Colorado",
+    "CT": "Connecticut",
+    "DE": "Delaware",
+    "DC": "District of Columbia",
+    "FL": "Florida",
+    "GA": "Georgia",
+    "HI": "Hawaii",
+    "ID": "Idaho",
+    "IL": "Illinois",
+    "IN": "Indiana",
+    "IA": "Iowa",
+    "KS": "Kansas",
+    "KY": "Kentucky",
+    "LA": "Louisiana",
+    "ME": "Maine",
+    "MD": "Maryland",
+    "MA": "Massachusetts",
+    "MI": "Michigan",
+    "MN": "Minnesota",
+    "MS": "Mississippi",
+    "MO": "Missouri",
+    "MT": "Montana",
+    "NE": "Nebraska",
+    "NV": "Nevada",
+    "NH": "New Hampshire",
+    "NJ": "New Jersey",
+    "NM": "New Mexico",
+    "NY": "New York",
+    "NC": "North Carolina",
+    "ND": "North Dakota",
+    "OH": "Ohio",
+    "OK": "Oklahoma",
+    "OR": "Oregon",
+    "PA": "Pennsylvania",
+    "RI": "Rhode Island",
+    "SC": "South Carolina",
+    "SD": "South Dakota",
+    "TN": "Tennessee",
+    "TX": "Texas",
+    "UT": "Utah",
+    "VT": "Vermont",
+    "VA": "Virginia",
+    "WA": "Washington",
+    "WV": "West Virginia",
+    "WI": "Wisconsin",
+    "WY": "Wyoming"
+}
+
+
 //Width and height
 var w = 800;
 var h = 650;
@@ -13,7 +68,7 @@ var path = d3.geoPath()
 
 //Define color scale to sort data values into buckets of color
 var color = d3.scaleThreshold()
-              .domain([100,1000,5000,10000]) //Chosen input domain for color scale based on data
+              .domain([500,5000,50000,500000]) //Chosen input domain for color scale based on data
               .range(["rgb(237,248,233)","rgb(186,228,179)","rgb(116,196,118)","rgb(49,163,84)","rgb(0,109,44)"]);
               //Colors derived from ColorBrewer, by Cynthia Brewer
               //https://github.com/d3/d3-scale-chromatic
@@ -42,22 +97,20 @@ d3.csv("social-movements.csv", function(data) {
                 var dataMovement = data[i].Movement;
                 var dataCause = data[i].Cause;
                 var dataDescription = data[i].Description;
-                var dataAttendance = data[i].Attendance;
+                var dataAttendance = +data[i].Attendance;
                 var dataCity = data[i].City;
-                var dataState = data[i].State;
+                var dataState = stateCodetoName[data[i].State];
                 var dataDate = data[i].Date;
             
                 //If match is found
-                if (dataState == jsonState) {
-
+                if (dataState === jsonState) {
                     stateYearlyAttendance += dataAttendance;
-
+                    console.log(dataState + stateYearlyAttendance);
                 }
                 
-                //Add total yearly attendance into JSON file that that state
-                json.features[j].properties.yearlyAttendance = dataAttendance;
-                
-            }		
+            }
+            //Add total yearly attendance into JSON file that that state
+            json.features[j].properties.yearlyAttendance = stateYearlyAttendance;
         }
 
         //Bind data and create one path per GeoJSON feature
@@ -72,6 +125,7 @@ d3.csv("social-movements.csv", function(data) {
 
                 if (attendance) {
                     //If value exists…
+                    console.log(d.properties.name + " " + attendance);
                     return color(attendance);
                 } else {
                     //If value is undefined…
@@ -84,9 +138,9 @@ d3.csv("social-movements.csv", function(data) {
 });
 
 //Attendance Legend
-var color = d3.scaleThreshold()
-    .domain([100, 1000, 5000, 10000])
-    .range(["rgb(237,248,233)","rgb(186,228,179)","rgb(116,196,118)","rgb(49,163,84)","rgb(0,109,44)"]);
+// var colorForLegend = d3.scaleThreshold()
+//     .domain([500, 1000, 5000, 10000])
+//     .range(["rgb(237,248,233)","rgb(186,228,179)","rgb(116,196,118)","rgb(49,163,84)","rgb(0,109,44)"]);
 
 var log = d3.legendColor()
     .labelFormat(d3.format(".0f"))
