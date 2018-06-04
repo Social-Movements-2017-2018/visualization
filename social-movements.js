@@ -29,38 +29,34 @@ d3.csv("data.csv", function(data) {
 
     //Load in GeoJSON data
     d3.json("unitedstates.json", function(json) {
+        
+        //For each state in the GeoJSON
+        for (var j = 0; j < json.features.length; j++) {
 
-        //Merge the ag. data and GeoJSON
-        //Loop through once for each ag. data value
-        for (var i = 0; i < data.length; i++) {
+            var jsonState = json.features[j].properties.name;
+            var stateYearlyAttendance = 0;
+             
+            //Find each direct action that occured in that state
+            for (var i = 0; i < data.length; i++) {
 
-            var dataMovement = data[i].Movement;
-            var dataCause = data[i].Cause;
-            var dataAttendance = data[i].Attendance;
-            var dataCity = data[i].City;
-            var dataState = data[i].State;
-            var dataDate = data[i].Date;
+                var dataMovement = data[i].Movement;
+                var dataCause = data[i].Cause;
+                var dataDescription = data[i].Description;
+                var dataAttendance = data[i].Attendance;
+                var dataCity = data[i].City;
+                var dataState = data[i].State;
+                var dataDate = data[i].Date;
             
-
-            //Find the corresponding state inside the GeoJSON
-            for (var j = 0; j < json.features.length; j++) {
-
-                var jsonState = json.features[j].properties.name;
-
+                //If match is found
                 if (dataState == jsonState) {
 
-                    //Copy the data value into the JSON
-                    json.features[j].properties.movement = dataMovement;
-                    json.features[j].properties.cause = dataCause;
-                    json.features[j].properties.attendance = dataAttendance;
-                    json.features[j].properties.city = dataCity;
-                    json.features[j].properties.state = dataState;
-                    json.features[j].properties.date = dataDate;
-
-                    //Stop looking through the JSON
-                    break;
+                    stateYearlyAttendance += dataAttendance;
 
                 }
+                
+                //Add total yearly attendance into JSON file that that state
+                json.features[j].properties.yearlyAttendance = dataAttendance;
+                
             }		
         }
 
@@ -72,7 +68,7 @@ d3.csv("data.csv", function(data) {
            .attr("d", path)
            .style("fill", function(d) {
                 //Get data value
-                var attendance = d.properties.attendance;
+                var attendance = d.properties.yearlyAttendance;
 
                 if (attendance) {
                     //If value exists…
