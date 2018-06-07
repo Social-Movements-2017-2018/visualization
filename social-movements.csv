@@ -1,4 +1,4 @@
-lon,lat,City,State,Date,Attendance,Movement,Cause,Description
+Lon,Lat,City,State,Date,Attendance,Movement,Cause,Description
 -77.0366456,38.8949549,Washington,DC,2017-04-29,190000,Environmental & Food Justice,Climate Justice,People's Climate March
 -87.6244212,41.8755546,Chicago,IL,2017-04-22,49000,U.S. Politics,Scientific Funding,March for Science
 -73.4373087,45.4423543,San Francisco,CA,2017-04-22,30750,U.S. Politics,Scientific Funding,March for Science
