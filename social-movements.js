@@ -181,6 +181,7 @@ d3.csv("social-movements.csv", function(data) {
                 .data(data)
                 .enter()
                 .append("circle")
+                .attr("class", "point")
                 .attr("cx", function (point) {
                     try {
                         return projection([point.Lon, point.Lat])[0];
@@ -230,6 +231,7 @@ d3.csv("social-movements.csv", function(data) {
             active = d3.select(null);
 
             d3.selectAll(".state").transition().style("fill", state_color);
+            d3.selectAll(".point").remove();
 
             svg.transition()
                 .duration(750)
