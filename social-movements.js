@@ -54,7 +54,7 @@ var stateCodetoName = {
     "WV": "West Virginia",
     "WI": "Wisconsin",
     "WY": "Wyoming"
-}
+};
 
 
 //Width and height
@@ -150,7 +150,7 @@ d3.csv("social-movements.csv", function(data) {
            .attr("class", "state")
            .attr("d", path)
            .style("fill", state_color)
-           .on("click", clicked);
+           .on("click", clicked)
 
         function state_color(d) {
             if (d3.select(this).classed("active")) return "#ddd";
@@ -174,6 +174,26 @@ d3.csv("social-movements.csv", function(data) {
             active.classed("active", false); // sets css active class to false on old active state
             active = d3.select(this).classed("active", true); // sets css active class to true on current state
             d3.selectAll(".state").transition().style("fill", state_color);
+
+            g.selectAll("circle")
+                .data(data)
+                .enter()
+                .append("circle")
+                .attr("cx", function (data) {
+                    console.log(data);
+                    return projection([data.lon,data.lat])[0];
+                })
+                .attr("cy", function (data) {
+                    return projection([data.lon,data.lat])[1];
+                })
+                .attr("r", 5)
+                .style("fill", function (data) {
+                    if (stateCodetoName[data.State] === d.properties.name) {
+                        return "black";
+                    } else {
+                        return "none";
+                    }
+                });
 
             // calculates necessary parameters for zoom data in order to center the state and zoom in on it
             var bounds = path.bounds(d),
