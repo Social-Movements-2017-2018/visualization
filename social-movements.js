@@ -140,12 +140,13 @@ d3.csv("social-movements.csv", function(data) {
         }
 
         //Bind data and create one path per GeoJSON feature
-        g.selectAll("path")
+        var statePath = g.selectAll("path")
            .data(json.features)
            .enter()
            .append("path")
            .attr("class", "state")
            .attr("d", path)
+           .on("mouseover", mouseOver)
            .style("fill", state_color)
            .on("click", clicked);
 
@@ -163,7 +164,13 @@ d3.csv("social-movements.csv", function(data) {
                 return "black";
             }
         }
-
+        
+        function mouseOver(d) {
+            statePath.attr("style", "cursor: pointer")
+                     .style("fill", state_color)
+                     .on("click", clicked);
+        }
+        
         function clicked(d) {
             if (active.node() === this) return reset(); // which state is currently being viewed. If you click on the
 
@@ -218,8 +225,6 @@ var infoSvg = d3.select("body")
             .attr("width", 300)
             .attr("height", h);
 
-//var infoG = infoSvg.append("g");
-
 var log = d3.legendColor()
     .labelFormat(d3.format(".0f"))
     .labels(d3.legendHelpers.thresholdLabels)
@@ -233,10 +238,9 @@ var legend = infoSvg.append("g")
 legend.append("text")
     .attr("class", "caption")
     .attr("x", -5)
-    .attr("y", -3)
+    .attr("y", -8)
     .attr("fill", "#000")
     .attr("text-anchor", "start")
-    .attr("font-weight", "bold")
     .text("Total Yearly Attendance at Direct Actions");
 
 // function for zooming the map
