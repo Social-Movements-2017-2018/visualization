@@ -58,13 +58,13 @@ var stateCodetoName = {
 
 
 //Width and height
-var w = 800;
+var w = 1000;
 var h = 650;
 var active = d3.select(null);
 
 //Define map projection
 var projection = d3.geoAlbersUsa()
-                       .translate([w/2, h/2.5])
+                       .translate([w/2.5, h/2.5])
                        .scale([1000]);
 
 // custom zoom function built off of d3 zoom with scale extent set to limit zooming, no limit on pan however
@@ -93,11 +93,8 @@ var svg = d3.select("body")
 var g = svg.append("g");
 
 // binds zoom function to svg and sets initial translation and scale
-svg
-    .call(zoom) // delete this line to disable free zooming
-    .call(zoom.transform, d3.zoomIdentity
-        .translate(0,0)
-        .scale(1));
+svg.call(zoom) // delete this line to disable free zooming
+    .call(zoom.transform, d3.zoomIdentity.translate(0,0).scale(1));
 
 //Load in movements data
 d3.csv("social-movements.csv", function(data) {
@@ -212,18 +209,24 @@ d3.csv("social-movements.csv", function(data) {
 });
 
 //Attendance Legend
-// var colorForLegend = d3.scaleThreshold()
-//     .domain([500, 1000, 5000, 10000])
-//     .range(["rgb(237,248,233)","rgb(186,228,179)","rgb(116,196,118)","rgb(49,163,84)","rgb(0,109,44)"]);
+
+//Create SVG element
+var infoSvg = d3.select("body")
+            .append("svg")
+            .attr("style", "background-color: lightyellow")
+            .attr("width", 300)
+            .attr("height", h);
+
+//var infoG = infoSvg.append("g");
 
 var log = d3.legendColor()
     .labelFormat(d3.format(".0f"))
     .labels(d3.legendHelpers.thresholdLabels)
     .scale(color);
 
-var legend = svg.append("g")
+var legend = infoSvg.append("g")
     .attr("class", "legend")
-    .attr("transform", "translate(450,550)")
+    .attr("transform", "translate(30,30)")
     .call(log);
 
 legend.append("text")
@@ -233,7 +236,7 @@ legend.append("text")
     .attr("fill", "#000")
     .attr("text-anchor", "start")
     .attr("font-weight", "bold")
-    .text("People in Attendance at Direct Actions");
+    .text("Total Yearly Attendance at Direct Actions");
 
 // function for zooming the map
 function zoomed() {
