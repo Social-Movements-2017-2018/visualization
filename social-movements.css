@@ -8,14 +8,17 @@ body {
   margin: 0;
 }
 h1 {
+  text-align:center;
   color:black;
-  font-weight: normal;
+    font-weight: normal;
 }
 p {
     width: 75%;
 }
-svg {
-  margin: auto;
+
+#viz {
+    width: 1150px;
+    margin: auto;
 }
 div.tooltip {
   position: absolute;			

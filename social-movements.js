@@ -54,7 +54,7 @@ var stateCodetoName = {
     "WV": "West Virginia",
     "WI": "Wisconsin",
     "WY": "Wyoming"
-}
+};
 
 
 //Width and height
@@ -144,7 +144,6 @@ d3.csv("social-movements.csv", function(data) {
                 //If match is found
                 if (dataState === jsonState) {
                     stateYearlyAttendance += dataAttendance;
-                    console.log(dataState + stateYearlyAttendance);
                 }
                 
             }
@@ -171,7 +170,6 @@ d3.csv("social-movements.csv", function(data) {
 
             if (attendance) {
                 //If value exists…
-                console.log(d.properties.name + " " + attendance);
                 return color(attendance);
             } else {
                 //If value is undefined…
@@ -207,9 +205,39 @@ d3.csv("social-movements.csv", function(data) {
             if (active.node() === this) return reset(); //current state in view
 
             state_view = true;
-            active.classed("active", false); // sets css active class to false on old active state
-            active = d3.select(this).classed("active", true); // sets css active class to true on current state
+            active.classed("active", false);
+            active = d3.select(this).classed("active", true);
             d3.selectAll(".state").transition().style("fill", state_color);
+
+            g.selectAll("circle")
+                .data(data)
+                .enter()
+                .append("circle")
+                .attr("class", "point")
+                .attr("cx", function (point) {
+                    try {
+                        return projection([point.Lon, point.Lat])[0];
+                    } catch (err) {
+                        console.log(point);
+                        return -1;
+                    }
+                })
+                .attr("cy", function (point) {
+                    try {
+                        return projection([point.Lon, point.Lat])[1];
+                    } catch (err) {
+                        console.log(point);
+                        return -1;
+                    }
+                })
+                .attr("r", 2)
+                .style("fill", function (point) {
+                    if (stateCodetoName[point.State] === d.properties.name) {
+                        return "black";
+                    } else {
+                        return "none";
+                    }
+                });
 
             // calculates necessary parameters for zoom data in order to center the state and zoom in on it
             var bounds = path.bounds(d),
@@ -235,6 +263,7 @@ d3.csv("social-movements.csv", function(data) {
             active = d3.select(null);
 
             d3.selectAll(".state").transition().style("fill", state_color);
+            d3.selectAll(".point").remove();
 
             svg.transition()
                 .duration(750)
