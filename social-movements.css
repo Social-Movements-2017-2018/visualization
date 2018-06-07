@@ -1,15 +1,19 @@
-title {
-  text-align: left;
+html {
+    width: auto;
+    margin: 20px;
 }
 body {
-  font: 13px sans-serif;
+  font-family: 'Raleway';
+  font-size: 13px;
+  margin: 0;
 }
 h1 {
-  text-align:center;
-  color:magenta;
+/*  text-align:center;*/
+  color:black;
 }
-
+p {
+    width: 75%;
+}
 svg {
-  display: block;
   margin: auto;
 }
