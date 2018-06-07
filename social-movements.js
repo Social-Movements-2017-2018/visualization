@@ -83,12 +83,25 @@ var color = d3.scaleThreshold()
               //Colors derived from ColorBrewer, by Cynthia Brewer
               //https://github.com/d3/d3-scale-chromatic
 
-//Create SVG element
+//Create main SVG element for the visualization
 var svg = d3.select("body")
             .append("svg")
             .attr("width", w)
             .attr("height", h)
             .on("click", stopped, true);
+
+//Create SVG element for information on the right
+var infoSvg = d3.select("body")
+            .append("svg")
+            .attr("class", "infoSvg")
+            .attr("style", "background-color: lightyellow")
+            .attr("width", 300)
+            .attr("height", h);
+
+//Tooltip div
+var div = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
 
 var g = svg.append("g");
 
@@ -146,6 +159,7 @@ d3.csv("social-movements.csv", function(data) {
            .attr("class", "state")
            .attr("d", path)
            .on("mouseover", mouseOver)
+           .on("mouseout", mouseOut)
            .style("fill", state_color)
            .on("click", clicked);
 
@@ -167,10 +181,28 @@ d3.csv("social-movements.csv", function(data) {
             statePath.attr("style", "cursor: pointer")
                      .style("fill", state_color)
                      .on("click", clicked);
+            div.transition()		
+               .duration(300)		
+               .style("opacity", 1);		
+            div.html("Social Movement:" + "<br/>" + 
+                     "Cause:" + "<br/>" +
+                     "Description:" + "<br/>" +
+                     "Attendance:" + "<br/>" +
+                     "City:" + "<br/>" +
+                     "Date:")	
+               .style("left", "890px")		
+               .style("top", "600px");
         }
         
+        function mouseOut(d) {
+            div.transition()
+               .duration(300)		
+               .style("opacity", 0);
+        }
+        
+        //When a state is clicked
         function clicked(d) {
-            if (active.node() === this) return reset();
+            if (active.node() === this) return reset(); //current state in view
 
             state_view = true;
             active.classed("active", false);
@@ -224,7 +256,7 @@ d3.csv("social-movements.csv", function(data) {
                     .scale(scale));
         }
 
-        // sets to original view by removing districts, recolorizing states, and returning to original zoom
+        //Sets to original view by removing districts, recolorizing states, and returning to original zoom
         function reset() {
             state_view = false;
             active.classed("active", false);
@@ -244,16 +276,7 @@ d3.csv("social-movements.csv", function(data) {
 
 });
 
-//Attendance Legend
-
-//Create new SVG element
-var infoSvg = d3.select("body")
-            .append("svg")
-            .attr("class", "infoSvg")
-            .attr("style", "background-color: lightyellow")
-            .attr("width", 300)
-            .attr("height", h);
-
+//Yearly Attendance Legend
 var log = d3.legendColor()
     .labelFormat(d3.format(".0f"))
     .labels(d3.legendHelpers.thresholdLabels)
@@ -272,7 +295,7 @@ legend.append("text")
     .attr("text-anchor", "start")
     .text("Total Yearly Attendance at Direct Actions");
 
-// function for zooming the map
+//Enables zooming for the map
 function zoomed() {
     g.style("stroke-width", 1.5 / d3.event.transform.k + "px");
     g.attr("transform", d3.event.transform);
