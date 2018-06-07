@@ -58,13 +58,13 @@ var stateCodetoName = {
 
 
 //Width and height
-var w = 1000;
-var h = 650;
+var w = 850;
+var h = 600;
 var active = d3.select(null);
 
 //Define map projection
 var projection = d3.geoAlbersUsa()
-                       .translate([w/2.5, h/2.5])
+                       .translate([w/2, h/2.5])
                        .scale([1000]);
 
 // custom zoom function built off of d3 zoom with scale extent set to limit zooming, no limit on pan however
@@ -210,9 +210,10 @@ d3.csv("social-movements.csv", function(data) {
 
 //Attendance Legend
 
-//Create SVG element
+//Create new SVG element
 var infoSvg = d3.select("body")
             .append("svg")
+            .attr("class", "infoSvg")
             .attr("style", "background-color: lightyellow")
             .attr("width", 300)
             .attr("height", h);
