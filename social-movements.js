@@ -148,7 +148,7 @@ d3.csv("social-movements.csv", function(data) {
            .attr("d", path)
            .on("mouseover", mouseOver)
            .style("fill", state_color)
-           .on("click", clicked)
+           .on("click", clicked);
 
         function state_color(d) {
             if (d3.select(this).classed("active")) return "#ddd";
