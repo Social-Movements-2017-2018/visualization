@@ -76,8 +76,14 @@ var zoom = d3.zoom()
 var path = d3.geoPath()
                  .projection(projection);
 
+var stateColor = d3.scaleThreshold()
+    .domain([5,10,50,100]) //Chosen input domain for color scale based on data
+    .range(["rgb(237,248,233)","rgb(186,228,179)","rgb(116,196,118)","rgb(49,163,84)","rgb(0,109,44)"]);
+    //Colors derived from ColorBrewer, by Cynthia Brewer
+    //https://github.com/d3/d3-scale-chromatic
+
 //Define color scale to sort data values into buckets of color
-var color = d3.scaleThreshold()
+var pointColor = d3.scaleThreshold()
               .domain([500,5000,50000,500000]) //Chosen input domain for color scale based on data
               .range(["rgb(237,248,233)","rgb(186,228,179)","rgb(116,196,118)","rgb(49,163,84)","rgb(0,109,44)"]);
               //Colors derived from ColorBrewer, by Cynthia Brewer
@@ -143,7 +149,7 @@ d3.csv("social-movements.csv", function(data) {
             
                 //If match is found
                 if (dataState === jsonState) {
-                    stateYearlyAttendance += dataAttendance;
+                    stateYearlyAttendance += 1;
                 }
                 
             }
@@ -169,7 +175,7 @@ d3.csv("social-movements.csv", function(data) {
 
             if (attendance) {
                 //If value exists…
-                return color(attendance);
+                return stateColor(attendance);
             } else {
                 //If value is undefined…
                 return "black";
@@ -284,7 +290,7 @@ d3.csv("social-movements.csv", function(data) {
 var log = d3.legendColor()
     .labelFormat(d3.format(".0f"))
     .labels(d3.legendHelpers.thresholdLabels)
-    .scale(color);
+    .scale(stateColor);
 
 var legend = infoSvg.append("g")
     .attr("class", "legend")
