@@ -84,7 +84,7 @@ var stateColor = d3.scaleThreshold()
 
 //Define color scale to sort data values into buckets of color
 var pointColor = d3.scaleThreshold()
-              .domain([500,5000,50000,500000]) //Chosen input domain for color scale based on data
+              .domain([500,1000,5000,10000]) //Chosen input domain for color scale based on data
               .range(["rgb(255,255,178","rgb(254,204,92)","rgb(253,141,60)","rgb(240,59,32)","rgb(189,0,38)"]);
               //Colors derived from ColorBrewer, by Cynthia Brewer
               //https://github.com/d3/d3-scale-chromatic
