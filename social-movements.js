@@ -158,8 +158,7 @@ d3.csv("social-movements.csv", function(data) {
            .append("path")
            .attr("class", "state")
            .attr("d", path)
-           .on("mouseover", mouseOver)
-           .on("mouseout", mouseOut)
+           .on("mouseover", showPointer)
            .style("fill", state_color)
            .on("click", clicked);
 
@@ -177,27 +176,10 @@ d3.csv("social-movements.csv", function(data) {
             }
         }
         
-        function mouseOver(d) {
+        function showPointer(d) {
             statePath.attr("style", "cursor: pointer")
                      .style("fill", state_color)
                      .on("click", clicked);
-            div.transition()		
-               .duration(300)		
-               .style("opacity", 1);		
-            div.html("Social Movement:" + "<br/>" + 
-                     "Cause:" + "<br/>" +
-                     "Description:" + "<br/>" +
-                     "Attendance:" + "<br/>" +
-                     "City:" + "<br/>" +
-                     "Date:")	
-               .style("left", "890px")		
-               .style("top", "600px");
-        }
-        
-        function mouseOut(d) {
-            div.transition()
-               .duration(300)		
-               .style("opacity", 0);
         }
         
         //When a state is clicked
@@ -209,7 +191,7 @@ d3.csv("social-movements.csv", function(data) {
             active = d3.select(this).classed("active", true);
             d3.selectAll(".state").transition().style("fill", state_color);
 
-            g.selectAll("circle")
+            var movementCircle = g.selectAll("circle")
                 .data(data)
                 .enter()
                 .append("circle")
@@ -237,7 +219,9 @@ d3.csv("social-movements.csv", function(data) {
                     } else {
                         return "none";
                     }
-                });
+                })
+                .on("mouseover", showTooltip)
+                .on("mouseout", mouseOut);
 
             // calculates necessary parameters for zoom data in order to center the state and zoom in on it
             var bounds = path.bounds(d),
@@ -270,6 +254,26 @@ d3.csv("social-movements.csv", function(data) {
                 .call(zoom.transform, d3.zoomIdentity
                     .translate(0,0)
                     .scale(1));
+        }
+        
+        function showTooltip(d) {
+            div.transition()		
+               .duration(300)		
+               .style("opacity", 1);		
+            div.html("Social Movement: " + d.Movement + "<br/>" + 
+                     "Cause: " + d.Cause + "<br/>" +
+                     "Description: " + d.Description + "<br/>" +
+                     "Attendance: " + d.Attendance + "<br/>" +
+                     "City: " + d.City + "<br/>" +
+                     "Date: " + d.Date)	
+               .style("left", "890px")		
+               .style("top", "600px");
+        }
+        
+        function mouseOut(d) {
+            div.transition()
+               .duration(300)		
+               .style("opacity", 0);
         }
 
     });
