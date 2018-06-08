@@ -16,6 +16,13 @@ p {
     width: 75%;
 }
 
+.info {
+  display: block;
+  position: relative;
+  left: 0px;
+  top: -220px;
+}
+
 #viz {
     width: 1150px;
     margin: auto;
