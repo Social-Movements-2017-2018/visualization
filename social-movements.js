@@ -241,6 +241,15 @@ d3.csv("social-movements.csv", function(data) {
             d3.select(".legend")
                 .call(log);
             
+//            var dotsData = data;
+//            if(womenClicked) {
+//                dotsData.forEach() {
+//                    if (d.Movement === "Women's Rights") {
+//                        console.log("movement: women");
+//                    }     
+//                }
+//            }
+            
             var movementCircle = g.selectAll("circle")
                 .data(data)
                 .enter()
