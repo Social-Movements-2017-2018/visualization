@@ -1,0 +1,44 @@
+html {
+    width: auto;
+    margin: 20px;
+}
+body {
+  font-family: 'Raleway';
+  font-size: 13px;
+  margin: 0;
+}
+h1 {
+  text-align:center;
+  color:black;
+    font-weight: normal;
+}
+p {
+    width: 75%;
+}
+
+#viz {
+    width: 1150px;
+    margin: auto;
+}
+div.tooltip {
+  position: absolute;			
+  text-align: left;			
+  width: 250px;					
+  height: 100px;					
+  padding: 5px;		
+  background: white;	
+  border: 0px;		
+  border-radius: 8px;			
+  pointer-events: none;			
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  left: 874px;
+  top: -450px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
