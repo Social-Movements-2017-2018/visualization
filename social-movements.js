@@ -107,6 +107,10 @@ var infoSvg = d3.select("body")
 var div = d3.select("body").append("div")
             .attr("class", "tooltip")
             .style("opacity", 0);
+// Checkboxes
+var checkboxes = d3.select("body").append("div")
+            .attr("class", "checkboxes")
+            .style("opacity", 0);
 
 var g = svg.append("g");
 

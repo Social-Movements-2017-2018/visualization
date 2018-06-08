@@ -31,3 +31,14 @@ div.tooltip {
   border-radius: 8px;			
   pointer-events: none;			
 }
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  left: 874px;
+  top: -450px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
