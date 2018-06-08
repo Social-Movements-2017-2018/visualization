@@ -189,6 +189,7 @@ d3.csv("social-movements.csv", function(data) {
                     .style("stroke", "white")
                     .style("stroke-width", 1)
                      .on("click", clicked);
+                    d3.select(this).style("opacity", ".4");
         }
         
         //When a state is clicked
@@ -302,14 +303,16 @@ d3.csv("social-movements.csv", function(data) {
                      "Attendance: " + d.Attendance + "<br/>" +
                      "City: " + d.City + "<br/>" +
                      "Date: " + d.Date)	
-               .style("left", "890px")		
+               .style("left", "890px")
                .style("top", "600px");
+                d3.select(this).style("stroke", "black");
         }
         
         function mouseOut(d) {
             div.transition()
                .duration(300)		
                .style("opacity", 0);
+            d3.select(this).style("stroke", "none");
         }
 
     });
