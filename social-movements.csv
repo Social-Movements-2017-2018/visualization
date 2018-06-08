@@ -303,14 +303,14 @@ Lon,Lat,City,State,Date,Attendance,Movement,Cause,Description
 -117.0002,46.7324,Moscow,ID,2017-02-04,650,Racial Justice,Immigrant Rights,immigration ban
 -112.4401098,42.8688613,Pocatello,ID,2017-04-22,500,U.S. Politics,Scientific Funding,March for Science
 -116.5532476,48.2765903,Sandpoint,ID,2018-01-20,951,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
--86.5342881,39.1670396,Bloomington,IL,2017-02-11,1000,Women's Rights,Reproductive Rights,Supporting Planned Parenthood
+-88.9937000,40.4842000,Bloomington,IL,2017-02-11,1000,Women's Rights,Reproductive Rights,Supporting Planned Parenthood
 -89.216655,37.7274692,Carbondale,IL,2018-01-20,1000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
 -88.2433829,40.1164205,Champaign,IL,2017-04-22,5000,U.S. Politics,Scientific Funding,March for Science
 -87.6244212,41.8755546,Chicago,IL,2017-04-22,49000,U.S. Politics,Scientific Funding,March for Science
 -87.6244212,41.8755546,Chicago,IL,2017-04-15,2900,U.S. Politics,Politician Opposition,demand Trump tax returns
 -87.6244212,41.8755546,Chicago,IL,2017-04-29,2000,Environmental & Food Justice,Climate Justice,People's Climate March
 -87.6244212,41.8755546,Chicago,IL,2017-08-26,2000,Racial Justice,Anti-Racism,Rally against hate
--75.9279495,40.335345,Chicago,IL,2017-12-04,1000,U.S. Politics,Anti-Budget Cuts,Protesting GOP tax plan
+-87.6244212,41.8755546,Chicago,IL,2017-12-04,1000,U.S. Politics,Anti-Budget Cuts,Protesting GOP tax plan
 -87.6244212,41.8755546,Chicago,IL,2017-02-19,2000,U.S. Politics,Politician Opposition,anti-Trump
 -87.6244212,41.8755546,Chicago,IL,2017-02-20,1200,U.S. Politics,Politician Opposition,Not My President Day; anti-Trump
 -87.6244212,41.8755546,Chicago,IL,2017-02-16,1100,Racial Justice,Immigrant Rights,Against immigration executive order
@@ -325,7 +325,7 @@ Lon,Lat,City,State,Date,Attendance,Movement,Cause,Description
 -87.6244212,41.8755546,Chicago,IL,2017-09-04,2000,Workers & Labor Rights,Living Wages,Rally for higher wages
 -89.5800978,40.666149,East Peoria,IL,2018-01-20,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
 -88.2811895,42.0372487,Elgin,IL,2018-01-20,800,Racial Justice,Immigrant Rights,Rallying for DREAM Act
--85.8419246,40.2769834,Elwood,IL,2017-12-19,600,Environmental & Food Justice,Environmental Protection,Protesting new construction proposal
+-88.1117000,41.4039000,Elwood,IL,2017-12-19,600,Environmental & Food Justice,Environmental Protection,Protesting new construction proposal
 -89.5891008,40.6938609,Peoria,IL,2017-04-22,500,U.S. Politics,Scientific Funding,March for Science
 -89.5891008,40.6938609,Peoria,IL,2017-02-11,2500,Women's Rights,Reproductive Rights,Supporting Planned Parenthood
 -89.093966,42.2713945,Rockford,IL,2018-01-20,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
@@ -333,11 +333,11 @@ Lon,Lat,City,State,Date,Attendance,Movement,Cause,Description
 -89.6443688,39.7989763,Springfield,IL,2018-02-28,500,U.S. Politics,Gun Control,Rallying for gun control
 -89.6443688,39.7989763,Springfield,IL,2018-01-20,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
 -87.7359,42.1081,Winnekta,IL,2017-07-25,600,U.S. Politics ,Anti-Budget Cuts,Protesting cuts to daycare assistance
--86.5342881,39.1670396,Bloomington,IN,2017-02-11,1500,Women's Rights,Reproductive Rights,Supoorting Planned Parenthood
--7.64738,4.57782,Evansville,IN,2017-04-22,550,U.S. Politics,Scientific Funding,March for Science
--89.6443688,39.7989763,Fort Wayne,IN,2018-01-21,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+87.5711000,39.1670396,Bloomington,IN,2017-02-11,1500,Women's Rights,Reproductive Rights,Supoorting Planned Parenthood
+-87.57110,37.97160,Evansville,IN,2017-04-22,550,U.S. Politics,Scientific Funding,March for Science
+-85.1394000,41.0793000,Fort Wayne,IN,2018-01-21,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
 -86.1583502,39.7683331,Indianapolis,IN,2017-04-22,6150,U.S. Politics,Scientific Funding,March for Science
--83.0567375,42.3486635,Indianapolis,IN,2017-02-20,650,Environmental & Food Justice,Environmental Protection,Rally for the Trees; in favor of a state Senate bill that would protect specific areas of state forest from logging or tree planting
+-86.1583502,39.7683331,Indianapolis,IN,2017-02-20,650,Environmental & Food Justice,Environmental Protection,Rally for the Trees; in favor of a state Senate bill that would protect specific areas of state forest from logging or tree planting
 -86.1583502,39.7683331,Indianapolis,IN,2018-01-20,4000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
 -86.1583502,39.7683331,Indianapolis,IN,2017-05-01,700,Workers & Labor Rights,Immigrant Rights,May Day; immigrant workers rights
 -86.2500066,41.6833813,South Bend,IN,2017-04-22,1128,U.S. Politics,Scientific Funding,March for Science
@@ -346,9 +346,9 @@ Lon,Lat,City,State,Date,Attendance,Movement,Cause,Description
 -95.677556,39.049011,Topeka,KS,2017-02-25,4000,U.S. Politics,Politician Opposition,anti-Trump; progressive
 -95.677556,39.049011,Topeka,KS,2018-01-21,2000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
 -97.3375448,37.6922361,Wichita,KS,2017-04-22,890,U.S. Politics,Scientific Funding,March for Science
--89.6443688,39.7989763,Wichita,KS,2018-01-20,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
--97.0780654,32.9342919,Covington,KY,2017-07-09,500,U.S. Politics ,Anti-Budget Cuts,Care Not Cuts
--85.7212545,38.2587156,Frankfurt,KY,2018-01-25,1000,U.S. Politics,Education,Rallying for educational choice
+-97.3375448,37.6922361,Wichita,KS,2018-01-20,500,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
+-84.5086000,39.0837000,Covington,KY,2017-07-09,500,U.S. Politics ,Anti-Budget Cuts,Care Not Cuts
+-84.8733000,38.2009000,Frankfurt,KY,2018-01-25,1000,U.S. Politics,Education,Rallying for educational choice
 -85.5644033,38.1942356,Jeffersontown,KY,2017-03-11,600,U.S. Politics ,Politician Opposition,protest visit by VP Pence
 -84.8966171,38.0372967,Lawrenceburg,KY,2017-02-21,1000,U.S. Politics,Politician Opposition,anti-Trump; outside Sen. Mitch McConnel meeting
 -84.4970393,38.0464066,Lexington,KY,2017-02-05,1000,Racial Justice,Immigrant Rights,immigration ban
@@ -361,7 +361,7 @@ Lon,Lat,City,State,Date,Attendance,Movement,Cause,Description
 -90.152855,29.984093,Metairie,LA,2017-07-16,700,Other,International Politics,symbolic plebiscite against the Venezuelan president
 -89.9750054503052,30.03280175,New Orleans,LA,2017-08-19,2000,Racial Justice,Anti-Racism,Protesting violence/racism in Charlottesville
 -89.9750054503052,30.03280175,New Orleans,LA,2018-01-20,15000,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
--97.0780654,32.9342919,New Orleans,LA,2017-07-02,529,U.S. Politics ,Politician Opposition,Impeach Trump
+-89.9750054503052,30.03280175,New Orleans,LA,2017-07-02,529,U.S. Politics ,Politician Opposition,Impeach Trump
 -89.9750054503052,30.03280175,New Orleans,LA,2017-05-07,500,Racial Justice,Anti-Racism,against confederate monument
 -92.4343035,31.3224044,Pineville,LA,2018-02-03,5600,U.S. Politics,Health Care,March against abortion
 -93.7651944,32.5221828,Shreveport,LA,2018-01-20,800,Women’s Rights,General Awareness,Empower Voters to Support Women's Rights
