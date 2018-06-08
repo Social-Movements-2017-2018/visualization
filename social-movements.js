@@ -85,7 +85,7 @@ var stateColor = d3.scaleThreshold()
 //Define color scale to sort data values into buckets of color
 var pointColor = d3.scaleThreshold()
               .domain([500,5000,50000,500000]) //Chosen input domain for color scale based on data
-              .range(["rgb(237,248,233)","rgb(186,228,179)","rgb(116,196,118)","rgb(49,163,84)","rgb(0,109,44)"]);
+              .range(["rgb(255,255,178","rgb(254,204,92)","rgb(253,141,60)","rgb(240,59,32)","rgb(189,0,38)"]);
               //Colors derived from ColorBrewer, by Cynthia Brewer
               //https://github.com/d3/d3-scale-chromatic
 
@@ -100,7 +100,6 @@ var svg = d3.select("body")
 var infoSvg = d3.select("body")
             .append("svg")
             .attr("class", "infoSvg")
-            .attr("style", "background-color: lightyellow")
             .attr("width", 300)
             .attr("height", h);
 
@@ -166,10 +165,12 @@ d3.csv("social-movements.csv", function(data) {
            .attr("d", path)
            .on("mouseover", showPointer)
            .style("fill", state_color)
+            .style("stroke", "white")
+            .style("stroke-width", 1)
            .on("click", clicked);
 
         function state_color(d) {
-            if (d3.select(this).classed("active")) return "#ddd";
+            if (d3.select(this).classed("active")) return "#fff8e7";
             //Get data value
             var attendance = d.properties.yearlyAttendance;
 
@@ -185,6 +186,8 @@ d3.csv("social-movements.csv", function(data) {
         function showPointer(d) {
             statePath.attr("style", "cursor: pointer")
                      .style("fill", state_color)
+                    .style("stroke", "white")
+                    .style("stroke-width", 1)
                      .on("click", clicked);
         }
         
@@ -192,10 +195,15 @@ d3.csv("social-movements.csv", function(data) {
         function clicked(d) {
             if (active.node() === this) return reset(); //current state in view
 
+            d3.select(".caption")
+                .text("Number of people in attendance");
             state_view = true;
             active.classed("active", false);
             active = d3.select(this).classed("active", true);
-            d3.selectAll(".state").transition().style("fill", state_color);
+            d3.selectAll(".state").transition()
+                .style("stroke", "white")
+                .style("stroke-width", 1)
+                .style("fill", state_color);
 
             var movementCircle = g.selectAll("circle")
                 .data(data)
@@ -221,7 +229,7 @@ d3.csv("social-movements.csv", function(data) {
                 .attr("r", 2)
                 .style("fill", function (point) {
                     if (stateCodetoName[point.State] === d.properties.name) {
-                        return "black";
+                        return pointColor(point.Attendance);
                     } else {
                         return "none";
                     }
@@ -244,6 +252,14 @@ d3.csv("social-movements.csv", function(data) {
                 .call(zoom.transform, d3.zoomIdentity
                     .translate(translate[0], translate[1])
                     .scale(scale));
+
+            var log = d3.legendColor()
+                .labelFormat(d3.format(".0f"))
+                .labels(d3.legendHelpers.thresholdLabels)
+                .scale(pointColor);
+
+            d3.select(".legend")
+                .call(log);
         }
 
         //Sets to original view by removing districts, recolorizing states, and returning to original zoom
@@ -252,7 +268,10 @@ d3.csv("social-movements.csv", function(data) {
             active.classed("active", false);
             active = d3.select(null);
 
-            d3.selectAll(".state").transition().style("fill", state_color);
+            d3.selectAll(".state").transition().style("fill", state_color)
+                .style("stroke", "white")
+                .style("stroke-width", 1);
+
             d3.selectAll(".point").remove();
 
             svg.transition()
@@ -260,6 +279,17 @@ d3.csv("social-movements.csv", function(data) {
                 .call(zoom.transform, d3.zoomIdentity
                     .translate(0,0)
                     .scale(1));
+
+            d3.select(".caption")
+                .text("Number of Direct Actions");
+
+            var log = d3.legendColor()
+                .labelFormat(d3.format(".0f"))
+                .labels(d3.legendHelpers.thresholdLabels)
+                .scale(stateColor);
+
+            d3.select(".legend")
+                .call(log);
         }
         
         function showTooltip(d) {
@@ -303,7 +333,7 @@ legend.append("text")
     .attr("y", -8)
     .attr("fill", "#000")
     .attr("text-anchor", "start")
-    .text("Total Yearly Attendance at Direct Actions");
+    .text("Number of Direct Actions");
 
 //Enables zooming for the map
 function zoomed() {
