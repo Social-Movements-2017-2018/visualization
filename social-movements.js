@@ -2,6 +2,9 @@
 * Sources:
 *   Zooming adapted from https://bl.ocks.org/ashenfad/48b4621bd3a9f1bb884a
 * */
+
+var womenClicked = true;
+
 var stateCodetoName = {
     "AL": "Alabama",
     "AK": "Alaska",
@@ -206,6 +209,30 @@ d3.csv("social-movements.csv", function(data) {
                 .style("stroke-width", 1)
                 .style("fill", state_color);
 
+            // calculates necessary parameters for zoom data in order to center the state and zoom in on it
+            var bounds = path.bounds(d),
+                dx = bounds[1][0] - bounds[0][0],
+                dy = bounds[1][1] - bounds[0][1],
+                x = (bounds[0][0] + bounds[1][0]) / 2,
+                y = (bounds[0][1] + bounds[1][1]) / 2,
+                scale = .9 / Math.max(dx / w, dy / h),
+                translate = [w / 2 - scale * x, h / 2 - scale * y];
+
+            // zooms in on state
+            svg.transition()
+                .duration(750)
+                .call(zoom.transform, d3.zoomIdentity
+                    .translate(translate[0], translate[1])
+                    .scale(scale));
+
+            var log = d3.legendColor()
+                .labelFormat(d3.format(".0f"))
+                .labels(d3.legendHelpers.thresholdLabels)
+                .scale(pointColor);
+
+            d3.select(".legend")
+                .call(log);
+            
             var movementCircle = g.selectAll("circle")
                 .data(data)
                 .enter()
@@ -237,31 +264,9 @@ d3.csv("social-movements.csv", function(data) {
                 })
                 .on("mouseover", showTooltip)
                 .on("mouseout", mouseOut);
-
-            // calculates necessary parameters for zoom data in order to center the state and zoom in on it
-            var bounds = path.bounds(d),
-                dx = bounds[1][0] - bounds[0][0],
-                dy = bounds[1][1] - bounds[0][1],
-                x = (bounds[0][0] + bounds[1][0]) / 2,
-                y = (bounds[0][1] + bounds[1][1]) / 2,
-                scale = .9 / Math.max(dx / w, dy / h),
-                translate = [w / 2 - scale * x, h / 2 - scale * y];
-
-            // zooms in on state
-            svg.transition()
-                .duration(750)
-                .call(zoom.transform, d3.zoomIdentity
-                    .translate(translate[0], translate[1])
-                    .scale(scale));
-
-            var log = d3.legendColor()
-                .labelFormat(d3.format(".0f"))
-                .labels(d3.legendHelpers.thresholdLabels)
-                .scale(pointColor);
-
-            d3.select(".legend")
-                .call(log);
         }
+        
+        
 
         //Sets to original view by removing districts, recolorizing states, and returning to original zoom
         function reset() {
@@ -313,6 +318,18 @@ d3.csv("social-movements.csv", function(data) {
                .duration(300)		
                .style("opacity", 0);
             d3.select(this).style("stroke", "none");
+        }
+        
+        //Handles checkboxes
+        document.getElementById("women").onclick = function (d) {
+            if (womenClicked) { 
+                womenClicked = false;
+                console.log("women = false")
+            }
+            else if (!womenClicked) {
+                womenClicked = true;
+                console.log("women = true")
+            }
         }
 
     });
