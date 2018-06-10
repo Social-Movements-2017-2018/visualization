@@ -56,3 +56,65 @@ div.tooltip {
   vertical-align: middle;
   float: right;
 }
+
+.info {
+    position: relative;
+    text-align: center;
+    left: 250px;
+    top: -200px; 
+    margin-bottom: 5px;
+    font-size: 13px;
+    width: 1000px;
+}
+
+.files {
+    position: relative;
+    text-align: center;
+    left: 100px;
+    top: -200px; 
+    margin-bottom: 5px;
+    font-size: 13px;
+    width: 600px;
+}
+
+.data_source {
+    position: relative;
+    text-align: center;
+    left: 275px;
+    top: -228px; 
+    margin-bottom: 5px;
+    font-size: 13px;
+    width: 600px;
+}
+
+.viz_source {
+    position: relative;
+    text-align: center;
+    left: 550px;
+    top: -256px; 
+    margin-bottom: 5px;
+    font-size: 13px;
+    width: 600px;
+}
+
+.code_sources {
+    position: relative;
+    text-align: center;
+    left: 750px;
+    top: -283px; 
+    margin-bottom: 5px;
+    font-size: 13px;
+    width: 600px;
+}
+
+.github {
+    position: relative;
+    text-align: center;
+    left: 410px;
+    top: -200px; 
+    margin-bottom: 5px;
+    font-size: 13px;
+    width: 600px;
+}
+
+
