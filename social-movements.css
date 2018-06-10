@@ -18,6 +18,7 @@ p {
 
 #viz {
     width: 1150px;
+    height: 600px;
     margin: auto;
 }
 div.tooltip {
@@ -41,4 +42,10 @@ div.tooltip {
   margin-bottom: 8px;
   cursor: pointer;
   font-size: 13px;
+  width: 300px;
+}
+
+.filter-check {
+  vertical-align: middle;
+  float: right;
 }
