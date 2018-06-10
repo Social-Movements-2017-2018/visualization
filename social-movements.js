@@ -138,14 +138,8 @@ d3.csv("social-movements.csv", function(data) {
             //Find each direct action that occured in that state
             for (var i = 0; i < data.length; i++) {
 
-                var dataMovement = data[i].Movement;
-                var dataCause = data[i].Cause;
-                var dataDescription = data[i].Description;
-                var dataAttendance = +data[i].Attendance;
-                var dataCity = data[i].City;
                 var dataState = stateCodetoName[data[i].State];
-                var dataDate = data[i].Date;
-            
+
                 //If match is found
                 if (dataState === jsonState) {
                     stateYearlyAttendance += 1;
@@ -231,6 +225,7 @@ d3.csv("social-movements.csv", function(data) {
                 .style("fill", function (point) {
                     if (stateCodetoName[point.State] === d.properties.name) {
                         return pointColor(point.Attendance);
+
                     } else {
                         return "none";
                     }
