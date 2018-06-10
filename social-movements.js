@@ -72,6 +72,10 @@ var zoom = d3.zoom()
     .scaleExtent([1, 32])
     .on("zoom", zoomed);
 
+// parsing date data
+var parseTime = d3.timeParse("%Y-%m-%d");
+    console.log(parseTime);
+
 //Define path generator
 var path = d3.geoPath()
                  .projection(projection);
@@ -121,7 +125,7 @@ d3.csv("social-movements.csv", function(data) {
     d3.json("unitedstates.json", function(json) {
 
         var state_view = false;
-
+        
         d3.select("svg").insert("rect", "g")
             .attr("class", "background")
             .attr("fill", "white")
