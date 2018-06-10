@@ -2,6 +2,17 @@
 * Sources:
 *   Zooming adapted from https://bl.ocks.org/ashenfad/48b4621bd3a9f1bb884a
 * */
+
+var womenClicked = true;
+var politicsClicked = true;
+var racialClicked = true;
+var religiousClicked = true;
+var lgbtqClicked = true;
+var enviroClicked = true;
+var housingClicked = true;
+var workersClicked = true;
+var otherClicked = true;
+
 var stateCodetoName = {
     "AL": "Alabama",
     "AK": "Alaska",
@@ -191,7 +202,7 @@ d3.csv("social-movements.csv", function(data) {
             if (active.node() === this) return reset(); //current state in view
 
             d3.select(".caption")
-                .text("Number of people in attendance");
+                .text("People in Attendance");
             state_view = true;
             active.classed("active", false);
             active = d3.select(this).classed("active", true);
@@ -200,6 +211,39 @@ d3.csv("social-movements.csv", function(data) {
                 .style("stroke-width", 1)
                 .style("fill", state_color);
 
+            // calculates necessary parameters for zoom data in order to center the state and zoom in on it
+            var bounds = path.bounds(d),
+                dx = bounds[1][0] - bounds[0][0],
+                dy = bounds[1][1] - bounds[0][1],
+                x = (bounds[0][0] + bounds[1][0]) / 2,
+                y = (bounds[0][1] + bounds[1][1]) / 2,
+                scale = .9 / Math.max(dx / w, dy / h),
+                translate = [w / 2 - scale * x, h / 2 - scale * y];
+
+            // zooms in on state
+            svg.transition()
+                .duration(750)
+                .call(zoom.transform, d3.zoomIdentity
+                    .translate(translate[0], translate[1])
+                    .scale(scale));
+
+            var log = d3.legendColor()
+                .labelFormat(d3.format(".0f"))
+                .labels(d3.legendHelpers.thresholdLabels)
+                .scale(pointColor);
+
+            d3.select(".legend")
+                .call(log);
+            
+//            var dotsData = data;
+//            if(womenClicked) {
+//                dotsData.forEach() {
+//                    if (d.Movement === "Women's Rights") {
+//                        console.log("movement: women");
+//                    }     
+//                }
+//            }
+            
             var movementCircle = g.selectAll("circle")
                 .data(data)
                 .enter()
@@ -232,31 +276,9 @@ d3.csv("social-movements.csv", function(data) {
                 })
                 .on("mouseover", showTooltip)
                 .on("mouseout", mouseOut);
-
-            // calculates necessary parameters for zoom data in order to center the state and zoom in on it
-            var bounds = path.bounds(d),
-                dx = bounds[1][0] - bounds[0][0],
-                dy = bounds[1][1] - bounds[0][1],
-                x = (bounds[0][0] + bounds[1][0]) / 2,
-                y = (bounds[0][1] + bounds[1][1]) / 2,
-                scale = .9 / Math.max(dx / w, dy / h),
-                translate = [w / 2 - scale * x, h / 2 - scale * y];
-
-            // zooms in on state
-            svg.transition()
-                .duration(750)
-                .call(zoom.transform, d3.zoomIdentity
-                    .translate(translate[0], translate[1])
-                    .scale(scale));
-
-            var log = d3.legendColor()
-                .labelFormat(d3.format(".0f"))
-                .labels(d3.legendHelpers.thresholdLabels)
-                .scale(pointColor);
-
-            d3.select(".legend")
-                .call(log);
         }
+        
+        
 
         //Sets to original view by removing districts, recolorizing states, and returning to original zoom
         function reset() {
@@ -308,6 +330,98 @@ d3.csv("social-movements.csv", function(data) {
                .duration(300)		
                .style("opacity", 0);
             d3.select(this).style("stroke", "none");
+        }
+        
+        //Handles checkboxes
+        document.getElementById("women").onclick = function (d) {
+            if (womenClicked) { 
+                womenClicked = false;
+                console.log("women = false")
+            }
+            else if (!womenClicked) {
+                womenClicked = true;
+                console.log("women = true")
+            }
+        }
+        document.getElementById("politics").onclick = function (d) {
+            if (politicsClicked) { 
+                politicsClicked = false;
+                console.log("politics = false")
+            }
+            else if (!politicsClicked) {
+                politicsClicked = true;
+                console.log("politics = true")
+            }
+        }
+        document.getElementById("racial").onclick = function (d) {
+            if (racialClicked) { 
+                racialClicked = false;
+                console.log("racial = false")
+            }
+            else if (!racialClicked) {
+                racialClicked = true;
+                console.log("racial = true")
+            }
+        }
+        document.getElementById("religious").onclick = function (d) {
+            if (religiousClicked) { 
+                religiousClicked = false;
+                console.log("religious = false")
+            }
+            else if (!religiousClicked) {
+                religiousClicked = true;
+                console.log("religious = true")
+            }
+        }
+        document.getElementById("lgbtq+").onclick = function (d) {
+            if (lgbtqClicked) { 
+                lgbtqClicked = false;
+                console.log("lgbtq+ = false")
+            }
+            else if (!lgbtqClicked) {
+                lgbtqClicked = true;
+                console.log("lgbtq+ = true")
+            }
+        }
+        document.getElementById("enviro").onclick = function (d) {
+            if (enviroClicked) { 
+                enviroClicked = false;
+                console.log("enviro = false")
+            }
+            else if (!enviroClicked) {
+                enviroClicked = true;
+                console.log("enviro = true")
+            }
+        }
+        document.getElementById("housing").onclick = function (d) {
+            if (housingClicked) { 
+                housingClicked = false;
+                console.log("housing = false")
+            }
+            else if (!housingClicked) {
+                housingClicked = true;
+                console.log("housing = true")
+            }
+        }
+        document.getElementById("workers").onclick = function (d) {
+            if (workersClicked) { 
+                workersClicked = false;
+                console.log("workers = false")
+            }
+            else if (!workersClicked) {
+                workersClicked = true;
+                console.log("workers = true")
+            }
+        }
+        document.getElementById("other").onclick = function (d) {
+            if (otherClicked) { 
+                otherClicked = false;
+                console.log("other = false")
+            }
+            else if (!otherClicked) {
+                otherClicked = true;
+                console.log("other = true")
+            }
         }
 
     });
