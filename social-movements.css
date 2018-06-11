@@ -49,10 +49,10 @@ div.tooltip {
   margin-bottom: 8px;
   cursor: pointer;
   font-size: 13px;
-  width: 300px;
+  width: 250px;
 }
 
-.filter-check {
+input {
   vertical-align: middle;
   float: right;
 }
