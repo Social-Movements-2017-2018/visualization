@@ -2,16 +2,17 @@
 * Sources:
 *   Zooming adapted from https://bl.ocks.org/ashenfad/48b4621bd3a9f1bb884a
 * */
-
-var womenClicked = true;
-var politicsClicked = true;
-var racialClicked = true;
-var religiousClicked = true;
-var lgbtqClicked = true;
-var enviroClicked = true;
-var housingClicked = true;
-var workersClicked = true;
-var otherClicked = true;
+var categories = {
+    "Women's Rights": true,
+    "U.S. Politics": true,
+    "Racial Justice": true,
+    "Religious & Cultural Justice": true,
+    "LGBTQ+ Rights": true,
+    "Environmental & Food Justice": true,
+    "Housing Justice": true,
+    "Workers & Labor Rights": true,
+    "Other": true
+}
 
 var stateCodetoName = {
     "AL": "Alabama",
@@ -72,6 +73,7 @@ var stateCodetoName = {
 var w = 850;
 var h = 600;
 var active = d3.select(null);
+var state = "";
 
 //Define map projection
 var projection = d3.geoAlbersUsa()
@@ -149,14 +151,8 @@ d3.csv("social-movements.csv", function(data) {
             //Find each direct action that occured in that state
             for (var i = 0; i < data.length; i++) {
 
-                var dataMovement = data[i].Movement;
-                var dataCause = data[i].Cause;
-                var dataDescription = data[i].Description;
-                var dataAttendance = +data[i].Attendance;
-                var dataCity = data[i].City;
                 var dataState = stateCodetoName[data[i].State];
-                var dataDate = data[i].Date;
-            
+
                 //If match is found
                 if (dataState === jsonState) {
                     stateYearlyAttendance += 1;
@@ -212,6 +208,7 @@ d3.csv("social-movements.csv", function(data) {
             state_view = true;
             active.classed("active", false);
             active = d3.select(this).classed("active", true);
+            state = d.properties.name;
             d3.selectAll(".state").transition()
                 .style("stroke", "white")
                 .style("stroke-width", 1)
@@ -273,7 +270,8 @@ d3.csv("social-movements.csv", function(data) {
                 })
                 .attr("r", 2)
                 .style("fill", function (point) {
-                    if (stateCodetoName[point.State] === d.properties.name) {
+                    var category = point.Movement;
+                    if (stateCodetoName[point.State] === d.properties.name && categories[category]) {
                         return pointColor(point.Attendance);
                     } else {
                         return "none";
@@ -283,8 +281,6 @@ d3.csv("social-movements.csv", function(data) {
                 .on("mouseout", mouseOut);
         }
         
-        
-
         //Sets to original view by removing districts, recolorizing states, and returning to original zoom
         function reset() {
             state_view = false;
@@ -339,94 +335,119 @@ d3.csv("social-movements.csv", function(data) {
         
         //Handles checkboxes
         document.getElementById("women").onclick = function (d) {
-            if (womenClicked) { 
-                womenClicked = false;
+            if (categories["Women's Rights"]) {
+                categories["Women's Rights"] = false;
                 console.log("women = false")
             }
-            else if (!womenClicked) {
-                womenClicked = true;
+            else if (!categories["Women's Rights"]) {
+                categories["Women's Rights"] = true;
                 console.log("women = true")
             }
+            checkHandler();
+
         }
         document.getElementById("politics").onclick = function (d) {
-            if (politicsClicked) { 
-                politicsClicked = false;
+            if (categories["U.S. Politics"]) {
+                categories["U.S. Politics"] = false;
                 console.log("politics = false")
             }
-            else if (!politicsClicked) {
-                politicsClicked = true;
+            else if (!categories["U.S. Politics"]) {
+                categories["U.S. Politics"] = true;
                 console.log("politics = true")
             }
+            checkHandler();
         }
         document.getElementById("racial").onclick = function (d) {
-            if (racialClicked) { 
-                racialClicked = false;
+            if (categories["Racial Justice"]) {
+                categories["Racial Justice"] = false;
                 console.log("racial = false")
             }
-            else if (!racialClicked) {
-                racialClicked = true;
+            else if (!categories["Racial Justice"]) {
+                categories["Racial Justice"] = true;
                 console.log("racial = true")
             }
+            checkHandler();
         }
         document.getElementById("religious").onclick = function (d) {
-            if (religiousClicked) { 
-                religiousClicked = false;
+            if (categories["Religious & Cultural Justice"]) {
+                categories["Religious & Cultural Justice"] = false;
                 console.log("religious = false")
             }
-            else if (!religiousClicked) {
-                religiousClicked = true;
+            else if (!categories["Religious & Cultural Justice"]) {
+                categories["Religious & Cultural Justice"] = true;
                 console.log("religious = true")
             }
+            checkHandler();
         }
         document.getElementById("lgbtq+").onclick = function (d) {
-            if (lgbtqClicked) { 
-                lgbtqClicked = false;
+            if (categories["LGBTQ+ Rights"]) {
+                categories["LGBTQ+ Rights"] = false;
                 console.log("lgbtq+ = false")
             }
-            else if (!lgbtqClicked) {
-                lgbtqClicked = true;
+            else if (!categories["LGBTQ+ Rights"]) {
+                categories["LGBTQ+ Rights"] = true;
                 console.log("lgbtq+ = true")
             }
+            checkHandler();
         }
         document.getElementById("enviro").onclick = function (d) {
-            if (enviroClicked) { 
-                enviroClicked = false;
+            if (categories["Environmental & Food Justice"]) {
+                categories["Environmental & Food Justice"] = false;
                 console.log("enviro = false")
             }
-            else if (!enviroClicked) {
-                enviroClicked = true;
+            else if (!categories["Environmental & Food Justice"]) {
+                categories["Environmental & Food Justice"] = true;
                 console.log("enviro = true")
             }
+            checkHandler();
         }
         document.getElementById("housing").onclick = function (d) {
-            if (housingClicked) { 
-                housingClicked = false;
+            if (categories["Housing Justice"]) {
+                categories["Housing Justice"] = false;
                 console.log("housing = false")
             }
-            else if (!housingClicked) {
-                housingClicked = true;
+            else if (!categories["Housing Justice"]) {
+                categories["Housing Justice"] = true;
                 console.log("housing = true")
             }
+            checkHandler();
         }
         document.getElementById("workers").onclick = function (d) {
-            if (workersClicked) { 
-                workersClicked = false;
+            if (categories["Workers & Labor Rights"]) {
+                categories["Workers & Labor Rights"] = false;
                 console.log("workers = false")
             }
-            else if (!workersClicked) {
-                workersClicked = true;
+            else if (!categories["Workers & Labor Rights"]) {
+                categories["Workers & Labor Rights"] = true;
                 console.log("workers = true")
             }
+            checkHandler();
         }
         document.getElementById("other").onclick = function (d) {
-            if (otherClicked) { 
-                otherClicked = false;
+            if (categories["Other"]) {
+                categories["Other"] = false;
                 console.log("other = false")
             }
-            else if (!otherClicked) {
-                otherClicked = true;
+            else if (!categories["Other"]) {
+                categories["Other"] = true;
                 console.log("other = true")
             }
+            checkHandler();
+        }
+
+        function checkHandler() {
+            g.selectAll("circle")
+                .style("fill", function (d) {
+                    if (!state_view) return "none";
+                    console.log(state + " " + d.State);
+                    if (categories[d.Movement] && state === stateCodetoName[d.State]) {
+                        console.log("turning on");
+                        return pointColor(d.Attendance);
+                    }
+                    else {
+                        return "none";
+                    }
+                })
         }
 
     });
