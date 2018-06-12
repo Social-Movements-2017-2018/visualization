@@ -31,13 +31,27 @@ p {
 div.tooltip {
   position: absolute;			
   text-align: left;			
-  width: 250px;					
+  width: 300px;
   height: 100px;					
   padding: 5px;		
   background: white;	
   border: 0px;		
   border-radius: 8px;			
   pointer-events: none;			
+}
+
+#tooltiptable {
+    width: 100%;
+}
+
+td {
+    vertical-align: top;
+}
+tr {
+    padding-right: 3px;
+}
+.right {
+    text-align: right;
 }
 
 /* Customize the label (the container) */
@@ -49,7 +63,7 @@ div.tooltip {
   margin-bottom: 8px;
   cursor: pointer;
   font-size: 13px;
-  width: 250px;
+  width: 300px;
 }
 
 input {

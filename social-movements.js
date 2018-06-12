@@ -315,12 +315,13 @@ d3.csv("social-movements.csv", function(data) {
             div.transition()		
                .duration(300)		
                .style("opacity", 1);		
-            div.html("Social Movement: " + d.Movement + "<br/>" + 
-                     "Cause: " + d.Cause + "<br/>" +
-                     "Description: " + d.Description + "<br/>" +
-                     "Attendance: " + d.Attendance + "<br/>" +
-                     "City: " + d.City + "<br/>" +
-                     "Date: " + d.Date)	
+            div.html("<table id='tooltiptable'><tbody>" +
+                         "<tr><td>Social Movement</td><td class='right'>" + d.Movement + "</td></tr>" +
+                         "<tr><td>Cause</td><td class='right'>" + d.Cause + "</td></tr>" +
+                         "<tr><td>Description</td><td class='right'>" + d.Description + "</td></tr>" +
+                         "<tr><td>Attendance</td><td class='right'>" + d.Attendance + "</td></tr>" +
+                         "<tr><td>City</td><td class='right'>" + d.City + "</td></tr>" +
+                         "<tr><td>Date</td><td class='right'>" + d.Date + "</td></tr>")
                .style("left", "890px")
                .style("top", "600px");
                 d3.select(this).style("stroke", "black");
