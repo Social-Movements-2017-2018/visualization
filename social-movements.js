@@ -174,7 +174,10 @@ d3.csv("social-movements.csv", function(data) {
            .style("fill", state_color)
             .style("stroke", "white")
             .style("stroke-width", 1)
-           .on("click", clicked);
+           .on("click", clicked)
+            .on("mouseout", function () {
+                d3.select(this).style("opacity", "1");
+            });
 
         function state_color(d) {
             if (d3.select(this).classed("active")) return "#fff8e7";
@@ -196,7 +199,7 @@ d3.csv("social-movements.csv", function(data) {
                     .style("stroke", "white")
                     .style("stroke-width", 1)
                      .on("click", clicked);
-                    d3.select(this).style("opacity", ".4");
+            d3.select(this).style("opacity", ".4");
         }
         
         //When a state is clicked
@@ -237,17 +240,12 @@ d3.csv("social-movements.csv", function(data) {
 
             d3.select(".legend")
                 .call(log);
-            
-//            var dotsData = data;
-//            if(womenClicked) {
-//                dotsData.forEach() {
-//                    if (d.Movement === "Women's Rights") {
-//                        console.log("movement: women");
-//                    }     
-//                }
-//            }
-            
-            var movementCircle = g.selectAll("circle")
+
+            console.log(d.properties.name);
+            g.selectAll("circle")
+                .remove();
+
+            g.selectAll("circle")
                 .data(data)
                 .enter()
                 .append("circle")
@@ -268,7 +266,7 @@ d3.csv("social-movements.csv", function(data) {
                         return -1;
                     }
                 })
-                .attr("r", 2)
+                .attr("r", 5 )
                 .style("fill", function (point) {
                     var category = point.Movement;
                     if (stateCodetoName[point.State] === d.properties.name && categories[category]) {
@@ -280,7 +278,7 @@ d3.csv("social-movements.csv", function(data) {
                 .on("mouseover", showTooltip)
                 .on("mouseout", mouseOut);
         }
-        
+
         //Sets to original view by removing districts, recolorizing states, and returning to original zoom
         function reset() {
             state_view = false;
@@ -478,6 +476,10 @@ legend.append("text")
 function zoomed() {
     g.style("stroke-width", 1.5 / d3.event.transform.k + "px");
     g.attr("transform", d3.event.transform);
+    d3.selectAll(".point")
+        .attr("r", function () {
+            return 5 / d3.event.transform.k;
+        })
 }
 
 function stopped() {
