@@ -1,0 +1,129 @@
+<!---Isolating Forces: Presentation Assignment 1--->
+<!---Claire Watts, cdwatts@ucsc.edu--->
+<!---Code via https://bl.ocks.org/mbostock/b1f0ee970299756bc12d60aedf53c13b---> 
+<!DOCTYPE html>
+<meta charset="utf-8">
+<canvas width="960" height="500"></canvas>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+/* --------------------------------------------------------------------
+Creates an array containing an arithmetic progression of 400 nodes. The
+color of the first 200 nodes is set to brown and the rest are steelblue.
+----------------------------------------------------------------------*/ 
+var nodes = d3.range(400).map(function(i) {
+  return {
+    index: i,
+    color: i < 200 ? "brown" : "steelblue"
+  };
+});
+    
+/* --------------------------------------------------------------------
+Creates the HTML canvas element by specifying the "canvas" CSS selector.
+Creates a 2d drawing context on the canvas (a CanvasRenderingContext2D
+object represents a two-dimensional rendering context). Width and height
+of the canvas are also specified.
+----------------------------------------------------------------------*/ 
+var canvas = document.querySelector("canvas"),
+    context = canvas.getContext("2d"),
+    width = canvas.width,
+    height = canvas.height;
+
+/* --------------------------------------------------------------------
+Creates a new simulation with the specified array of nodes (and no 
+forces to begin with). The simulator starts automatically.
+----------------------------------------------------------------------*/ 
+var simulation = d3.forceSimulation(nodes)
+    /* ----------------------------------------------------------------
+    Creates a new positioning force along the y-axis towards the given
+    position y, which in this case defaults to 0, by assigning the
+    force for the specified name "y" and returning this simulation.
+    ------------------------------------------------------------------*/
+    .force("y", d3.forceY())
+    /* ----------------------------------------------------------------
+    Assigns a force for the specified name "brown" and returns this 
+    simulation. The force is isolated so it only affects nodes with
+    the color "brown". This is done using the isolate function to return
+    the desired force, which accepts two parameters: the force to
+    inflict and the filter function, which returns true for nodes that
+    are "brown". Thus, only nodes that are brown are selected and forced
+    to move along the x-axis towards the given position x, which in this
+    case is -(canvas.width/6).
+    ------------------------------------------------------------------*/
+    .force("brown", isolate(d3.forceX(-width / 6), function(d) { return d.color === "brown"; }))
+    /* ----------------------------------------------------------------
+    Assigns a force for the specified name "steelblue" and returns this 
+    simulation. The force is isolated so it only affects nodes with
+    the color "steelblue". This is done using the isolate function to
+    return the desired force, which accepts two parameters: the force to
+    inflict and the filter function, which returns true for nodes that
+    are "steelblue". Thus, only nodes that are steelblue are selected
+    and forced to move along the x-axis towards the given position x,
+    which in this case is +(canvas.width/6).
+    ------------------------------------------------------------------*/
+    .force("steelblue", isolate(d3.forceX(width / 6), function(d) { return d.color === "steelblue"; }))
+    /* ----------------------------------------------------------------
+    Creates a new many-body force, which applies mutually amongst all 
+    nodes. Since the specified stength is negative, it is used to
+    simulate electrostatic charge (repulsion) which causes nodes to 
+    repel each other. Specifying the strength re-evaluates the strength
+    accessor for each node and returns this force. The strength of each
+    node is only recomputed when the force is initialized, as it is
+    above for each half of the nodes.
+    ------------------------------------------------------------------*/
+    .force("charge", d3.forceManyBody().strength(-10))
+    /* ----------------------------------------------------------------
+    Sets the event listener for the specified typename "tick" and
+    returns this simulation. After each tick of the simulation's internal
+    timer, function ticked is triggered.
+    ------------------------------------------------------------------*/
+    .on("tick", ticked);
+
+/* --------------------------------------------------------------------
+This function clears all pixels in the drawing context, saves the entire 
+cleared state of the canvas by pushing it onto the drawing state stack,
+and moves the canvas and its origin x horizontally and y vertically to
+the center on the original canvas. Draws each node and then restores the
+most recently saved cleared canvas state by removing the top entry in
+the drawing state stack.
+----------------------------------------------------------------------*/ 
+function ticked() {
+  context.clearRect(0, 0, width, height);
+  context.save();
+  context.translate(width / 2, height / 2);
+  nodes.forEach(drawNode);
+  context.restore();
+}
+
+/* --------------------------------------------------------------------
+This function draws a node. Creates a new path by emptying the list of
+sub-paths and moves the starting point of a new sub-path three spaces
+horizontally from the (x, y) coordinates of the given node d. 
+Adds an arc to the path which is centered at node d's (x, y) position
+with a radius of 3. The angle at which the arc starts is 0 radians and
+it ends at 2PI radians. Specifies the color to be used as the 
+corresponding node color and fills the current path with the current
+fill style.
+----------------------------------------------------------------------*/ 
+function drawNode(d) {
+  context.beginPath();
+  context.moveTo(d.x + 3, d.y);
+  context.arc(d.x, d.y, 3, 0, 2 * Math.PI);
+  context.fillStyle = d.color;
+  context.fill();
+}
+
+/* --------------------------------------------------------------------
+This function isolates the given force so that it applies to specific
+nodes. This is done using nodes.filter, which creates a new array of 
+nodes that pass the test implemented by the given filter function. Then
+force.initialize assigns this new array of nodes to the given force and
+the isolated force is returned.
+----------------------------------------------------------------------*/ 
+function isolate(force, filter) {
+  var initialize = force.initialize;
+  force.initialize = function() { initialize.call(force, nodes.filter(filter)); };
+  return force;
+}
+
+</script>
