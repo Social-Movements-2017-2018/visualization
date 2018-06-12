@@ -16,49 +16,49 @@
   </head>
     
   <body>
-    <h1><bold>Participation in Social Movements in the U.S. 2017-2018</bold></h1>
+    <div class="title"><h1><bold>Participation in Social Movements in the U.S. 2017-2018</bold></h1></div>
       
-    <p class="intro">Throughout U.S. history, there are been various social movements that have been the catalysts of change and have made the world what it is today. Direct actions such as protests, rallies, marches, and public demonstrations have been utilized to propel such movements forward. This data visualization shows how many people have been in attendance at direct actions that have taken place in U.S. cities from February 2017 to February 2018, in support of various well-known social movements. It also depicts the number of direct actions that have taken place within each state during a specified time range.</p>
-      
+    <div class="intro"><p>Throughout U.S. history, there are been various social movements that have been the catalysts of change and have made the world what it is today. Direct actions such as protests, rallies, marches, and public demonstrations have been utilized to propel such movements forward. This data visualization shows how many people have been in attendance at direct actions that have taken place in U.S. cities from February 2017 to February 2018, in support of various well-known social movements. It also depicts the number of direct actions that have taken place within each state during a specified time range.</p></div>
+    
     <!-- D3.js code -->
-    <script type="text/javascript" src="social-movements.js"></script>
+    <div class="dataviz"><script type="text/javascript" src="social-movements.js"></script></div>
 
     <!-- checkboxes -->
     <div id="container" style="">
-        
-        <label class="container" id="women">Women's Rights
+
+        <label class="movements" id="women">Women's Rights
           <input type="checkbox" checked="checked">
         </label>
 
-        <label class="container" id="politics">U.S. Politics
+        <label class="movements" id="politics">U.S. Politics
           <input type="checkbox" checked="checked">
         </label>
 
-        <label class="container" id="racial">Racial Justice
+        <label class="movements" id="racial">Racial Justice
           <input type="checkbox" checked="checked">
         </label>
 
-        <label class="container" id="religious">Religious & Cultural Justice
+        <label class="movements" id="religious">Religious & Cultural Justice
           <input type="checkbox" checked="checked">
         </label>
 
-        <label class="container" id="lgbtq+">LGBTQ+ Rights 
+        <label class="movements" id="lgbtq+">LGBTQ+ Rights 
           <input type="checkbox" checked="checked">
         </label>
 
-        <label class="container" id="enviro">Environmental & Food Justice 
+        <label class="movements" id="enviro">Environmental & Food Justice 
           <input type="checkbox" checked="checked">
         </label>
 
-        <label class="container" id="housing">Housing Justice
+        <label class="movements" id="housing">Housing Justice
           <input type="checkbox" checked="checked">
         </label>
 
-        <label class="container" id="workers">Workers & Labor Rights
+        <label class="movements" id="workers">Workers & Labor Rights
           <input type="checkbox" checked="checked">
         </label>
 
-        <label class="container" id="other">Other
+        <label class="movements" id="other">Other
           <input type="checkbox" checked="checked">
         </label>
     </div>
@@ -71,35 +71,34 @@
 
             <p> CMPS 165: Data Programming for Visualization - Spring 2018</p>
         </div>
-        <div class="files">
-            <p><b>Files Submitted:</b></p>
-            <p>index.html</p>
-            <p>social-movements.js</p>
-            <p>social-movements.css</p>
-            <p>social-movements.csv</p>
-            <p>unitedstates.json</p>
-            <p>city_to_coordinates.py</p>
-        </div>
-        <div class="data_source">
-            <p><b>Data Sources:</b></p>
-            <a href="https://sites.google.com/view/crowdcountingconsortium/view-download-the-data?authuser=0">Crowd Counting Consortium Data</a>
-            <br><br>
-            <a href="https://gadm.org/download_country_v3.html">GADM United States Coordinates</a>
-            <br><br>
-            <a href="http://shop.oreilly.com/product/0636920037316.do"><i>Interactive Data Visualization for the Web</i></a>
-        </div> 
-        <div class="viz_source">
-            <p><b>Visualization Sources:</b></p>
-            <a href="https://sites.google.com/view/crowdcountingconsortium/home">Crowd Counting Consortium Maps</a>
-            <br><br>
-            <a href="https://www.bu.edu/research/articles/counting-american-protests/">Counting Protests Maps</a>
-        </div>
-          <div class="code_sources">
-            <p><b>Code Sources:</b></p>
-            <a href="http://shop.oreilly.com/product/0636920037316.do"><i>Interactive Data Visualization for the Web</i></a>
+        <div class="last">
+            <div class="files">
+                <p><b>Files Submitted:</b></p>
+                <p>index.html</p>
+                <p>social-movements.js</p>
+                <p>social-movements.css</p>
+                <p>social-movements.csv</p>
+                <p>unitedstates.json</p>
+                <p>city_to_coordinates.py</p>
+            </div>
+            <div class="data_source">
+                <p><b>Data Sources:</b></p>
+                <p><a href="https://sites.google.com/view/crowdcountingconsortium/view-download-the-data?authuser=0">Crowd Counting Consortium Data</a></p>
+                <p><a href="https://gadm.org/download_country_v3.html">GADM United States Coordinates</a></p>
+                <p><a href="http://shop.oreilly.com/product/0636920037316.do"><i>Interactive Data Visualization for the Web</i></a></p>
+            </div> 
+            <div class="viz_source">
+                <p><b>Visualization Sources:</b></p>
+                <p><a href="https://sites.google.com/view/crowdcountingconsortium/home">Crowd Counting Consortium Maps</a></p>
+                <p><a href="https://www.bu.edu/research/articles/counting-american-protests/">Counting Protests Maps</a></p>
+            </div>
+              <div class="code_source">
+                <p><b>Code Sources:</b></p>
+                <p><a href="http://shop.oreilly.com/product/0636920037316.do"><i>Interactive Data Visualization for the Web</i></a></p>
+            </div>
         </div>
         <div class="github">
-            <a href="https://social-movements-2017-2018.github.io/visualization"><b>GitHub</b></a>
+            <p><a href="https://social-movements-2017-2018.github.io/visualization"><b>GitHub</b></a></p>
         </div>
     </div>
 
