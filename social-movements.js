@@ -82,7 +82,7 @@
 
 // custom zoom function built off of d3 zoom with scale extent set to limit zooming, no limit on pan however
     var zoom = d3.zoom()
-        .scaleExtent([1, 32])
+        .scaleExtent([1, 256])
         .on("zoom", zoomed);
 
 //Define path generator
@@ -111,15 +111,16 @@
         .on("click", stopped, true);
 
 //Create SVG element for information on the right
-    var infoSvg = d3.select(".dataviz")
+    var infoSvg = d3.select("#sidebar")
+        .append("div")
+        .attr("class", "legend")
         .append("svg")
         .attr("class", "infoSvg")
         .attr("width", 300)
-        .attr("height", h)
         .attr("class", "leg");
 
 //Tooltip div
-    var div = d3.select("body").append("div")
+    var div = d3.select("#sidebar").append("div")
         .attr("class", "tooltip")
         .style("opacity", 0);
 
