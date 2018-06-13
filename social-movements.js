@@ -379,12 +379,12 @@
                     .duration(300)
                     .style("opacity", 1);
                 div.html("<table id='tooltiptable'><tbody>" +
-                    "<tr><td>Social Movement:</td><td class='right'>" + d.Movement + "</td></tr>" +
-                    "<tr><td>Cause:</td><td class='right'>" + d.Cause + "</td></tr>" +
-                    "<tr><td>Description:</td><td class='right'>" + d.Description + "</td></tr>" +
-                    "<tr><td>Attendance:</td><td class='right'>" + d.Attendance + "</td></tr>" +
-                    "<tr><td>City:</td><td class='right'>" + d.City + "</td></tr>" +
-                    "<tr><td>Date:</td><td class='right'>" + d.Date + "</td></tr>")
+                    "<tr><td><b>Social Movement:</b></td><td class='right'>" + d.Movement + "</td></tr>" +
+                    "<tr><td><b>Cause:</b></td><td class='right'>" + d.Cause + "</td></tr>" +
+                    "<tr><td><b>Description:</b></td><td class='right'>" + d.Description + "</td></tr>" +
+                    "<tr><td><b>Attendance:</b></td><td class='right'>" + d.Attendance + "</td></tr>" +
+                    "<tr><td><b>City:</b></td><td class='right'>" + d.City + "</td></tr>" +
+                    "<tr><td><b>Date:</b></td><td class='right'>" + d.Date + "</td></tr>")
                     .style("left", "970px")
                     .style("top", "600px");
                 d3.select(this).style("stroke", "black");
@@ -546,15 +546,16 @@
 
     var legend = infoSvg.append("g")
         .attr("class", "legend")
-        .attr("transform", "translate(5,20)")
+        .attr("transform", "translate(5,30)")
         .call(log);
 
     legend.append("text")
         .attr("class", "caption")
         .attr("x", -5)
-        .attr("y", -8)
+        .attr("y", -20)
         .attr("fill", "#000")
         .attr("text-anchor", "start")
+        .style("font-weight", "bold")
         .text("Number of Direct Actions");
 
 //Enables zooming for the map
