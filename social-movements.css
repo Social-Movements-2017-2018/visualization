@@ -41,7 +41,7 @@ h1 {
 }
 
 div.tooltip {
-    position: absolute;			
+   position: absolute;
     text-align: left;			
     width: 250px;										
     padding: 5px;		
@@ -60,6 +60,20 @@ div.tooltip {
     cursor: pointer;
     font-size: 13px;
     width: 250px;
+}
+
+#tooltiptable {
+    width: 100%;
+}
+
+td {
+    vertical-align: top;
+}
+tr {
+    padding-right: 3px;
+}
+.right {
+    text-align: right;
 }
 
 input {
