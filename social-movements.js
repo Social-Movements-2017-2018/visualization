@@ -379,12 +379,12 @@
                     .duration(300)
                     .style("opacity", 1);
                 div.html("<table id='tooltiptable'><tbody>" +
-                    "<tr><td>Social Movement</td><td class='right'>" + d.Movement + "</td></tr>" +
-                    "<tr><td>Cause</td><td class='right'>" + d.Cause + "</td></tr>" +
-                    "<tr><td>Description</td><td class='right'>" + d.Description + "</td></tr>" +
-                    "<tr><td>Attendance</td><td class='right'>" + d.Attendance + "</td></tr>" +
-                    "<tr><td>City</td><td class='right'>" + d.City + "</td></tr>" +
-                    "<tr><td>Date</td><td class='right'>" + d.Date + "</td></tr>")
+                    "<tr><td>Social Movement:</td><td class='right'>" + d.Movement + "</td></tr>" +
+                    "<tr><td>Cause:</td><td class='right'>" + d.Cause + "</td></tr>" +
+                    "<tr><td>Description:</td><td class='right'>" + d.Description + "</td></tr>" +
+                    "<tr><td>Attendance:</td><td class='right'>" + d.Attendance + "</td></tr>" +
+                    "<tr><td>City:</td><td class='right'>" + d.City + "</td></tr>" +
+                    "<tr><td>Date:</td><td class='right'>" + d.Date + "</td></tr>")
                     .style("left", "970px")
                     .style("top", "600px");
                 d3.select(this).style("stroke", "black");
