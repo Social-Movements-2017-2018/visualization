@@ -29,20 +29,13 @@ h1 {
 }
 
 .dataviz {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#viz {
-    width: 1150px;
+    width: 1160px;
     height: 600px;
     margin: auto;
 }
 
-div.tooltip {
-    position: absolute;			
-    text-align: left;			
+.tooltip {
+    text-align: left;
     width: 250px;										
     padding: 5px;		
     background: lightgrey;	
@@ -51,15 +44,40 @@ div.tooltip {
     pointer-events: none;			
 }
 
+#sidebar {
+    position: relative;
+    width: 300px;
+    height: 100%;
+    float: right;
+    padding-left: 10px;
+}
+
+#container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .movements {
     display: block;
     position: relative;
-    left: 955px;
-    top: -390px;
     margin-bottom: 8px;
     cursor: pointer;
     font-size: 13px;
     width: 250px;
+}
+
+#tooltiptable {
+    width: 100%;
+}
+
+td {
+    vertical-align: top;
+}
+tr {
+    padding-right: 3px;
+}
+.right {
+    text-align: right;
 }
 
 input {
@@ -68,12 +86,8 @@ input {
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 10px;
-    position: relative;
-    top: -200px;
+    width: 1160px;
+    margin: auto;
 }
 
 .last {
