@@ -463,6 +463,40 @@
 
     });
 
+
+//var color = d3.scaleThreshold()
+//    .domain([1, 10, 50, 200, 500, 1000, 2000, 4000])
+//    .range(d3.schemeOrRd[9]);
+
+//var x = d3.scaleSqrt()
+//    .domain([0, ])
+//    .rangeRound([440, 950]);
+//
+//var key = svg.append("g")
+//    .attr("class", "key")
+//    .attr("transform", "translate(0,40)");
+//
+//key.selectAll("rect")
+//  .data(pointColor.range().map(function(d) {
+//      d = pointColor.invertExtent(d);
+//      if (d[0] == null) d[0] = x.domain()[0];
+//      if (d[1] == null) d[1] = x.domain()[1];
+//      return d;
+//    }))
+//  .enter().append("rect")
+//    .attr("height", 8)
+//    .attr("x", function(d) { return x(d[0]); })
+//    .attr("width", function(d) { return x(d[1]) - x(d[0]); })
+//    .attr("fill", function(d) { return pointColor(d[0]); });
+//
+//key.append("text")
+//    .attr("class", "caption")
+//    .attr("x", x.range()[0])
+//    .attr("y", -6)
+//    .attr("fill", "#000")
+//    .attr("text-anchor", "start")
+//    .text("People in Attendance");
+
 //Yearly Attendance Legend
     var log = d3.legendColor()
         .labelFormat(d3.format(".0f"))
@@ -471,7 +505,7 @@
 
     var legend = infoSvg.append("g")
         .attr("class", "legend")
-        .attr("transform", "translate(30,30)")
+        .attr("transform", "translate(5,20)")
         .call(log);
 
     legend.append("text")
