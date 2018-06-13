@@ -173,11 +173,11 @@ d3.csv("social-movements.csv", function(data) {
            .on("mouseover", showPointer)
            .style("fill", state_color)
             .style("stroke", "white")
-            .style("stroke-width", 1)
            .on("click", clicked)
             .on("mouseout", function () {
                 d3.select(this).style("opacity", "1");
-            });
+            })
+            .style("stroke-width", 1);
 
         function state_color(d) {
             if (d3.select(this).classed("active")) return "#fff8e7";
@@ -199,6 +199,7 @@ d3.csv("social-movements.csv", function(data) {
                     .style("stroke", "white")
                     .style("stroke-width", 1)
                      .on("click", clicked);
+            if (active.node() === this) return;
             d3.select(this).style("opacity", ".4");
         }
         
@@ -226,12 +227,6 @@ d3.csv("social-movements.csv", function(data) {
                 scale = .9 / Math.max(dx / w, dy / h),
                 translate = [w / 2 - scale * x, h / 2 - scale * y];
 
-            // zooms in on state
-            svg.transition()
-                .duration(750)
-                .call(zoom.transform, d3.zoomIdentity
-                    .translate(translate[0], translate[1])
-                    .scale(scale));
 
             var log = d3.legendColor()
                 .labelFormat(d3.format(".0f"))
@@ -245,38 +240,73 @@ d3.csv("social-movements.csv", function(data) {
             g.selectAll("circle")
                 .remove();
 
-            g.selectAll("circle")
-                .data(data)
-                .enter()
-                .append("circle")
-                .attr("class", "point")
-                .attr("cx", function (point) {
-                    try {
-                        return projection([point.Lon, point.Lat])[0];
-                    } catch (err) {
-                        console.log(point);
-                        return -1;
+            var points = data.map(function (point) {
+                var x;
+                try {
+                    x = projection([point.Lon, point.Lat])[0];
+                } catch (err) {
+                    x = -1;
+                }
+                var y;
+                try {
+                    y = projection([point.Lon, point.Lat])[1];
+                } catch (err) {
+                    y = -1;
+                }
+                point.x = x;
+                point.y = y;
+                return point;
+            });
+
+            function getScale(x) {
+                console.log(d3.zoomTransform(svg.node()));
+                return x / d3.zoomTransform(svg.node()).k;
+            }
+
+            // zooms in on state
+            svg.transition()
+                .duration(750)
+                .call(zoom.transform, d3.zoomIdentity
+                    .translate(translate[0], translate[1])
+                    .scale(scale))
+                .on("end", function() {
+                    var sim = d3.forceSimulation(points)
+                        .force("y", d3.forceY(function(point) {
+                            return point.y;
+                        }))
+                        .force("x", d3.forceX(function(point) {
+                            return point.x;
+                        }))
+                        .force("charge", d3.forceCollide(getScale(4)).strength(1))
+                        .stop();
+                    while (sim.alpha() > 0.5) {
+                        sim.tick();
                     }
-                })
-                .attr("cy", function (point) {
-                    try {
-                        return projection([point.Lon, point.Lat])[1];
-                    } catch (err) {
-                        console.log(point);
-                        return -1;
-                    }
-                })
-                .attr("r", 5 )
-                .style("fill", function (point) {
-                    var category = point.Movement;
-                    if (stateCodetoName[point.State] === d.properties.name && categories[category]) {
-                        return pointColor(point.Attendance);
-                    } else {
-                        return "none";
-                    }
-                })
-                .on("mouseover", showTooltip)
-                .on("mouseout", mouseOut);
+                    points.forEach(drawPoint)
+                });
+
+
+            function drawPoint(point) {
+                if (stateCodetoName[point.State] !== d.properties.name) return;
+                console.log("drawing");
+                g.append("circle")
+                    .datum(point)
+                    .attr("class", "point")
+                    .attr("cx", point.x)
+                    .attr("cy", point.y)
+                    .attr("r", getScale(4))
+                    .style("fill", function() {
+                        var category = point.Movement;
+                        if (categories[category]) {
+                            return pointColor(point.Attendance);
+                        } else {
+                            return "none";
+                        }
+                    })
+                    .on("mouseover", showTooltip)
+                    .on("mouseout", mouseOut);
+            }
+
         }
 
         //Sets to original view by removing districts, recolorizing states, and returning to original zoom
@@ -478,7 +508,7 @@ function zoomed() {
     g.attr("transform", d3.event.transform);
     d3.selectAll(".point")
         .attr("r", function () {
-            return 5 / d3.event.transform.k;
+            return 4 / d3.event.transform.k
         })
 }
 
