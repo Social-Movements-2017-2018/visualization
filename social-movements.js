@@ -71,13 +71,13 @@ var stateCodetoName = {
 
 //Width and height
 var w = 850;
-var h = 600;
+var h = 550;
 var active = d3.select(null);
 var state = "";
 
 //Define map projection
 var projection = d3.geoAlbersUsa()
-                       .translate([w/2, h/2.5])
+                       .translate([w/2, h/2])
                        .scale([1000]);
 
 // custom zoom function built off of d3 zoom with scale extent set to limit zooming, no limit on pan however
@@ -103,18 +103,20 @@ var pointColor = d3.scaleThreshold()
               //https://github.com/d3/d3-scale-chromatic
 
 //Create main SVG element for the visualization
-var svg = d3.select("body")
+var svg = d3.select(".dataviz")
             .append("svg")
             .attr("width", w)
             .attr("height", h)
+            .attr("class", "map")
             .on("click", stopped, true);
 
 //Create SVG element for information on the right
-var infoSvg = d3.select("body")
+var infoSvg = d3.select(".dataviz")
             .append("svg")
             .attr("class", "infoSvg")
             .attr("width", 300)
-            .attr("height", h);
+            .attr("height", h)
+            .attr("class", "leg");
 
 //Tooltip div
 var div = d3.select("body").append("div")
@@ -350,7 +352,7 @@ d3.csv("social-movements.csv", function(data) {
                          "<tr><td>Attendance</td><td class='right'>" + d.Attendance + "</td></tr>" +
                          "<tr><td>City</td><td class='right'>" + d.City + "</td></tr>" +
                          "<tr><td>Date</td><td class='right'>" + d.Date + "</td></tr>")
-               .style("left", "890px")
+               .style("left", "970px")
                .style("top", "600px");
                 d3.select(this).style("stroke", "black");
         }
