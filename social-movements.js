@@ -505,7 +505,7 @@
 
     var legend = infoSvg.append("g")
         .attr("class", "legend")
-        .attr("transform", "translate(30,30)")
+        .attr("transform", "translate(5,20)")
         .call(log);
 
     legend.append("text")
