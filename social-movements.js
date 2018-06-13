@@ -90,7 +90,7 @@
         .projection(projection);
 
     var stateColor = d3.scaleThreshold()
-        .domain([5, 10, 50, 100]) //Chosen input domain for color scale based on data
+        .domain([1, 10, 50, 100]) //Chosen input domain for color scale based on data
         .range(["rgb(237,248,233)", "rgb(186,228,179)", "rgb(116,196,118)", "rgb(49,163,84)", "rgb(0,109,44)"]);
     //Colors derived from ColorBrewer, by Cynthia Brewer
     //https://github.com/d3/d3-scale-chromatic
@@ -145,7 +145,15 @@
             for (var j = 0; j < json.features.length; j++) {
 
                 var jsonState = json.features[j].properties.name;
-                var stateYearlyAttendance = 0;
+                json.features[j].properties.women = 0;
+                json.features[j].properties.politics = 0;
+                json.features[j].properties.race = 0;
+                json.features[j].properties.religion = 0;
+                json.features[j].properties.lgbtq = 0;
+                json.features[j].properties.enviro = 0;
+                json.features[j].properties.housing = 0;
+                json.features[j].properties.work = 0;
+                json.features[j].properties.other = 0;
 
                 //Find each direct action that occured in that state
                 for (var i = 0; i < data.length; i++) {
@@ -154,12 +162,27 @@
 
                     //If match is found
                     if (dataState === jsonState) {
-                        stateYearlyAttendance += 1;
+                        if (data[i].Movement === "Women's Rights")
+                            json.features[j].properties.women += 1;
+                        else if (data[i].Movement === "U.S. Politics")
+                            json.features[j].properties.politics += 1;
+                        else if (data[i].Movement === "Racial Justice")
+                            json.features[j].properties.race += 1;
+                        else if (data[i].Movement === "Religious & Cultural Justice")
+                            json.features[j].properties.religion += 1;
+                        else if (data[i].Movement === "LGBTQ+ Rights")
+                            json.features[j].properties.lgbtq +=1;
+                        else if (data[i].Movement === "Environmental & Food Justice")
+                            json.features[j].properties.enviro += 1;
+                        else if (data[i].Movement === "Housing Justice")
+                            json.features[j].properties.housing += 1;
+                        else if (data[i].Movement === "Workers & Labor Rights")
+                            json.features[j].properties.work += 1;
+                        else if (data[i].Movement === "Other")
+                            json.features[j].properties.other += 1;
                     }
 
                 }
-                //Add total yearly attendance into JSON file that that state
-                json.features[j].properties.yearlyAttendance = stateYearlyAttendance;
             }
 
             //Bind data and create one path per GeoJSON feature
@@ -181,15 +204,28 @@
             function state_color(d) {
                 if (d3.select(this).classed("active")) return "#fff8e7";
                 //Get data value
-                var attendance = d.properties.yearlyAttendance;
+                var attendance = 0;
 
-                if (attendance) {
-                    //If value exists…
-                    return stateColor(attendance);
-                } else {
-                    //If value is undefined…
-                    return "black";
-                }
+                if (categories["Women's Rights"])
+                    attendance += d.properties.women;
+                if (categories["U.S. Politics"])
+                    attendance += d.properties.politics;
+                if (categories["Racial Justice"])
+                    attendance += d.properties.race;
+                if (categories["Religious & Cultural Justice"])
+                    attendance += d.properties.religion;
+                if (categories["LGBTQ+ Rights"])
+                    attendance += d.properties.lgbtq;
+                if (categories["Environmental & Food Justice"])
+                    attendance += d.properties.enviro;
+                if (categories["Housing Justice"])
+                    attendance += d.properties.housing;
+                if (categories["Workers & Labor Rights"])
+                    attendance += d.properties.work;
+                if (categories["Other"])
+                    attendance += d.properties.other;
+
+                return stateColor(attendance);
             }
 
             function showPointer(d) {
@@ -444,6 +480,8 @@
                         categories["Other"] = true;
                         console.log("other = true")
                     }
+                    d3.selectAll(".state")
+                        .style("fill", state_color);
                     checkHandler();
                 });
 
