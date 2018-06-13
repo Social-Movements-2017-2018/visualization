@@ -138,11 +138,7 @@
 
             var state_view = false;
 
-            d3.select("svg").insert("rect", "g")
-                .attr("class", "background")
-                .attr("fill", "white")
-                .attr("width", w)
-                .attr("height", h)
+            d3.select("svg")
                 .on("click", reset);
 
             //For each state in the GeoJSON
@@ -368,7 +364,14 @@
             //Handles checkboxes
             d3.selectAll(".movements")
                 .on("click", function () {
-                    console.log(d3.select("#women"));
+                    if (d3.select("#all").node() === this) {
+                        if (!d3.select("#all").select("input").property("checked")) {
+                            d3.selectAll("input").property("checked", false);
+                        }
+                        else {
+                            d3.selectAll("input").property("checked", true);
+                        }
+                    }
                     if (!d3.select("#women").select("input").property("checked")) {
                         categories["Women's Rights"] = false;
                         console.log("women = false")
