@@ -165,7 +165,6 @@ input {
     stroke: #000;
     stroke-opacity: 0.5;
     stroke-width: 1.25px;
-    pointer-events: stroke;
     cursor: pointer;
 }
 
