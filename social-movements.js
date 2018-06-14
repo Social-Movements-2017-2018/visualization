@@ -162,6 +162,11 @@ d3.csv("social-movements.csv", function (data) {
     //Load in GeoJSON data
     d3.json("unitedstates.json", function (json) {
 
+        var state_view = false;
+
+        var beginDate = timeScale.domain()[0];
+        var endDate = timeScale.domain()[1];
+
         slider.append("line")
             .attr("class", "track")
             .attr("x1", timeScale.range()[0])
@@ -217,14 +222,37 @@ d3.csv("social-movements.csv", function (data) {
             endHandle.attr("cx", timeScale(h));
             endLabel.attr("x", timeScale(h))
                 .text(formatDate(h));
+            endDate = h;
+            if (timeScale(h) < beginLabel.attr("x")) {
+                beginLabel.attr("x", timeScale(h));
+                beginHandle.attr("cx", timeScale(h));
+                beginDate = h;
+            }
+            updateMap();
         }
         function updateBegin(h) {
             beginHandle.attr("cx", timeScale(h));
             beginLabel.attr("x", timeScale(h))
                 .text(formatDate(h));
+            beginDate = h;
+            if (timeScale(h) > endLabel.attr("x")) {
+                endLabel.attr("x", timeScale(h));
+                endHandle.attr("cx", timeScale(h));
+                endDate = h;
+            }
+            updateMap();
         }
 
-        var state_view = false;
+        function updateMap() {
+            if (!state_view) {
+                d3.selectAll(".state")
+                    .style("fill", state_color);
+            }
+            else {
+                fillPoints();
+            }
+
+        }
 
         d3.select("svg")
             .on("click", reset);
@@ -232,16 +260,8 @@ d3.csv("social-movements.csv", function (data) {
         //For each state in the GeoJSON
         for (var j = 0; j < json.features.length; j++) {
 
+            json.features[j].properties.data = [];
             var jsonState = json.features[j].properties.name;
-            json.features[j].properties.women = 0;
-            json.features[j].properties.politics = 0;
-            json.features[j].properties.race = 0;
-            json.features[j].properties.religion = 0;
-            json.features[j].properties.lgbtq = 0;
-            json.features[j].properties.enviro = 0;
-            json.features[j].properties.housing = 0;
-            json.features[j].properties.work = 0;
-            json.features[j].properties.other = 0;
 
             //Find each direct action that occured in that state
             for (var i = 0; i < data.length; i++) {
@@ -250,26 +270,8 @@ d3.csv("social-movements.csv", function (data) {
 
                 //If match is found
                 if (dataState === jsonState) {
-                    if (data[i].Movement === "Women's Rights")
-                        json.features[j].properties.women += 1;
-                    else if (data[i].Movement === "U.S. Politics")
-                        json.features[j].properties.politics += 1;
-                    else if (data[i].Movement === "Racial Justice")
-                        json.features[j].properties.race += 1;
-                    else if (data[i].Movement === "Religious & Cultural Justice")
-                        json.features[j].properties.religion += 1;
-                    else if (data[i].Movement === "LGBTQ+ Rights")
-                        json.features[j].properties.lgbtq +=1;
-                    else if (data[i].Movement === "Environmental & Food Justice")
-                        json.features[j].properties.enviro += 1;
-                    else if (data[i].Movement === "Housing Justice")
-                        json.features[j].properties.housing += 1;
-                    else if (data[i].Movement === "Workers & Labor Rights")
-                        json.features[j].properties.work += 1;
-                    else if (data[i].Movement === "Other")
-                        json.features[j].properties.other += 1;
+                    json.features[j].properties.data.push(data[i]);
                 }
-
             }
         }
 
@@ -293,26 +295,13 @@ d3.csv("social-movements.csv", function (data) {
             if (d3.select(this).classed("active")) return "#fff8e7";
             //Get data value
             var attendance = 0;
-
-            if (categories["Women's Rights"])
-                attendance += d.properties.women;
-            if (categories["U.S. Politics"])
-                attendance += d.properties.politics;
-            if (categories["Racial Justice"])
-                attendance += d.properties.race;
-            if (categories["Religious & Cultural Justice"])
-                attendance += d.properties.religion;
-            if (categories["LGBTQ+ Rights"])
-                attendance += d.properties.lgbtq;
-            if (categories["Environmental & Food Justice"])
-                attendance += d.properties.enviro;
-            if (categories["Housing Justice"])
-                attendance += d.properties.housing;
-            if (categories["Workers & Labor Rights"])
-                attendance += d.properties.work;
-            if (categories["Other"])
-                attendance += d.properties.other;
-
+            for (var i = 0; i < d.properties.data.length; i++) {
+                var actionDate = new Date(d.properties.data[i].Date);
+                var movement = d.properties.data[i].Movement;
+                if (actionDate <=  endDate && actionDate >= beginDate
+                    && categories[movement])
+                    attendance += 1;
+            }
             return stateColor(attendance);
         }
 
@@ -570,14 +559,16 @@ d3.csv("social-movements.csv", function (data) {
                 }
                 d3.selectAll(".state")
                     .style("fill", state_color);
-                checkHandler();
+                fillPoints();
             });
 
-        function checkHandler() {
+        function fillPoints() {
             g.selectAll(".point")
                 .style("fill", function (d) {
                     if (!state_view) return "none";
-                    if (categories[d.Movement]) {
+                    var date = new Date(d.Date);
+                    if (categories[d.Movement] &&
+                        date >= beginDate && date <= endDate) {
                         // console.log("turning on " + d.Movement);
                         return pointColor(d.Attendance);
                     }
