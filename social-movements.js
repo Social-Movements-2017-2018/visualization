@@ -589,6 +589,7 @@ function pointLegend() {
     d3.selectAll("#stateLegend").remove();
     var group = infoSvg.append("g")
         .attr('id', 'pointLegend')
+        .style("font-family", "Raleway")
         .attr("transform", "translate(7,30)");
 
     group.selectAll('rect')
@@ -615,10 +616,11 @@ function pointLegend() {
         .attr('id', 'pointLegend')
         .attr('class', 'caption')
         .attr('x', pointX.range()[0])
-        .attr('y', -6)
+        .attr('y', -15)
         .attr('fill', '#000')
         .attr('text-anchor', 'start')
         .attr('font-weight', 'bold')
+        .attr('font-size', 13)
         .text('People in Attendance');
     
     group.call(d3.axisBottom(pointX)
@@ -660,7 +662,7 @@ function stateLegend() {
         .attr('id', 'stateLegend')
         .attr('class', 'caption')
         .attr('x', stateX.range()[0])
-        .attr('y', -6)
+        .attr('y', -15)
         .attr('fill', '#000')
         .attr('text-anchor', 'start')
         .attr('font-weight', 'bold')
