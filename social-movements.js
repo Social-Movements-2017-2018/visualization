@@ -633,6 +633,7 @@ function stateLegend() {
     var group = infoSvg
         .append("g")
         .attr('id', 'stateLegend')
+        .style("font-family", "Raleway")
         .attr("transform", "translate(7,30)");
     
     group
@@ -663,6 +664,7 @@ function stateLegend() {
         .attr('fill', '#000')
         .attr('text-anchor', 'start')
         .attr('font-weight', 'bold')
+        .attr('font-size', 13)
         .text('Number of Direct Actions')
     
     group.call(d3.axisBottom(stateX)
