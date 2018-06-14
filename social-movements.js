@@ -407,16 +407,9 @@ d3.csv("social-movements.csv", function (data) {
                     .attr("cx", point.x)
                     .attr("cy", point.y)
                     .attr("r", getScale(4))
-                    .style("fill", function () {
-                        var category = point.Movement;
-                        if (categories[category]) {
-                            return pointColor(point.Attendance);
-                        } else {
-                            return "none";
-                        }
-                    })
                     .on("mouseover", showTooltip)
                     .on("mouseout", mouseOut);
+                fillPoints();
             }
 
         }
