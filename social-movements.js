@@ -117,7 +117,7 @@ var infoSvg = d3.select("#sidebar")
     .append("svg")
     .attr("class", "infoSvg")
     .attr("width", 300)
-    .attr("class", "leg");
+    .attr("height", 75);
 
 //Tooltip div
 var div = d3.select("#sidebar").append("div")
@@ -154,8 +154,12 @@ d3.csv("social-movements.csv", function (data) {
 
     timeScale.domain(
         [
-            d3.min(data.map(function (d) { return new Date(d.Date); })),
-            d3.max(data.map(function (d) { return new Date(d.Date); }))
+            d3.min(data.map(function (d) {
+                return new Date(d.Date);
+            })),
+            d3.max(data.map(function (d) {
+                return new Date(d.Date);
+            }))
         ]
     );
 
@@ -171,9 +175,13 @@ d3.csv("social-movements.csv", function (data) {
             .attr("class", "track")
             .attr("x1", timeScale.range()[0])
             .attr("x2", timeScale.range()[1])
-            .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+            .select(function () {
+                return this.parentNode.appendChild(this.cloneNode(true));
+            })
             .attr("class", "track-inset")
-            .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+            .select(function () {
+                return this.parentNode.appendChild(this.cloneNode(true));
+            })
             .attr("class", "track-overlay")
 
         slider.insert("g", ".track-overlay")
@@ -186,15 +194,21 @@ d3.csv("social-movements.csv", function (data) {
             .attr("x", timeScale)
             .attr("y", 13)
             .attr("text-anchor", "middle")
-            .text(function(d) { return formatDateIntoMonth(d); });
+            .text(function (d) {
+                return formatDateIntoMonth(d);
+            });
 
         var beginHandle = slider.append("circle")
             .attr("class", "handle")
             .attr("r", 9)
             .style("fill", "white")
             .call(d3.drag()
-                .on("start.interrupt", function() { slider.interrupt(); })
-                .on("start drag", function() { updateBegin(timeScale.invert(d3.event.x)); }));
+                .on("start.interrupt", function () {
+                    slider.interrupt();
+                })
+                .on("start drag", function () {
+                    updateBegin(timeScale.invert(d3.event.x));
+                }));
 
         var beginLabel = slider.append("text")
             .attr("class", "label")
@@ -208,8 +222,12 @@ d3.csv("social-movements.csv", function (data) {
             .style("fill", "white")
             .attr("cx", timeScale.range()[1])
             .call(d3.drag()
-                .on("start.interrupt", function() { slider.interrupt(); })
-                .on("start drag", function() { updateEnd(timeScale.invert(d3.event.x)); }));
+                .on("start.interrupt", function () {
+                    slider.interrupt();
+                })
+                .on("start drag", function () {
+                    updateEnd(timeScale.invert(d3.event.x));
+                }));
 
         var endLabel = slider.append("text")
             .attr("class", "label")
@@ -230,6 +248,7 @@ d3.csv("social-movements.csv", function (data) {
             }
             updateMap();
         }
+
         function updateBegin(h) {
             beginHandle.attr("cx", timeScale(h));
             beginLabel.attr("x", timeScale(h))
@@ -298,7 +317,7 @@ d3.csv("social-movements.csv", function (data) {
             for (var i = 0; i < d.properties.data.length; i++) {
                 var actionDate = new Date(d.properties.data[i].Date);
                 var movement = d.properties.data[i].Movement;
-                if (actionDate <=  endDate && actionDate >= beginDate
+                if (actionDate <= endDate && actionDate >= beginDate
                     && categories[movement])
                     attendance += 1;
             }
@@ -319,8 +338,7 @@ d3.csv("social-movements.csv", function (data) {
         function clicked(d) {
             if (active.node() === this) return reset(); //current state in view
 
-            d3.select(".caption")
-                .text("People in Attendance");
+            pointLegend();
             state_view = true;
             active.classed("active", false);
             active = d3.select(this).classed("active", true);
@@ -340,15 +358,6 @@ d3.csv("social-movements.csv", function (data) {
                 translate = [w / 2 - scale * x, h / 2 - scale * y];
 
 
-            var log = d3.legendColor()
-                .labelFormat(d3.format(".0f"))
-                .labels(d3.legendHelpers.thresholdLabels)
-                .scale(pointColor);
-
-            d3.select(".legend")
-                .call(log);
-
-            console.log(d.properties.name);
             g.selectAll("circle")
                 .remove();
 
@@ -416,6 +425,7 @@ d3.csv("social-movements.csv", function (data) {
 
         //Sets to original view by removing districts, recolorizing states, and returning to original zoom
         function reset() {
+            stateLegend();
             state_view = false;
             active.classed("active", false);
             active = d3.select(null);
@@ -573,28 +583,105 @@ d3.csv("social-movements.csv", function (data) {
         }
 
     });
-
 });
 
-//Yearly Attendance Legend
-    var log = d3.legendColor()
-        .labelFormat(d3.format(".0f"))
-        .labels(d3.legendHelpers.thresholdLabels)
-        .scale(stateColor);
+function pointLegend() {
+    d3.selectAll("#stateLegend").remove();
+    var group = infoSvg.append("g")
+        .attr('id', 'pointLegend')
+        .attr("transform", "translate(7,30)");
 
-    var legend = infoSvg.append("g")
-        .attr("class", "legend")
-        .attr("transform", "translate(5,30)")
-        .call(log);
+    group.selectAll('rect')
+        .data(pointColor.range().map(function (d) {
+            d = pointColor.invertExtent(d);
+            if (d[0] == null) d[0] = pointX.domain()[0];
+            if (d[1] == null) d[1] = pointX.domain()[1];
+            return d;
+        }))
+        .enter().append('rect')
+        .attr('id', 'pointLegend')
+        .attr('height', 8)
+        .attr('x', function (d) {
+            return pointX(d[0]);
+        })
+        .attr('width', function (d) {
+            return pointX(d[1]) - pointX(d[0]);
+        })
+        .attr('fill', function (d) {
+            return pointColor(d[0]);
+        });
 
-    legend.append("text")
-        .attr("class", "caption")
-        .attr("x", -5)
-        .attr("y", -20)
-        .attr("fill", "#000")
-        .attr("text-anchor", "start")
-        .style("font-weight", "bold")
-        .text("Number of Direct Actions");
+    group.append('text')
+        .attr('id', 'pointLegend')
+        .attr('class', 'caption')
+        .attr('x', pointX.range()[0])
+        .attr('y', -6)
+        .attr('fill', '#000')
+        .attr('text-anchor', 'start')
+        .attr('font-weight', 'bold')
+        .text('People in Attendance');
+    
+    group.call(d3.axisBottom(pointX)
+    .tickSize(13)
+    .tickValues(pointColor.domain()))
+    .select(".domain")
+    .remove();
+}
+
+function stateLegend() {
+    d3.selectAll("#pointLegend").remove();
+    var group = infoSvg
+        .append("g")
+        .attr('id', 'stateLegend')
+        .attr("transform", "translate(7,30)");
+    
+    group
+        .selectAll('rect')
+        .data(stateColor.range().map(function (d) {
+            d = stateColor.invertExtent(d);
+            if (d[0] == null) d[0] = stateX.domain()[0];
+            if (d[1] == null) d[1] = stateX.domain()[1];
+            return d;
+        }))
+        .enter().append('rect')
+        .attr('height', 8)
+        .attr('x', function (d) {
+            return stateX(d[0]);
+        })
+        .attr('width', function (d) {
+            return stateX(d[1]) - stateX(d[0]);
+        })
+        .attr('fill', function (d) {
+            return stateColor(d[0]);
+        });
+
+    group.append('text')
+        .attr('id', 'stateLegend')
+        .attr('class', 'caption')
+        .attr('x', stateX.range()[0])
+        .attr('y', -6)
+        .attr('fill', '#000')
+        .attr('text-anchor', 'start')
+        .attr('font-weight', 'bold')
+        .text('Number of Direct Actions')
+    
+    group.call(d3.axisBottom(stateX)
+    .tickSize(13)
+    .tickValues(stateColor.domain()))
+    .select(".domain")
+    .remove();
+}
+
+var pointX = d3.scaleSqrt()
+    .domain([500, 20000])
+    .rangeRound([1, 300]);
+
+var stateX = d3.scaleSqrt()
+    .domain([1, 200])
+    .rangeRound([1, 300]);
+
+//pointLegend();
+stateLegend();
 
 //Enables zooming for the map
 function zoomed() {
