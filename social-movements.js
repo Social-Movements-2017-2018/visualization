@@ -116,7 +116,8 @@
         .attr("class", "legend")
         .append("svg")
         .attr("class", "infoSvg")
-        .attr("width", 300);
+        .attr("width", 300)
+        .attr("height", 75);
 
 //Tooltip div
     var div = d3.select("#sidebar").append("div")
@@ -240,6 +241,7 @@
             //When a state is clicked
             function clicked(d) {
                 if (active.node() === this) return reset(); //current state in view
+                pointLegend();
 
                 d3.select(".caption")
                     .text("People in Attendance");
@@ -345,6 +347,7 @@
 
             //Sets to original view by removing districts, recolorizing states, and returning to original zoom
             function reset() {
+                stateLegend();
                 state_view = false;
                 active.classed("active", false);
                 active = d3.select(null);
@@ -505,7 +508,11 @@
 
 function pointLegend() {
     d3.selectAll("#stateLegend").remove();
-    infoSvg.selectAll('rect')
+    var group = infoSvg.append("g")
+        .attr('id', 'pointLegend')
+        .attr("transform", "translate(7,30)");
+
+    group.selectAll('rect')
         .data(pointColor.range().map(function (d) {
             d = pointColor.invertExtent(d);
             if (d[0] == null) d[0] = pointX.domain()[0];
@@ -525,7 +532,7 @@ function pointLegend() {
             return pointColor(d[0]);
         });
 
-    infoSvg.append('text')
+    group.append('text')
         .attr('id', 'pointLegend')
         .attr('class', 'caption')
         .attr('x', pointX.range()[0])
@@ -535,7 +542,7 @@ function pointLegend() {
         .attr('font-weight', 'bold')
         .text('People in Attendance');
     
-    g.call(d3.axisBottom(pointX)
+    group.call(d3.axisBottom(pointX)
     .tickSize(13)
     .tickValues(pointColor.domain()))
     .select(".domain")
@@ -544,12 +551,13 @@ function pointLegend() {
 
 function stateLegend() {
     d3.selectAll("#pointLegend").remove();
-    var group = infoSvg.selectAll('rect')
+    var group = infoSvg
         .append("g")
         .attr('id', 'stateLegend')
-        .attr("transform", "translate(0,30)");
+        .attr("transform", "translate(7,30)");
     
     group
+        .selectAll('rect')
         .data(stateColor.range().map(function (d) {
             d = stateColor.invertExtent(d);
             if (d[0] == null) d[0] = stateX.domain()[0];
