@@ -116,8 +116,7 @@
         .attr("class", "legend")
         .append("svg")
         .attr("class", "infoSvg")
-        .attr("width", 300)
-        .attr("class", "leg");
+        .attr("width", 300);
 
 //Tooltip div
     var div = d3.select("#sidebar").append("div")
@@ -263,13 +262,13 @@
                     translate = [w / 2 - scale * x, h / 2 - scale * y];
 
 
-                var log = d3.legendColor()
-                    .labelFormat(d3.format(".0f"))
-                    .labels(d3.legendHelpers.thresholdLabels)
-                    .scale(pointColor);
-
-                d3.select(".legend")
-                    .call(log);
+//                var log = d3.legendColor()
+//                    .labelFormat(d3.format(".0f"))
+//                    .labels(d3.legendHelpers.thresholdLabels)
+//                    .scale(pointColor);
+//
+//                d3.select(".legend")
+//                    .call(log);
 
                 console.log(d.properties.name);
                 g.selectAll("circle")
@@ -362,16 +361,16 @@
                         .translate(0, 0)
                         .scale(1));
 
-                d3.select(".caption")
-                    .text("Number of Direct Actions");
-
-                var log = d3.legendColor()
-                    .labelFormat(d3.format(".0f"))
-                    .labels(d3.legendHelpers.thresholdLabels)
-                    .scale(stateColor);
-
-                d3.select(".legend")
-                    .call(log);
+//                d3.select(".caption")
+//                    .text("Number of Direct Actions");
+//
+//                var log = d3.legendColor()
+//                    .labelFormat(d3.format(".0f"))
+//                    .labels(d3.legendHelpers.thresholdLabels)
+//                    .scale(stateColor);
+//
+//                d3.select(".legend")
+//                    .call(log);
             }
 
             function showTooltip(d) {
@@ -504,59 +503,118 @@
 
     });
 
+function pointLegend() {
+    d3.selectAll("#stateLegend").remove();
+    infoSvg.selectAll('rect')
+        .data(pointColor.range().map(function (d) {
+            d = pointColor.invertExtent(d);
+            if (d[0] == null) d[0] = pointX.domain()[0];
+            if (d[1] == null) d[1] = pointX.domain()[1];
+            return d;
+        }))
+        .enter().append('rect')
+        .attr('id', 'pointLegend')
+        .attr('height', 8)
+        .attr('x', function (d) {
+            return pointX(d[0]);
+        })
+        .attr('width', function (d) {
+            return pointX(d[1]) - pointX(d[0]);
+        })
+        .attr('fill', function (d) {
+            return pointColor(d[0]);
+        });
 
-//var color = d3.scaleThreshold()
-//    .domain([1, 10, 50, 200, 500, 1000, 2000, 4000])
-//    .range(d3.schemeOrRd[9]);
+    infoSvg.append('text')
+        .attr('id', 'pointLegend')
+        .attr('class', 'caption')
+        .attr('x', pointX.range()[0])
+        .attr('y', -6)
+        .attr('fill', '#000')
+        .attr('text-anchor', 'start')
+        .attr('font-weight', 'bold')
+        .text('People in Attendance');
+    
+    g.call(d3.axisBottom(pointX)
+    .tickSize(13)
+    .tickValues(pointColor.domain()))
+    .select(".domain")
+    .remove();
+}
 
-//var x = d3.scaleSqrt()
-//    .domain([0, ])
-//    .rangeRound([440, 950]);
+function stateLegend() {
+    d3.selectAll("#pointLegend").remove();
+    var group = infoSvg.selectAll('rect')
+        .append("g")
+        .attr('id', 'stateLegend')
+        .attr("transform", "translate(0,30)");
+    
+    group
+        .data(stateColor.range().map(function (d) {
+            d = stateColor.invertExtent(d);
+            if (d[0] == null) d[0] = stateX.domain()[0];
+            if (d[1] == null) d[1] = stateX.domain()[1];
+            return d;
+        }))
+        .enter().append('rect')
+        .attr('height', 8)
+        .attr('x', function (d) {
+            return stateX(d[0]);
+        })
+        .attr('width', function (d) {
+            return stateX(d[1]) - stateX(d[0]);
+        })
+        .attr('fill', function (d) {
+            return stateColor(d[0]);
+        });
+
+    group.append('text')
+        .attr('id', 'stateLegend')
+        .attr('class', 'caption')
+        .attr('x', stateX.range()[0])
+        .attr('y', -6)
+        .attr('fill', '#000')
+        .attr('text-anchor', 'start')
+        .attr('font-weight', 'bold')
+        .text('Number of Direct Actions')
+    
+    group.call(d3.axisBottom(stateX)
+    .tickSize(13)
+    .tickValues(stateColor.domain()))
+    .select(".domain")
+    .remove();
+}
+
+var pointX = d3.scaleSqrt()
+    .domain([500, 20000])
+    .rangeRound([1, 300]);
+
+var stateX = d3.scaleSqrt()
+    .domain([1, 200])
+    .rangeRound([1, 300]);
+
+//pointLegend();
+stateLegend();
+
+////Yearly Attendance Legend
+//    var log = d3.legendColor()
+//        .labelFormat(d3.format(".0f"))
+//        .labels(d3.legendHelpers.thresholdLabels)
+//        .scale(stateColor);
 //
-//var key = svg.append("g")
-//    .attr("class", "key")
-//    .attr("transform", "translate(0,40)");
+//    var legend = infoSvg.append("g")
+//        .attr("class", "legend")
+//        .attr("transform", "translate(5,30)")
+//        .call(log);
 //
-//key.selectAll("rect")
-//  .data(pointColor.range().map(function(d) {
-//      d = pointColor.invertExtent(d);
-//      if (d[0] == null) d[0] = x.domain()[0];
-//      if (d[1] == null) d[1] = x.domain()[1];
-//      return d;
-//    }))
-//  .enter().append("rect")
-//    .attr("height", 8)
-//    .attr("x", function(d) { return x(d[0]); })
-//    .attr("width", function(d) { return x(d[1]) - x(d[0]); })
-//    .attr("fill", function(d) { return pointColor(d[0]); });
-//
-//key.append("text")
-//    .attr("class", "caption")
-//    .attr("x", x.range()[0])
-//    .attr("y", -6)
-//    .attr("fill", "#000")
-//    .attr("text-anchor", "start")
-//    .text("People in Attendance");
-
-//Yearly Attendance Legend
-    var log = d3.legendColor()
-        .labelFormat(d3.format(".0f"))
-        .labels(d3.legendHelpers.thresholdLabels)
-        .scale(stateColor);
-
-    var legend = infoSvg.append("g")
-        .attr("class", "legend")
-        .attr("transform", "translate(5,30)")
-        .call(log);
-
-    legend.append("text")
-        .attr("class", "caption")
-        .attr("x", -5)
-        .attr("y", -20)
-        .attr("fill", "#000")
-        .attr("text-anchor", "start")
-        .style("font-weight", "bold")
-        .text("Number of Direct Actions");
+//    legend.append("text")
+//        .attr("class", "caption")
+//        .attr("x", -5)
+//        .attr("y", -20)
+//        .attr("fill", "#000")
+//        .attr("text-anchor", "start")
+//        .style("font-weight", "bold")
+//        .text("Number of Direct Actions");
 
 //Enables zooming for the map
     function zoomed() {
