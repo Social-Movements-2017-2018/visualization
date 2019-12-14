@@ -104,9 +104,11 @@ var pointColor = d3.scaleThreshold()
 
 //Create main SVG element for the visualization
 var svg = d3.select(".dataviz")
+    .append("div")
+    .classed("svg-container", true)
     .append("svg")
-    .attr("width", w)
-    .attr("height", h)
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewbox", `0 0 ${w} ${h}`)
     .attr("class", "map")
     .on("click", stopped, true);
 
@@ -481,14 +483,14 @@ d3.csv("social-movements.csv", function (data) {
         d3.selectAll(".movements")
             .on("click", function () {
                 if (d3.select("#all").node() === this) {
-                    if (!d3.select("#all").select("input").property("checked")) {
+                    if (!d3.select("#all").property("checked")) {
                         d3.selectAll("input").property("checked", false);
                     }
                     else {
                         d3.selectAll("input").property("checked", true);
                     }
                 }
-                if (!d3.select("#women").select("input").property("checked")) {
+                if (!d3.select("#women").property("checked")) {
                     categories["Women's Rights"] = false;
                     console.log("women = false")
                 }
@@ -496,7 +498,7 @@ d3.csv("social-movements.csv", function (data) {
                     categories["Women's Rights"] = true;
                     console.log("women = true")
                 }
-                if (!d3.select("#politics").select("input").property("checked")) {
+                if (!d3.select("#politics").property("checked")) {
                     categories["U.S. Politics"] = false;
                     console.log("politics = false")
                 }
@@ -504,7 +506,7 @@ d3.csv("social-movements.csv", function (data) {
                     categories["U.S. Politics"] = true;
                     console.log("politics = true")
                 }
-                if (!d3.select("#racial").select("input").property("checked")) {
+                if (!d3.select("#racial").property("checked")) {
                     categories["Racial Justice"] = false;
                     console.log("racial = false")
                 }
@@ -512,7 +514,7 @@ d3.csv("social-movements.csv", function (data) {
                     categories["Racial Justice"] = true;
                     console.log("racial = true")
                 }
-                if (!d3.select("#religious").select("input").property("checked")) {
+                if (!d3.select("#religious").property("checked")) {
                     categories["Religious & Cultural Justice"] = false;
                     console.log("religious = false")
                 }
@@ -520,7 +522,7 @@ d3.csv("social-movements.csv", function (data) {
                     categories["Religious & Cultural Justice"] = true;
                     console.log("religious = true")
                 }
-                if (!d3.select("#lgbtq").select("input").property("checked")) {
+                if (!d3.select("#lgbtq").property("checked")) {
                     categories["LGBTQ+ Rights"] = false;
                     console.log("lgbtq = false")
                 }
@@ -528,7 +530,7 @@ d3.csv("social-movements.csv", function (data) {
                     categories["LGBTQ+ Rights"] = true;
                     console.log("lgbtq = true")
                 }
-                if (!d3.select("#enviro").select("input").property("checked")) {
+                if (!d3.select("#enviro").property("checked")) {
                     categories["Environmental & Food Justice"] = false;
                     console.log("enviro = false")
                 }
@@ -536,7 +538,7 @@ d3.csv("social-movements.csv", function (data) {
                     categories["Environmental & Food Justice"] = true;
                     console.log("enviro = true")
                 }
-                if (!d3.select("#housing").select("input").property("checked")) {
+                if (!d3.select("#housing").property("checked")) {
                     categories["Housing Justice"] = false;
                     console.log("housing = false")
                 }
@@ -544,7 +546,7 @@ d3.csv("social-movements.csv", function (data) {
                     categories["Housing Justice"] = true;
                     console.log("housing = true")
                 }
-                if (!d3.select("#workers").select("input").property("checked")) {
+                if (!d3.select("#workers").property("checked")) {
                     categories["Workers & Labor Rights"] = false;
                     console.log("workers = false")
                 }
@@ -552,7 +554,7 @@ d3.csv("social-movements.csv", function (data) {
                     categories["Workers & Labor Rights"] = true;
                     console.log("workers = true")
                 }
-                if (!d3.select("#other").select("input").property("checked")) {
+                if (!d3.select("#other").property("checked")) {
                     categories["Other"] = false;
                     console.log("other = false")
                 }
@@ -622,7 +624,7 @@ function pointLegend() {
         .attr('font-weight', 'bold')
         .attr('font-size', 13)
         .text('People in Attendance');
-    
+
     group.call(d3.axisBottom(pointX)
     .tickSize(13)
     .tickValues(pointColor.domain()))
@@ -637,7 +639,7 @@ function stateLegend() {
         .attr('id', 'stateLegend')
         .style("font-family", "Raleway")
         .attr("transform", "translate(7,30)");
-    
+
     group
         .selectAll('rect')
         .data(stateColor.range().map(function (d) {
@@ -668,7 +670,7 @@ function stateLegend() {
         .attr('font-weight', 'bold')
         .attr('font-size', 13)
         .text('Number of Direct Actions')
-    
+
     group.call(d3.axisBottom(stateX)
     .tickSize(13)
     .tickValues(stateColor.domain()))
